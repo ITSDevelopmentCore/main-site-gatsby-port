@@ -4,17 +4,16 @@
 import React from "react";
 
 /**
- * Imports : Media
+ * Imports : media
  */
-import IllustrationAdvantagesYearLight from '../../assets/media/illustration_advantages-year-light.png';
-import IllustrationAdvantagesYearDark from '../../assets/media/illustration_advantages-year-dark.png';
-import IllustrationAdvantagesClientsLight from '../../assets/media/illustration_advantages-clients-light.png';
-import IllustrationAdvantagesClientsDark from '../../assets/media/illustration_advantages-clients-dark.png';
-import IllustrationAdvantagesProjectsLight from '../../assets/media/illustration_advantages-projects-light.png';
-import IllustrationAdvantagesProjectsDark from '../../assets/media/illustration_advantages-projects-dark.png';
-import IllustrationAdvantagesTempLight from '../../assets/media/illustration_advantages-temp-light.png';
-import IllustrationAdvantagesTempDark from '../../assets/media/illustration_advantages-temp-dark.png';
-
+import IllustrationAdvantagesYearLight from '../../../assets/home/illustration_advantages-year-light.png';
+import IllustrationAdvantagesYearDark from '../../../assets/home/illustration_advantages-year-dark.png';
+import IllustrationAdvantagesClientsLight from '../../../assets/home/illustration_advantages-clients-light.png';
+import IllustrationAdvantagesClientsDark from '../../../assets/home/illustration_advantages-clients-dark.png';
+import IllustrationAdvantagesProjectsLight from '../../../assets/home/illustration_advantages-projects-light.png';
+import IllustrationAdvantagesProjectsDark from '../../../assets/home/illustration_advantages-projects-dark.png';
+import IllustrationAdvantagesTempLight from '../../../assets/home/illustration_advantages-temp-light.png';
+import IllustrationAdvantagesTempDark from '../../../assets/home/illustration_advantages-temp-dark.png';
 import { FiArrowDownRight } from 'react-icons/fi';
 import CardAdvantage from "../view/CardAdvantage";
 
@@ -24,7 +23,6 @@ export default function BlockAdvantages() {
         <section className={
             'mt-[185px] '
         }>
-
 
             <h2 className={
                 'mb-[55px] '

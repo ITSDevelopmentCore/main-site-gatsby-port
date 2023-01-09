@@ -3,20 +3,21 @@
  */
 import React, { useEffect, useState } from "react"
 import { useCookies } from "react-cookie";
-
-/**
- * Imports : Scripts
- */
-import { applyTailwindDarkTheme } from "../../scripts/themeScripts";
-import { showDarkThemeModal } from "../../scripts/changeViewByIdScripts";
+import { CookiesProvider } from "react-cookie";
 
 
 /**
- * Imports : Blocks
+ * Imports : scripts
  */
-import ModalDarkTheme from "../modals/ModalDarkTheme";
-import Footer from "../blocks/Footer";
-import Header from "../blocks/Header";
+import { applyTailwindDarkTheme } from "../scripts/themeScripts";
+import { showDarkThemeModal } from "../scripts/changeViewByIdScripts";
+
+/**
+ * Imports : components
+ */
+import ModalDarkTheme from "../components/common/modals/ModalDarkTheme";
+import Footer from "../components/common/blocks/Footer";
+import Header from "../components/common/blocks/Header";
 
 export const ThemeContext = React.createContext();
 

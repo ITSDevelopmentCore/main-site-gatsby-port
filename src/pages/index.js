@@ -3,6 +3,16 @@
  */
 import * as React from "react"
 
+
+/**
+ * Imports: Blocks
+ */
+import Feedback from "../components/common/blocks/Feedback";
+import BlockPreview from "../components/home/blocks/BlockPreview";
+import BlockAdvantages from "../components/home/blocks/BlockAdvantages";
+import BlockServices from "../components/home/blocks/BlockServices";
+import BlockNews from "../components/home/blocks/BlockNews";
+
 const HomePage = () => {
   return (
     <>

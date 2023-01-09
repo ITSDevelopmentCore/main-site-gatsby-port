@@ -1,10 +1,21 @@
+/**
+ * Imports : React
+ */
 import React from 'react';
+
+/**
+ * Imports : Icons
+ */
 import { RiApps2Fill } from 'react-icons/ri';
+
+/**
+ * Imports : components
+ */
 import CardWebAppsMobile from '../view/CardWebAppsMobile';
 import SwiperWebApps from '../view/SwiperWebApps'
+import Symbol from '../../common/view/Symbol';
 
-export default function BlockAdvantages(props) {
-
+export default function BlockAdvantages() {
 
     return (
         <section className="mt-[265px]">

@@ -1,12 +1,12 @@
 /**
  * Imports : React
  */
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 /**
  * Imports : media
  */
-import IcTechTask from '../../assets/icons/ic_tech-task.svg'
+import IcTechTask from '../../../assets/common/icons/ic_tech-task.svg';
 
 /**
  * Imports : scripts

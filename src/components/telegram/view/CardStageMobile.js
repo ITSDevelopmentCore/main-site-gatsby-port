@@ -1,3 +1,6 @@
+/**
+ * Imports : React
+ */
 import React from 'react';
 
 export default function CardWebAppsMobile(props) {

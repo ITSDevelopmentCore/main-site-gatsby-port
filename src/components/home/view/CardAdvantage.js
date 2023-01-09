@@ -1,5 +1,8 @@
+/**
+ * Imports : React
+ */
 import React, { useContext } from 'react';
-import { ThemeContext } from '../../../common/components/blocks/Page';
+import { ThemeContext } from '../../../layouts/index';
 
 export default function CardAdvantage(props) {
 

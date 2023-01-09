@@ -1,8 +1,14 @@
+/**
+ * Imports : React
+ */
 import React, { useContext } from "react";
-import { ThemeContext } from '../../../common/components/blocks/Page'
+import { ThemeContext } from '../../../layouts/index';
 
-import IllustrationPreviewLight from '../../assets/media/illustration_preview-light.png';
-import IllustrationPreviewDark from '../../assets/media/illustration_preview-dark.png';
+/**
+ * Imports : media
+ */
+import IllustrationPreviewLight from '../../../assets/home/illustration_preview-light.png';
+import IllustrationPreviewDark from '../../../assets/home/illustration_preview-dark.png';
 
 export default function BlockPreview() {
 

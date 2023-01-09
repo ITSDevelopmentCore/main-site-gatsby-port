@@ -14,14 +14,13 @@ import { RiServiceFill } from 'react-icons/ri';
 /**
  * Imports: components
  */
-import Symbol from '../../../common/components/view/Symbol';
+import Symbol from '../../common/view/Symbol';
 import CardAdvantageMobile from '../view/CardAdvantageMobile';
 import CardAdvantage from '../view/CardAdvantage';
 
 
 export default function BlockAdvantages() {
-
-
+    
     return (
         <>
             <div className="mt-[85px]">

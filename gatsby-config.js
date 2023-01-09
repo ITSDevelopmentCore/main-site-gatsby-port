@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
-    
+    'gatsby-plugin-postcss',
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
@@ -16,21 +16,21 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
-        "path": "./src/images/"
+        "path": "./src/assets/"
       },
       __key: "images"
     },
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./relative/path/to/layout/component`),
+        component: require.resolve(`./src/layouts/index.js`),
       },
     },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        "icon": "src/images/icon.png"
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-manifest',
+    //   options: {
+    //     "icon": "src/images/icon.png"
+    //   }
+    // },
   ]
 };

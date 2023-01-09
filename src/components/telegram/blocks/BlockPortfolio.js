@@ -1,9 +1,15 @@
+/**
+ * Imports : React
+ */
 import React from 'react';
 
-
+/**
+ * Imports : components
+ */
 import SwiperPortfolio from '../view/SwiperPortfolio'
 
-export default function BlockPortfolio(props) {
+
+export default function BlockPortfolio() {
 
 
     return (

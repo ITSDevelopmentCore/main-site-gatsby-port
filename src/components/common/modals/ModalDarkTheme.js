@@ -1,14 +1,17 @@
+/**
+ * Imports : React
+ */
 import React from 'react';
 
 /**
- * Imports : Media
+ * Imports : media
  */
 import { BsMoonStarsFill } from 'react-icons/bs';
 
 /**
- * Imports : Scripts
+ * Imports : scripts
  */
-import { applyTailwindDarkTheme } from "../../scripts/themeScripts";
+import { applyTailwindDarkTheme } from "../../../scripts/themeScripts";
 import useCookies from 'react-cookie/cjs/useCookies';
 
 

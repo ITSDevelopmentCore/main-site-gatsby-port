@@ -2,6 +2,10 @@
  * Imports : React
  */
 import React from "react";
+
+/**
+ * Import : components
+ */
 import CardNews from "../view/CardNews";
 
 /**
@@ -10,10 +14,10 @@ import CardNews from "../view/CardNews";
 import {TbChristmasTree} from 'react-icons/tb';
 import {GiUpgrade} from 'react-icons/gi';
 import {FaTelegramPlane} from 'react-icons/fa';
-
-import STUB_news from '../../assets/media/STUB_news.png';
-import IcYoutube from "../../assets/media/icons/IcYoutube";
 import { AiFillPlayCircle } from 'react-icons/ai';
+
+import STUB_news from '../../../assets/home/STUB_news.png';
+import IcYoutube from "../../../assets/home/icons/IcYoutube";
 
 export default function BlockNews() {
 

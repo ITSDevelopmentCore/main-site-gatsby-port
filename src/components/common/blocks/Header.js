@@ -7,7 +7,7 @@ import React from "react";
  * Imports : media
  */
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import IcBurger from '../../assets/icons/IcBurger';
+import IcBurger from '../../../assets/common/icons/IcBurger';
 
 /**
  * Imports : components

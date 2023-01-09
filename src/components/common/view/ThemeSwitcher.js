@@ -1,8 +1,11 @@
-import React, { useContext } from "react"
-import { ThemeContext } from "../../components/blocks/Page";
+/**
+ * Imports : React
+ */
+import React, { useContext } from "react";
+import { ThemeContext } from '../../../layouts/index';
 
 /**
- * Imports : Media
+ * Imports : media
  */
 import { BsMoonStarsFill } from 'react-icons/bs';
 

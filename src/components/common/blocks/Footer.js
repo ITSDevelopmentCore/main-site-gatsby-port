@@ -6,10 +6,10 @@ import React from "react";
 /**
  * Imports : media
  */
-import IcDzen from '../../assets/icons/IcDzen'
-import IcVK from '../../assets/icons/IcVK'
-import IcTelegram from '../../assets/icons/IcTelegram'
-import { AiOutlineArrowUp } from 'react-icons/ai'
+import IcDzen from '../../../assets/common/icons/IcDzen';
+import IcVK from '../../../assets/common/icons/IcVK';
+import IcTelegram from '../../../assets/common/icons/IcTelegram';
+import { AiOutlineArrowUp } from 'react-icons/ai';
 
 /**
  * Imports : scripts
