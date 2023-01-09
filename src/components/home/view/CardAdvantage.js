@@ -16,7 +16,8 @@ export default function CardAdvantage(props) {
                     + 'card_primary '
                     + 'laptop:aspect-square'}>
                         
-                    <img src={theme == 'dark' ? props.imageDark : props.imageLight} />
+                    <img src={theme === 'dark' ? props.imageDark : props.imageLight}
+                    img='Иллюстрация к карточке' />
                 </div>
 
                 <div className={

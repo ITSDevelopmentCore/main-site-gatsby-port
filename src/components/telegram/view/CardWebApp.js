@@ -20,9 +20,12 @@ export default function CardWebApp(props) {
                 </article>
 
                 <div className='flex justify-between'>
-                    <img src={props.qr} className='w-[150px] aspect-square' />
-                    <p className='text-xs opacity-60 w-36'>Сканируйте QR-код или 
-                    <a href={props.link} className='underline text-sky-500 cursor-pointer font-bold'>перейтите по ссылке</a>, чтобы ознакомиться с тестовым приложением</p>
+                    <img
+                        src={props.qr}
+                        alt='QR Код для сканирования'
+                        className='w-[150px] aspect-square' />
+                    <p className='text-xs opacity-60 w-36'>Сканируйте QR-код или
+                        <a href={props.link} className='underline text-sky-500 cursor-pointer font-bold'>перейтите по ссылке</a>, чтобы ознакомиться с тестовым приложением</p>
                 </div>
 
             </div>
@@ -31,7 +34,9 @@ export default function CardWebApp(props) {
                 <div class="mockup-phone border-primary h-full aspect-[1/2]">
                     <div class="camera"></div>
                     <div class="display">
-                        <img src={props.image} />
+                        <img src={props.image}
+                            alt='Скриншот бота'
+                        />
                     </div>
                 </div>
             </div>

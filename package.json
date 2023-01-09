@@ -15,23 +15,21 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-  
     "daisyui": "^2.46.1",
-
     "gatsby": "^5.3.3",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-layout": "^4.3.0",
     "gatsby-plugin-manifest": "^5.3.1",
+    "gatsby-plugin-sass": "^6.3.1",
     "gatsby-plugin-sharp": "^5.3.2",
     "gatsby-plugin-sitemap": "^6.3.1",
     "gatsby-source-filesystem": "^5.3.1",
     "gatsby-transformer-sharp": "^5.3.1",
-
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-cookie": "^4.1.1",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
-
+    "sass": "^1.57.1",
     "swiper": "^8.4.5",
     "tailwind-scrollbar-hide": "^1.1.7"
   },

@@ -57,18 +57,18 @@ export default function Layout(props) {
     }
 
     function workWithFirstVisit() {
-        if (cookies.firstVisit == undefined) {
+        if (cookies.firstVisit === undefined) {
             setTimeout(() => { showDarkThemeModal() }, 3000);
             setCookie('firstVisit', false);
         }
     }
 
     function workWithTheme() {
-        if (cookies.theme == 'dark') {
+        if (cookies.theme === 'dark') {
             applyTailwindDarkTheme(true);
             setTheme('dark');
         }
-        if (cookies.theme == 'light') {
+        if (cookies.theme === 'light') {
             applyTailwindDarkTheme(false);
             setTheme('light')
         }

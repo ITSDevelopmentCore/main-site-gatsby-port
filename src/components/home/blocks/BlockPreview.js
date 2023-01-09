@@ -110,8 +110,9 @@ export default function BlockPreview() {
                 className={
                     'h-[240px] '
                     + 'laptop:basis-1/2 laptop:max-w-[50%] laptop:h-full'}
+                    alt='Иллюстрация к главной странице'
 
-                src={theme == 'dark' ? IllustrationPreviewDark : IllustrationPreviewLight}
+                src={theme === 'dark' ? IllustrationPreviewDark : IllustrationPreviewLight}
             />
 
         </section>

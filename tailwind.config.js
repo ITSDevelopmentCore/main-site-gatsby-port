@@ -1,7 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ['./source/**/*.{js,jsx,html,svg}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,html,svg}'],
+
 
   darkMode: 'class',
 
@@ -12,7 +13,7 @@ module.exports = {
         'award':
           "url('Z:/Projects/Web/main-website-new/source/page_telegram/assets/media/award.svg')",
         'award-d':
-        "url('Z:/Projects/Web/main-website-new/source/page_telegram/assets/media/award-dark.svg')",
+          "url('Z:/Projects/Web/main-website-new/source/page_telegram/assets/media/award-dark.svg')",
       }),
 
       colors: {

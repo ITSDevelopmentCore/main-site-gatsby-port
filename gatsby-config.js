@@ -10,6 +10,7 @@ module.exports = {
     'gatsby-plugin-postcss',
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
+    `gatsby-plugin-sass`,
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -26,11 +27,5 @@ module.exports = {
         component: require.resolve(`./src/layouts/index.js`),
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-manifest',
-    //   options: {
-    //     "icon": "src/images/icon.png"
-    //   }
-    // },
   ]
 };

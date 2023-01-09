@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card_primary {
+        @apply bg-white rounded-[50px] dark:bg-card-surface dark:border dark:border-slate-800 p-[30px] laptop:p-[50px]
+    }
+
+    .section-title {
+        @apply text-[28px] leading-[32px] font-extrabold text-center laptop:text-[46px] laptop:leading-[52px] laptop:text-left large:text-[58px] large:leading-[66px] desktop:text-[64px] desktop:leading-[72px]
+    }
+}

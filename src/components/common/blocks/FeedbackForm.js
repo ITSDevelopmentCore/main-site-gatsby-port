@@ -18,7 +18,7 @@ function FeedbackForm() {
 
     const extractFileName = (file) => {
         var fileList = file.target.files;
-        if (file.target.files.length != 0) {
+        if (file.target.files.length !== 0) {
             setFile(fileList[0].name)
         }
     }
@@ -108,7 +108,8 @@ function FeedbackForm() {
                             'w-[45px] aspect-square mr-5 '
                             + 'laptop:w-[70px] '
                             + 'cursor-pointer rounded-lg'}
-                            src={IcTechTask}>
+                            src={IcTechTask}
+                            alt='Загрузить техническое задание (Иконка)'>
                         </img>
 
                         <input

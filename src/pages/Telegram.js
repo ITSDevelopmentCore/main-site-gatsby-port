@@ -16,16 +16,17 @@ import BlockStages from "../components/telegram/blocks/BlockStages";
 import BlockPortfolio from "../components/telegram/blocks/BlockPortfolio";
 
 
-let root = document.getElementById("root");
-let reactDom = ReactDOM.createRoot(root)
-reactDom.render(
-    <>
-        <Preview />
-        <BlockAdvantages />
-        <BlockWebApps />
-        <BlockStages />
-        <BlockPortfolio />
-        <Feedback />
-    </>
-)
+export default function TelegramPage() {
+    return (
+        <>
+            <Preview />
+            <BlockAdvantages />
+            <BlockWebApps />
+            <BlockStages />
+            <BlockPortfolio />
+            <Feedback />
+        </>
+    )
+}
+
 
