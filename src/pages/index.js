@@ -27,4 +27,9 @@ const HomePage = () => {
 
 export default HomePage;
 
-export const Head = () => <title>ITS.dev - Разработка программного обеспечения</title>
+export const Head = () => {
+  <>
+    <title>ITS.dev - Разработка программного обеспечения</title>
+    <meta name="description" content="ITS Development предлагает качественную и сертифицированную разработку ПО от мобильных платформ и сайтов до сложных систем автоматизации на базе ИИ." />
+  </>
+}
