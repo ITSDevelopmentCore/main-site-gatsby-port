@@ -1,7 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx,html,svg}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,html,svg}'
+    , './gatsby-ssr.js'],
 
 
   darkMode: 'class',

@@ -31,13 +31,6 @@ export default function Layout(props) {
     })
 
     return (
-        <div className={"font-['nexa'] text-[18px] "
-            + "laptop:text-[14px] "
-            + "large:text-[16px] "
-            + "desktop:text-[18px] "
-            + "bg-gray-100 "
-            + "dark:bg-[#191E25] dark:text-white "}>
-
             <div className={'mx-5 laptop:mx-10 desktop:w-[1500px] desktop:mx-auto'}>
                 <CookiesProvider>
                     <ThemeContext.Provider value={{ theme, changeThemeCallback }}>
@@ -50,11 +43,6 @@ export default function Layout(props) {
                     </ThemeContext.Provider>
                 </CookiesProvider>
             </div>
-
-
-
-        </div>
-
     )
 
     function changeThemeCallback(changedToDark) {

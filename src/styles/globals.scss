@@ -1,9 +1,14 @@
 @import "_fonts";
 @import "_tailwind";
 
-// body {
-//     font-family: 'nexa';
-//     font-size: 18px;
+.stroke-custom {
+    path {
+        stroke-width: 3px !important;
+    }
+}
 
-
-// }
+@media (min-width: 1024px) {
+    .swiper-pagination {
+        visibility: visible;
+    }
+}
