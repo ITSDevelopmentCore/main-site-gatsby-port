@@ -2,7 +2,6 @@
  * Imports : React
  */
 import React from "react"
-import * as ReactDOM from 'react-dom/client';
 
 /**
  * Imports: Blocks
@@ -16,7 +15,7 @@ import BlockStages from "../components/telegram/blocks/BlockStages";
 import BlockPortfolio from "../components/telegram/blocks/BlockPortfolio";
 
 
-export default function TelegramPage() {
+const TelegramPage = () => {
     return (
         <>
             <Preview />
@@ -28,5 +27,9 @@ export default function TelegramPage() {
         </>
     )
 }
+
+export const Head = () => <title>Разработка Телеграм ботов</title>
+
+export default TelegramPage;
 
 

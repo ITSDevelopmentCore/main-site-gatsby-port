@@ -1,53 +1,53 @@
 /**
- * Для работы данного компонента необходим установленный DaisyUI плагин к TailwindCSS.
- */
-
-
-/**
  * Imports : React
  */
 import React from "react";
 
-function DropdownMenuMobile() {
+/**
+ * Imports : Gatsby
+ */
+import { Link } from 'gatsby';
+
+const DropdownMenuMobile = () => {
     return (
         <menu
             id={"dropdownMenuMobile"}
             className={'hidden absolute top-[70px] right-0 left-0 z-20'}>
             <ul>
+
                 <DropdownMenuMobileCategory
                     title='О компании и соискателям'
                     content={
                         [
-                            { title: 'О нас', href: 'http://127.0.0.1:5500/build/html/telegram.html' },
-                            { title: 'Вакансии', href: 'http://127.0.0.1:5500/build/html/telegram.html' },
+                            { title: 'О нас', href: '/' },
+                            { title: 'Вакансии', href: '/' },
                         ]
-                    }
-                />
+                    } />
+
                 <DropdownMenuMobileCategory
                     title='Услуги'
                     content={
                         [
-                            { title: 'Telegram разработка', href: 'http://127.0.0.1:5500/build/html/telegram.html' },
-                            { title: 'Mobile разработка', href: 'http://127.0.0.1:5500/build/html/telegram.html' },
-                            { title: 'Web разработка', href: 'http://127.0.0.1:5500/build/html/telegram.html' },
-                            { title: 'Startup MVP', href: 'http://127.0.0.1:5500/build/html/telegram.html' },
+                            { title: 'Telegram разработка', href: '/telegram' },
+                            { title: 'Mobile разработка', href: '/' },
+                            { title: 'Web разработка', href: '/' },
+                            { title: 'Startup MVP', href: '/' },
                         ]
-                    }
-                />
+                    } />
+
                 <DropdownMenuMobileCategory
                     title='Решения'
                     content={
                         [
-                            { title: 'Bot System', href: 'http://127.0.0.1:5500/build/html/development.html' },
+                            { title: 'Bot System', href: '/' },
                         ]
-                    }
-                />
+                    } />
             </ul>
         </menu>
     )
 }
 
-function DropdownMenuMobileCategory(props) {
+const DropdownMenuMobileCategory = (props) => {
     return (
         <li tabIndex={0}
             className={
@@ -66,31 +66,25 @@ function DropdownMenuMobileCategory(props) {
                         link={item.href} />;
                 })}
             </ul>
-
-
         </li>
     )
 }
 
 
-function DropdownMenuMobileItem(props) {
+const DropdownMenuMobileItem = (props) => {
     return (
-        <a href={props.link}>
-            <li className={
-                'flex justify-center items-center h-[60px] '
-                + 'bg-white rounded-[4px] '
-                + 'dark:bg-card-surface'}>
+        <Link to={props.link}>
+            <li
+                key={props.title}
+                className={
+                    'flex justify-center items-center py-[15px]'}>
 
                 <span className="text-sky-500">{props.title.split(' ')[0]}</span>
                 &nbsp;
                 <span>{props.title.split(' ')[1]}</span>
-
             </li>
-        </a>
+        </Link>
     )
 }
-
-
-
 
 export default DropdownMenuMobile;

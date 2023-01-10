@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react"
 import { useCookies } from "react-cookie";
 import { CookiesProvider } from "react-cookie";
 
-
 /**
  * Imports : scripts
  */
@@ -32,16 +31,30 @@ export default function Layout(props) {
     })
 
     return (
-        <CookiesProvider>
-            <ThemeContext.Provider value={{ theme, changeThemeCallback }}>
-                <Header />
-                <ModalDarkTheme />
-                <main>
-                    {props.children}
-                </main>
-                <Footer />
-            </ThemeContext.Provider>
-        </CookiesProvider>
+        <div className={"font-['nexa'] text-[18px] "
+            + "laptop:text-[14px] "
+            + "large:text-[16px] "
+            + "desktop:text-[18px] "
+            + "bg-gray-100 "
+            + "dark:bg-[#191E25] dark:text-white "}>
+
+            <div className={'mx-5 laptop:mx-10 desktop:w-[1500px] desktop:mx-auto'}>
+                <CookiesProvider>
+                    <ThemeContext.Provider value={{ theme, changeThemeCallback }}>
+                        <Header />
+                        <ModalDarkTheme />
+                        <main>
+                            {props.children}
+                        </main>
+                        <Footer />
+                    </ThemeContext.Provider>
+                </CookiesProvider>
+            </div>
+
+
+
+        </div>
+
     )
 
     function changeThemeCallback(changedToDark) {

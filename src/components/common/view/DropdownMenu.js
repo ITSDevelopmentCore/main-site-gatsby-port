@@ -8,7 +8,12 @@ import React from "react";
  */
 import { TfiAngleDown } from 'react-icons/tfi';
 
-function DropdownMenu(props) {
+/**
+ * Imports : Gatsby
+ */
+import { Link } from 'gatsby';
+
+const DropdownMenu = (props) => {
     return (
         <div className="dropdown dropdown-hover group">
 
@@ -31,12 +36,12 @@ function DropdownMenu(props) {
     )
 }
 
-function MenuItem(props) {
+const MenuItem = (props) => {
     return (
         <li>
-            <a href={props.link}>
+            <Link to={props.link}>
                 {props.title}
-            </a>
+            </Link>
         </li>
     )
 }

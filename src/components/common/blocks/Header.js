@@ -10,15 +10,19 @@ import { BsFillTelephoneFill } from 'react-icons/bs';
 import IcBurger from '../../../assets/common/icons/IcBurger';
 
 /**
- * Imports : components
+ * Imports : custom components
  */
 import Symbol from '../view/Symbol';
 import DropdownMenu from "../view/DropdownMenu";
 import ThemeSwitcher from "../view/ThemeSwitcher";
 import DropdownMenuMobile from "../view/DropdownMenuMobile";
 
+/**
+ * Imports : Gatsby
+ */
+import { Link } from 'gatsby';
 
-function Header() {
+const Header = () => {
 
     const buttonClickHandler = () => {
         document.getElementById('feedback').scrollIntoView({
@@ -34,11 +38,15 @@ function Header() {
 
             <div className="flex items-center">
 
-                <div className={
-                    'font-bold text-[30px] leading-[46px] '
-                    + 'laptop:mr-14 laptop:text-[32px] laptop:leading-[48px]'}>
-                    its.<span className="text-sky-500">dev</span>
-                </div>
+                <Link to='/'>
+                    <div className={
+                        'font-bold text-[30px] leading-[46px] '
+                        + 'laptop:mr-14 laptop:text-[32px] laptop:leading-[48px]'}>
+
+                        its.<span className="text-sky-500">dev</span>
+
+                    </div>
+                </Link>
 
                 <nav className={
                     'hidden '
@@ -51,11 +59,11 @@ function Header() {
                             items={[
                                 {
                                     title: "О нас",
-                                    link: "http://127.0.0.1:5500/build/html/home.html"
+                                    link: '/'
                                 },
                                 {
                                     title: "Вакансии и карьера",
-                                    link: "http://127.0.0.1:5500/build/html/development.html"
+                                    link: '/'
                                 }
                             ]} />
                         <DropdownMenu
@@ -63,19 +71,19 @@ function Header() {
                             items={[
                                 {
                                     title: "Telegram",
-                                    link: "http://127.0.0.1:5500/build/html/telegram.html"
+                                    link: '/telegram'
                                 },
                                 {
                                     title: "Мобильная разработка",
-                                    link: "http://127.0.0.1:5500/build/html/development.html"
+                                    link: '/'
                                 },
                                 {
                                     title: "Web разработка",
-                                    link: "http://127.0.0.1:5500/build/html/development.html"
+                                    link: '/'
                                 },
                                 {
                                     title: "Startup MVP",
-                                    link: "http://127.0.0.1:5500/build/html/development.html"
+                                    link: '/'
                                 },
                             ]} />
                         <DropdownMenu
@@ -83,7 +91,7 @@ function Header() {
                             items={[
                                 {
                                     title: "Bot System",
-                                    link: "http://127.0.0.1:5500/build/html/development.html"
+                                    link: '/'
                                 }
                             ]} />
                     </ul>

@@ -27,4 +27,4 @@ const HomePage = () => {
 
 export default HomePage;
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>ITS.dev - Разработка программного обеспечения</title>
