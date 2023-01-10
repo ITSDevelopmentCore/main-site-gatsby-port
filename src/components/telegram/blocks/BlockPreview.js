@@ -9,9 +9,10 @@ import Symbol from '../../common/view/Symbol';
  */
 import IllustrationMobileMockupDouble from '../../../assets/telegram/illustration-mobile-mockup-double.png';
 import MockupGIF from '../../../assets/telegram/video/mockup.gif';
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
 export default function BlockPreview() {
-    
+
     const classesPreviewAdvantageDigitLaptop = "text-center desktop:text-[70px] desktop:leading-[75px] large:text-[60px] large:leading-[65px] laptop:text-[50px] laptop:leading-[55px]";
     const classesPreviewAdvantageTextLaptop = "font-base opacity-60 text-center";
     const classesPreviewAdvantageDividerLaptop = "h-[2px] w-full bg-neutral-900 opacity-10 my-10 dark:bg-white";
@@ -77,12 +78,16 @@ export default function BlockPreview() {
                     + 'desktop:w-[330px] '}>
                     <div className="camera"></div>
                     <div className="display h-full rounded-[20px] ">
-                        <img src={MockupGIF} className={'h-full w-full'} />
+                        <StaticImage
+                            src={MockupGIF}
+                            alt='Working Telegram bot GIF'
+                            className={'h-full w-full'} />
                     </div>
                 </div>
 
-                <img
+                <StaticImage
                     src={IllustrationMobileMockupDouble}
+                    alt='Mobile phone with working bot illustration'
                     className={
                         'h-[350px] w-[270px] m-auto relative -bottom-[150px] z-20 '
                         + 'laptop:hidden '} />
@@ -121,7 +126,7 @@ export default function BlockPreview() {
 
             <div className={
                 'flex flex-col p-[26px] relative z-40 '
-                + 'card_primary ' 
+                + 'card_primary '
                 + 'laptop:hidden '}>
 
 

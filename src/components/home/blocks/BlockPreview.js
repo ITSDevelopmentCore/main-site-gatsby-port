@@ -9,6 +9,7 @@ import { ThemeContext } from '../../../layouts/index';
  */
 import IllustrationPreviewLight from '../../../assets/home/illustration_preview-light.png';
 import IllustrationPreviewDark from '../../../assets/home/illustration_preview-dark.png';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function BlockPreview() {
 
@@ -51,7 +52,7 @@ export default function BlockPreview() {
 
                 <div className={
                     'flex justify-center space-x-[10px] mb-[10px] text-[12px] '
-                    +'desktop:text-[18px] desktop:leading-[27px] desktop:space-x-[15px] desktop:mb-[19px] '}>
+                    + 'desktop:text-[18px] desktop:leading-[27px] desktop:space-x-[15px] desktop:mb-[19px] '}>
 
                     <button className={
                         'px-[18px] py-[12px] '
@@ -73,7 +74,7 @@ export default function BlockPreview() {
 
                 <div className={
                     'flex justify-center space-x-[10px] mb-[50px] text-[12px] '
-                    +'desktop:text-[18px] desktop:leading-[27px] '}>
+                    + 'desktop:text-[18px] desktop:leading-[27px] '}>
 
                     <button className={
                         'px-[18px] py-[12px] '
@@ -92,26 +93,26 @@ export default function BlockPreview() {
                     </button>
                 </div>
 
-                <button 
-                onClick={buttonClickHandler}
-                className={
-                    'p-[10px] mb-[75px] '
-                    + 'text-[14px] leading-[20px] font-bold text-white shadow-blue rounded-[6px] bg-gradient-to-t from-sky-500 to-sky-300 transition-all duration-200 hover:shadow-blue-extended '
-                    + 'laptop:text-[18px] laptop:px-[34px] laptop:py-[14px] '
-                    + 'large:text-[20px] large:px-[42px] large:py-[16px] '
-                    + 'desktop:text-[22px] desktop:leading-[33px] desktop:px-[46px] desktop:py-[19px] desktop:rounded-[10px] '
-                    + 'dark:to-sky-500 dark:text-white'}>
+                <button
+                    onClick={buttonClickHandler}
+                    className={
+                        'p-[10px] mb-[75px] '
+                        + 'text-[14px] leading-[20px] font-bold text-white shadow-blue rounded-[6px] bg-gradient-to-t from-sky-500 to-sky-300 transition-all duration-200 hover:shadow-blue-extended '
+                        + 'laptop:text-[18px] laptop:px-[34px] laptop:py-[14px] '
+                        + 'large:text-[20px] large:px-[42px] large:py-[16px] '
+                        + 'desktop:text-[22px] desktop:leading-[33px] desktop:px-[46px] desktop:py-[19px] desktop:rounded-[10px] '
+                        + 'dark:to-sky-500 dark:text-white'}>
                     Свяжитесь со мной
                 </button>
 
             </div>
 
-            <img
+            <GatsbyImage
                 className={
                     'h-[240px] '
                     + 'laptop:basis-1/2 laptop:max-w-[50%] laptop:h-full'}
-                    alt='Иллюстрация к главной странице'
 
+                alt='Main page preview illustration'
                 src={theme === 'dark' ? IllustrationPreviewDark : IllustrationPreviewLight}
             />
 

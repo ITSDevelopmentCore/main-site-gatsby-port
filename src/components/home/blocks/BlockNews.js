@@ -11,13 +11,14 @@ import CardNews from "../view/CardNews";
 /**
  * Imports : media
  */
-import {TbChristmasTree} from 'react-icons/tb';
-import {GiUpgrade} from 'react-icons/gi';
-import {FaTelegramPlane} from 'react-icons/fa';
+import { TbChristmasTree } from 'react-icons/tb';
+import { GiUpgrade } from 'react-icons/gi';
+import { FaTelegramPlane } from 'react-icons/fa';
 import { AiFillPlayCircle } from 'react-icons/ai';
 
 import STUB_news from '../../../assets/home/STUB_news.png';
 import IcYoutube from "../../../assets/home/icons/IcYoutube";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function BlockNews() {
 
@@ -37,7 +38,7 @@ export default function BlockNews() {
                 <div className={
                     'flex flex-col justify-between basis-1/2 space-y-[20px] mb-[40px] '
                     + 'card_primary cursor-pointer '
-                    +'laptop:mb-0 '}>
+                    + 'laptop:mb-0 '}>
 
                     <h4 className="flex justify-start items-center space-x-[10px]">
                         <IcYoutube />
@@ -50,8 +51,10 @@ export default function BlockNews() {
                     </p>
 
                     <div className="relative">
-                        <img className='w-full' src={STUB_news} />
-
+                        <StaticImage
+                            className='w-full'
+                            src={STUB_news}
+                            alt='Videoblog preview image' />
 
                         <AiFillPlayCircle className="w-[40px] h-[40px] z-20 absolute top-[45%] left-[45%] right-[45%] bottom-[45%]" />
                     </div>
@@ -63,17 +66,17 @@ export default function BlockNews() {
                 <div className={'flex flex-col space-y-[15px] basis-1/2'}>
 
                     <CardNews
-                        img={<GiUpgrade className="h-full w-full text-sky-500"/>}
+                        img={<GiUpgrade className="h-full w-full text-sky-500" />}
                         title={'Обновление сайта its.dev'}
                         description={'Мы полностью обновили наш вебсайт в соответствии с трендами 2023 года.'} />
 
                     <CardNews
-                        img={<FaTelegramPlane className="h-full w-full text-sky-500"/>}
+                        img={<FaTelegramPlane className="h-full w-full text-sky-500" />}
                         title={'Telegram Web Apps'}
                         description={'Спектр наших услуг пополнился Telegram ботами на базе Telegram Web Apps. Предлагаем к просмотру демо-версии.'} />
 
                     <CardNews
-                        img={<TbChristmasTree className="h-full w-full text-sky-500"/>}
+                        img={<TbChristmasTree className="h-full w-full text-sky-500" />}
                         title={'С Новым годом!'}
                         description={'Новогодние подарки уже ждут всех наших клиентов на электроной почте.'} />
 

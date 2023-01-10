@@ -1,6 +1,7 @@
 /**
  * Imports : React
  */
+import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 function CardPortfolio(props) {
@@ -19,7 +20,9 @@ function CardPortfolio(props) {
                     <div className="camera"></div>
                     <div className="display">
                         <div className="bg-white w-full h-full">
-                        <img src={props.screenshot}/>
+                            <GatsbyImage
+                                alt='Portrolio screenshot'
+                                src={props.screenshot} />
                         </div>
                     </div>
                 </div>
@@ -42,7 +45,7 @@ function CardPortfolio(props) {
 
                 <p className={
                     'text-justify text-[12px] leading-[16px] opacity-60 mb-[17px] '
-                    +'laptop:text-[16px] laptop:leading-[24px] laptop:mb-0 '
+                    + 'laptop:text-[16px] laptop:leading-[24px] laptop:mb-0 '
                 }>
                     {props.description}
                 </p>
@@ -51,49 +54,50 @@ function CardPortfolio(props) {
                     <h4 className={
                         'mb-[20px] '
                         + 'font-bold text-[16px] leading-[16px] '
-                        +'laptop:text-[24px] laptop:leading-[22px]'
+                        + 'laptop:text-[24px] laptop:leading-[22px]'
                     }>
                         Бюджет проекта:
                     </h4>
 
                     <p className={
                         'text-[23px] leading-[20px] text-sky-500 font-extrabold '
-                        +'laptop:text-[32px] laptop:leading-[29px]'
+                        + 'laptop:text-[32px] laptop:leading-[29px]'
                     }>
                         {props.budget}
                     </p>
                 </div>
 
                 <div className='mb-[22px] laptop:mb-0'>
-                <h4 className={
+                    <h4 className={
                         'mb-[20px] '
                         + 'font-bold text-[16px] leading-[16px] '
-                        +'laptop:text-[24px] laptop:leading-[22px]'
+                        + 'laptop:text-[24px] laptop:leading-[22px]'
                     }>
                         Затрачено:
                     </h4>
 
                     <p className={
                         'text-[23px] leading-[20px] text-sky-500 font-extrabold '
-                        +'laptop:text-[32px] laptop:leading-[29px]'
+                        + 'laptop:text-[32px] laptop:leading-[29px]'
                     }>
                         {props.result}
                     </p>
                 </div>
 
                 <a className='laptop:hidden'>
-                <a href={props.link} >
-                    <button className='btn w-full bg-sky-500 text-white'>
-                        Посмотреть
-                    </button>
+                    <a href={props.link} >
+                        <button className='btn w-full bg-sky-500 text-white'>
+                            Посмотреть
+                        </button>
                     </a>
                 </a>
-                <img
+                <GatsbyImage
+                    src={props.qr}
+                    alt='QR code for portfolio work checkout'
                     className={
                         'hidden w-[140px] h-[140px] '
                         + 'rounded-[15px] '
-                        + 'laptop:block '}
-                    src={props.qr} />
+                        + 'laptop:block '} />
             </div>
 
             <div className={
@@ -102,7 +106,9 @@ function CardPortfolio(props) {
                 <div className="mockup-phone border-primary h-[595px] aspect-[1/2] ">
                     <div className="camera"></div>
                     <div className="display">
-                        <img src={props.screenshot}/>
+                        <GatsbyImage
+                        src={props.screenshot} 
+                        alt='Portrolio screenshot'/>
                     </div>
                 </div>
             </div>
