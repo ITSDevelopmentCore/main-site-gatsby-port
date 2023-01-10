@@ -1,0 +1,14 @@
+@import "_fonts";
+@import "_tailwind";
+
+.stroke-custom {
+    path {
+        stroke-width: 3px !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .swiper-pagination {
+        visibility: visible;
+    }
+}

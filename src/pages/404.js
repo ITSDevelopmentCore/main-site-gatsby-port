@@ -30,6 +30,7 @@ const NotFoundPage = () => {
       <p style={paragraphStyles}>
         Sorry 😔, we couldn’t find what you were looking for.
         <br />
+        {console.log(process.env.GATSBY_API)}
         {process.env.NODE_ENV === "development" ? (
           <>
             <br />
