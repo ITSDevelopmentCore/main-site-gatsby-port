@@ -63,7 +63,7 @@ const Header = () => {
                                 },
                                 {
                                     title: "Вакансии и карьера",
-                                    link: '/'
+                                    link: '/underDevelopment'
                                 }
                             ]} />
                         <DropdownMenu
@@ -75,15 +75,15 @@ const Header = () => {
                                 },
                                 {
                                     title: "Мобильная разработка",
-                                    link: '/'
+                                    link: '/underDevelopment'
                                 },
                                 {
                                     title: "Web разработка",
-                                    link: '/'
+                                    link: '/underDevelopment'
                                 },
                                 {
                                     title: "Startup MVP",
-                                    link: '/'
+                                    link: '/underDevelopment'
                                 },
                             ]} />
                         <DropdownMenu
@@ -91,7 +91,7 @@ const Header = () => {
                             items={[
                                 {
                                     title: "Bot System",
-                                    link: '/'
+                                    link: '/underDevelopment'
                                 }
                             ]} />
                     </ul>

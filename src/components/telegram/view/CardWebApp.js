@@ -31,9 +31,9 @@ export default function CardWebApp(props) {
             </div>
 
             <div className='flex justify-center items-center'>
-                <div class="mockup-phone border-primary h-full aspect-[1/2]">
-                    <div class="camera"></div>
-                    <div class="display">
+                <div className="mockup-phone border-primary h-full aspect-[1/2]">
+                    <div className="camera"></div>
+                    <div className="display">
                         <img
                             src={props.image}
                             alt='Telegram Web App Screenshot'/>

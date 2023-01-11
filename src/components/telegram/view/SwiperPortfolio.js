@@ -36,7 +36,7 @@ function Gallery() {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="w-8 h-8 bg-sky-500 rounded-[5px] ' + className + '"></span>';
+      return '<span className="w-8 h-8 bg-sky-500 rounded-[5px] ' + className + '"></span>';
     },
   };
 

@@ -12,34 +12,37 @@ const DropdownMenuMobile = () => {
     return (
         <menu
             id={"dropdownMenuMobile"}
-            className={'hidden absolute top-[70px] right-0 left-0 z-20'}>
+            className={'hidden absolute top-[70px] right-0 left-0 z-40'}>
             <ul>
 
                 <DropdownMenuMobileCategory
                     title='О компании и соискателям'
+                    key='О компании и соискателям'
                     content={
                         [
                             { title: 'О нас', href: '/' },
-                            { title: 'Вакансии', href: '/' },
+                            { title: 'Вакансии', href: '/underDevelopment' },
                         ]
                     } />
 
                 <DropdownMenuMobileCategory
                     title='Услуги'
+                    key='Услуги'
                     content={
                         [
                             { title: 'Telegram разработка', href: '/telegram' },
-                            { title: 'Mobile разработка', href: '/' },
-                            { title: 'Web разработка', href: '/' },
-                            { title: 'Startup MVP', href: '/' },
+                            { title: 'Mobile разработка', href: '/underDevelopment' },
+                            { title: 'Web разработка', href: '/underDevelopment' },
+                            { title: 'Startup MVP', href: '/underDevelopment' },
                         ]
                     } />
 
                 <DropdownMenuMobileCategory
                     title='Решения'
+                    key='Решения'
                     content={
                         [
-                            { title: 'Bot System', href: '/' },
+                            { title: 'Bot System', href: '/underDevelopment' },
                         ]
                     } />
             </ul>
@@ -50,11 +53,9 @@ const DropdownMenuMobile = () => {
 const DropdownMenuMobileCategory = (props) => {
     return (
         <li 
-            key={props.title}
             className={
                 'collapse '
-                + 'bg-white rounded-[4px] '
-                + 'dark:bg-card-surface dark:border dark:border-slate-800'}>
+                + 'card_primary '}>
 
             <p className="collapse-title text-xl font-medium block">
                 {props.title}
@@ -63,6 +64,7 @@ const DropdownMenuMobileCategory = (props) => {
             <ul>
                 {props.content.map(function (item) {
                     return <DropdownMenuMobileItem
+                    key={item.title}
                         title={item.title}
                         link={item.href} />;
                 })}
@@ -76,7 +78,6 @@ const DropdownMenuMobileItem = (props) => {
     return (
         <Link to={props.link}>
             <li
-                key={props.title}
                 className={
                     'flex justify-center items-center py-[15px]'}>
 

@@ -46,7 +46,7 @@ export default function Layout(props) {
                     <CookiesProvider>
                         <Header />
                         <ModalDarkTheme />
-                        <main>
+                        <main className="min-h-[100vh]">
                             {props.children}
                         </main>
                         <Footer />
