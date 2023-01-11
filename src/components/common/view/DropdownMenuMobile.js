@@ -49,7 +49,8 @@ const DropdownMenuMobile = () => {
 
 const DropdownMenuMobileCategory = (props) => {
     return (
-        <li tabIndex={0}
+        <li 
+            key={props.title}
             className={
                 'collapse '
                 + 'bg-white rounded-[4px] '

@@ -1,7 +1,6 @@
 /**
  * Imports : React
  */
-import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 /**
@@ -36,7 +35,7 @@ export default function CardService(props) {
                 {props.description}
             </p>
 
-            <GatsbyImage
+            <img
                 src={props.image}
                 alt='Service card illustration'
                 className={'absolute top-0 right-0'} />

@@ -16,7 +16,6 @@ import { GiUpgrade } from 'react-icons/gi';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { AiFillPlayCircle } from 'react-icons/ai';
 
-import STUB_news from '../../../assets/home/STUB_news.png';
 import IcYoutube from "../../../assets/home/icons/IcYoutube";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -53,8 +52,8 @@ export default function BlockNews() {
                     <div className="relative">
                         <StaticImage
                             className='w-full'
-                            src={STUB_news}
-                            alt='Videoblog preview image' />
+                            src={'../../../assets/home/STUB_news.png'}
+                            alt='Videoblog preview'/>
 
                         <AiFillPlayCircle className="w-[40px] h-[40px] z-20 absolute top-[45%] left-[45%] right-[45%] bottom-[45%]" />
                     </div>

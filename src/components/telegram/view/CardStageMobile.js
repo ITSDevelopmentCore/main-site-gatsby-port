@@ -6,7 +6,7 @@ import React from 'react';
 export default function CardWebAppsMobile(props) {
 
     return (
-        <section tabIndex="0" className="collapse collapse-arrow card_primary p-[20px] rounded-[35px]">
+        <section className="collapse collapse-arrow card_primary p-[20px] rounded-[35px]">
 
             <div className={'flex justify-start items-center'}>
                 <span className={

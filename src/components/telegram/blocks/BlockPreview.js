@@ -9,7 +9,6 @@ import Symbol from '../../common/view/Symbol';
  */
 import IllustrationMobileMockupDouble from '../../../assets/telegram/illustration-mobile-mockup-double.png';
 import MockupGIF from '../../../assets/telegram/video/mockup.gif';
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
 export default function BlockPreview() {
 
@@ -78,14 +77,14 @@ export default function BlockPreview() {
                     + 'desktop:w-[330px] '}>
                     <div className="camera"></div>
                     <div className="display h-full rounded-[20px] ">
-                        <StaticImage
+                        <img
                             src={MockupGIF}
                             alt='Working Telegram bot GIF'
                             className={'h-full w-full'} />
                     </div>
                 </div>
 
-                <StaticImage
+                <img
                     src={IllustrationMobileMockupDouble}
                     alt='Mobile phone with working bot illustration'
                     className={

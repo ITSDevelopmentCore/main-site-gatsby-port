@@ -1,7 +1,6 @@
 /**
  * Imports : React
  */
-import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../../layouts/index';
 
@@ -17,7 +16,7 @@ export default function CardAdvantage(props) {
                 + 'card_primary '
                 + 'laptop:aspect-square'}>
 
-                <GatsbyImage
+                <img
                     src={theme === 'dark' ? props.imageDark : props.imageLight}
                     alt='Advantage card illustration' />
             </div>

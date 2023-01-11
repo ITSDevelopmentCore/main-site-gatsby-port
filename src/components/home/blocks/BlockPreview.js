@@ -9,7 +9,6 @@ import { ThemeContext } from '../../../layouts/index';
  */
 import IllustrationPreviewLight from '../../../assets/home/illustration_preview-light.png';
 import IllustrationPreviewDark from '../../../assets/home/illustration_preview-dark.png';
-import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function BlockPreview() {
 
@@ -107,7 +106,7 @@ export default function BlockPreview() {
 
             </div>
 
-            <GatsbyImage
+            <img
                 className={
                     'h-[240px] '
                     + 'laptop:basis-1/2 laptop:max-w-[50%] laptop:h-full'}

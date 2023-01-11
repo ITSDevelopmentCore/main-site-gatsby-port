@@ -1,7 +1,6 @@
 /**
  * Imports : React
  */
-import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 export default function CardWebApp(props) {
@@ -21,7 +20,7 @@ export default function CardWebApp(props) {
                 </article>
 
                 <div className='flex justify-between'>
-                    <GatsbyImage
+                    <img
                         src={props.qr}
                         alt='Telegram Web App QR code for checkout'
                         className='w-[150px] aspect-square' />
@@ -35,7 +34,7 @@ export default function CardWebApp(props) {
                 <div class="mockup-phone border-primary h-full aspect-[1/2]">
                     <div class="camera"></div>
                     <div class="display">
-                        <GatsbyImage
+                        <img
                             src={props.image}
                             alt='Telegram Web App Screenshot'/>
                     </div>

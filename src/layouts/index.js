@@ -18,6 +18,13 @@ import ModalDarkTheme from "../components/common/modals/ModalDarkTheme";
 import Footer from "../components/common/blocks/Footer";
 import Header from "../components/common/blocks/Header";
 
+/**
+ * Imports : media
+ */
+import BgLight from '../assets/home/background-light.png';
+import BgDark from '../assets/home/background-dark.png';
+
+
 export const ThemeContext = React.createContext();
 
 export default function Layout(props) {
@@ -31,18 +38,25 @@ export default function Layout(props) {
     })
 
     return (
-            <div className={'mx-5 laptop:mx-10 desktop:w-[1500px] desktop:mx-auto'}>
-                <CookiesProvider>
-                    <ThemeContext.Provider value={{ theme, changeThemeCallback }}>
+        <ThemeContext.Provider value={{ theme, changeThemeCallback }}>
+            <div style={theme === 'dark' ? { backgroundImage: `url(${BgDark})` } : { backgroundImage: `url(${BgLight})` }}>
+                <div
+                    className={'mx-5 laptop:mx-10 desktop:w-[1500px] desktop:mx-auto'}>
+
+                    <CookiesProvider>
                         <Header />
                         <ModalDarkTheme />
                         <main>
                             {props.children}
                         </main>
                         <Footer />
-                    </ThemeContext.Provider>
-                </CookiesProvider>
+                    </CookiesProvider>
+
+                </div>
             </div>
+
+        </ThemeContext.Provider>
+
     )
 
     function changeThemeCallback(changedToDark) {

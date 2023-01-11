@@ -38,12 +38,12 @@ export default function BlockStages() {
                     description='Встреча лично или в онлайне. Выяснение деталей проекта.' />
                 <CardStage
                     number='2'
-                    title='Составление Т\З'
-                    description='Готовим официальное Т\З, описывающее все в мельчайших деталях.' />
+                    title='Составление ТЗ'
+                    description='Готовим официальное ТЗ, описывающее все в мельчайших деталях.' />
                 <CardStage
                     number='3'
                     title='Разработка'
-                    description='Команда программистов высокой квалификации разрабатывает продукт согласно Т\З.' />
+                    description='Команда программистов высокой квалификации разрабатывает продукт согласно ТЗ.' />
                 <CardStage
                     number='4'
                     title='Тестирование'
@@ -55,7 +55,7 @@ export default function BlockStages() {
                 <CardStage
                     number='6'
                     title='Поддержка'
-                    description={'Следим за продуктом 24' + '7, оказывая реактивную поддержку по всем вопросам.'} />
+                    description={'Следим за продуктом 24 на 7, оказывая реактивную поддержку по всем вопросам.'} />
             </div>
 
             <div className={
@@ -67,12 +67,12 @@ export default function BlockStages() {
                     description='Встреча лично или в онлайне. Выяснение деталей проекта.' />
                 <CardStageMobile
                     number='2'
-                    title='Составление Т\З'
-                    description='Готовим официальное Т\З, описывающее все в мельчайших деталях.' />
+                    title='Составление ТЗ'
+                    description='Готовим официальное ТЗ, описывающее все в мельчайших деталях.' />
                 <CardStageMobile
                     number='3'
                     title='Разработка'
-                    description='Команда программистов высокой квалификации разрабатывает продукт согласно Т\З.' />
+                    description='Команда программистов высокой квалификации разрабатывает продукт согласно ТЗ.' />
                 <CardStageMobile
                     number='4'
                     title='Тестирование'
@@ -84,7 +84,7 @@ export default function BlockStages() {
                 <CardStageMobile
                     number='6'
                     title='Поддержка'
-                    description={'Следим за продуктом 24' + '7, оказывая реактивную поддержку по всем вопросам.'} />
+                    description={'Следим за продуктом 24 на 7, оказывая реактивную поддержку по всем вопросам.'} />
             </div>
 
             <div className={'flex flex-col mt-[90px] large:mt-[180px] space-y-[18px] '

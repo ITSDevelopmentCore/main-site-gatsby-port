@@ -1,7 +1,6 @@
 /**
  * Imports : React
  */
-import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 function CardPortfolio(props) {
@@ -10,8 +9,7 @@ function CardPortfolio(props) {
         <section className={
             'p-[45px] mb-[100px] w-[90%] h-[600px] relative '
             + 'laptop:w-[750px] laptop:h-[720px] laptop:flex laptop:justify-between '
-            + 'bg-white rounded-[50px] '
-            + 'dark:bg-card-surface'}>
+            + 'card_primary'}>
 
 
 
@@ -20,7 +18,7 @@ function CardPortfolio(props) {
                     <div className="camera"></div>
                     <div className="display">
                         <div className="bg-white w-full h-full">
-                            <GatsbyImage
+                            <img
                                 alt='Portrolio screenshot'
                                 src={props.screenshot} />
                         </div>
@@ -84,14 +82,13 @@ function CardPortfolio(props) {
                     </p>
                 </div>
 
-                <a className='laptop:hidden'>
-                    <a href={props.link} >
-                        <button className='btn w-full bg-sky-500 text-white'>
-                            Посмотреть
-                        </button>
-                    </a>
+                <a className='laptop:hidden'
+                    href={props.link}>
+                    <button className='btn w-full bg-sky-500 text-white'>
+                        Посмотреть
+                    </button>
                 </a>
-                <GatsbyImage
+                <img
                     src={props.qr}
                     alt='QR code for portfolio work checkout'
                     className={
@@ -106,9 +103,9 @@ function CardPortfolio(props) {
                 <div className="mockup-phone border-primary h-[595px] aspect-[1/2] ">
                     <div className="camera"></div>
                     <div className="display">
-                        <GatsbyImage
-                        src={props.screenshot} 
-                        alt='Portrolio screenshot'/>
+                        <img
+                            src={props.screenshot}
+                            alt='Portrolio screenshot' />
                     </div>
                 </div>
             </div>
