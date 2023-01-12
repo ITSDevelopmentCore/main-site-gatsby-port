@@ -12,39 +12,32 @@ function CardPortfolio(props) {
             + 'card_primary'}>
 
 
-
-            <div className='laptop:hidden flex justify-center items-start'>
-                <div className="mockup-phone border-primary h-[600px] aspect-[1/2] scale-[0.6] -mt-[120px]">
+            <div className='laptop:hidden h-[300px] aspect-[1/2] mx-auto'>
+                <div className="rounded-[25px] mockup-phone border-primary h-full w-full">
                     <div className="camera"></div>
                     <div className="display">
-                        <div className="bg-white w-full h-full">
-                            <img
-                                alt='Portrolio screenshot'
-                                src={props.screenshot} />
-                        </div>
+                        <img
+                            alt='Portrolio screenshot'
+                            src={props.screenshot} />
                     </div>
                 </div>
             </div>
-
 
 
             <div className={'flex flex-col absolute bottom-[30px] left-[30px] right-[30px] bg-white '
                 + 'laptop:max-w-[300px] laptop:justify-between laptop:static '
                 + 'dark:bg-card-surface'}>
 
-
                 <h4 className={
                     'text-[26px] leading-[23px] mb-[7px] mt-[20px] '
                     + 'laptop:text-[35px] laptop:leading-[32px] laptop:my-0 '
-                    + 'font-bold'
-                }>
+                    + 'font-bold'}>
                     {props.title}
                 </h4>
 
                 <p className={
                     'text-justify text-[12px] leading-[16px] opacity-60 mb-[17px] '
-                    + 'laptop:text-[16px] laptop:leading-[24px] laptop:mb-0 '
-                }>
+                    + 'laptop:text-[16px] laptop:leading-[24px] laptop:mb-0 '}>
                     {props.description}
                 </p>
 
@@ -52,15 +45,13 @@ function CardPortfolio(props) {
                     <h4 className={
                         'mb-[20px] '
                         + 'font-bold text-[16px] leading-[16px] '
-                        + 'laptop:text-[24px] laptop:leading-[22px]'
-                    }>
+                        + 'laptop:text-[24px] laptop:leading-[22px]'}>
                         Бюджет проекта:
                     </h4>
 
                     <p className={
                         'text-[23px] leading-[20px] text-sky-500 font-extrabold '
-                        + 'laptop:text-[32px] laptop:leading-[29px]'
-                    }>
+                        + 'laptop:text-[32px] laptop:leading-[29px]'}>
                         {props.budget}
                     </p>
                 </div>
@@ -69,15 +60,13 @@ function CardPortfolio(props) {
                     <h4 className={
                         'mb-[20px] '
                         + 'font-bold text-[16px] leading-[16px] '
-                        + 'laptop:text-[24px] laptop:leading-[22px]'
-                    }>
+                        + 'laptop:text-[24px] laptop:leading-[22px]'}>
                         Затрачено:
                     </h4>
 
                     <p className={
                         'text-[23px] leading-[20px] text-sky-500 font-extrabold '
-                        + 'laptop:text-[32px] laptop:leading-[29px]'
-                    }>
+                        + 'laptop:text-[32px] laptop:leading-[29px]'}>
                         {props.result}
                     </p>
                 </div>

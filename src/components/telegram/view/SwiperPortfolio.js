@@ -120,7 +120,6 @@ function Gallery() {
           link='https://t.me/Baksman_wallet_bot'/>
       </SwiperSlide>
 
-
     </Swiper>
   );
 
