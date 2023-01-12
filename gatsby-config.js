@@ -33,5 +33,6 @@ module.exports = {
         component: require.resolve(`./src/layouts/index.js`),
       },
     },
+
   ]
 };

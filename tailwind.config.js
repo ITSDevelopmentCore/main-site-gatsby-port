@@ -10,15 +10,13 @@ module.exports = {
   theme: {
     extend: {
 
-      backgroundImage: (theme) => ({
-        'award':
-          "url('Z:/Projects/Web/main-website-new/source/page_telegram/assets/media/award.svg')",
-        'award-d':
-          "url('Z:/Projects/Web/main-website-new/source/page_telegram/assets/media/award-dark.svg')",
-      }),
+      fontSize : {
+        'inherit' : 'inherit'
+      },
 
       colors: {
         neutral: colors.neutral,
+        inherit: colors.white,
       },
 
       fontFamily: {

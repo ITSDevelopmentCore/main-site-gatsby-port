@@ -25,16 +25,16 @@ export default function BlockPreview() {
             'flex flex-col items-center mt-[50px] '
             + 'laptop:flex-row laptop:items-center '}>
 
-            <div className={
-                'flex flex-col justify-between items-center '
-                + 'laptop:basis-1/2 laptop:items-start'}>
+            <div
+                className={
+                    'flex flex-col justify-between items-center '
+                    + 'laptop:basis-1/2 laptop:items-start '}>
 
                 <h2 className={
                     'mb-[28px] text-[50px] leading-[57px] '
                     + 'font-extrabold text-center '
                     + 'laptop:text-[75px] laptop:leading-[85px] laptop:text-left '
                     + 'desktop:text-[93px] desktop:leading-[106px]'}>
-
                     its.
                     <span className={'text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-sky-400 to-sky-500'}>dev</span>
 

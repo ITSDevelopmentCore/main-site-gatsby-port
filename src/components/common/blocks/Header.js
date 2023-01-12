@@ -107,7 +107,7 @@ const Header = () => {
                     'hidden laptop:flex laptop:items-center '
                     + 'font-bold'}>
 
-                    <BsFillTelephoneFill className="text-sky-500 w-6 h-6 mr-2" />
+                    <BsFillTelephoneFill className="text-sky-500 w-[25px] aspect-square mx-[10px]" />
 
                     <a href="tel:89122486136"
                         className="mr-[52px]">
@@ -123,7 +123,9 @@ const Header = () => {
 
                     <button
                         onClick={buttonClickHandler}
-                        className="text-[14px] laptop:text-[16px] large:text-[18px] btn btn-active rounded-lg bg-sky-500 text-white py-3 px-5 hover:bg-sky-400 border-none transition-all normal-case">
+                        className={
+                            'py-[12px] px-[20px] '
+                            + 'text-inherit btn btn-active rounded-lg bg-sky-500 hover:bg-sky-400 border-none transition-all normal-case'}>
                         Связаться с нами
                     </button>
 

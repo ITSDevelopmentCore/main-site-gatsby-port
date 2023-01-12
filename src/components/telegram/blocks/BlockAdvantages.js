@@ -1,7 +1,8 @@
 /**
  * Imports : React
  */
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../../layouts/index';
 
 /**
  * Imports: media
@@ -17,10 +18,15 @@ import { RiServiceFill } from 'react-icons/ri';
 import Symbol from '../../common/view/Symbol';
 import CardAdvantageMobile from '../view/CardAdvantageMobile';
 import CardAdvantage from '../view/CardAdvantage';
+import AwardLight from '../../../assets/telegram/award.svg';
+import AwardDark from '../../../assets/telegram/award-dark.svg';
+
 
 
 export default function BlockAdvantages() {
-    
+
+    const { theme } = useContext(ThemeContext);
+
     return (
         <>
             <div className="mt-[85px]">
@@ -59,7 +65,12 @@ export default function BlockAdvantages() {
 
                     </div>
 
-                    <div className={"grow award bg-award dark:bg-award-d flex justify-center"}>
+                    <div className={"grow flex justify-center relative"}>
+
+                        <img
+                            src={theme === 'dark' ? AwardDark : AwardLight}
+                            className={'absolute top-0 right-0 left-0 bottom-0'} />
+                            
                         <p className='flex flex-col items-center w-[40%] text-center desktop:pt-[20%] laptop:scale-75 laptop:pt-[30%] desktop:scale-100'>
                             <span className='font-extrabold text-[100px] leading-[50px] text-sky-500'>4</span><br />
                             <span className='font-bold text-[30px] leading-[30px] text-sky-500'>место</span><br />
