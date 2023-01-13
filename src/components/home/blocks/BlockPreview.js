@@ -112,7 +112,7 @@ export default function BlockPreview() {
                         + 'laptop:basis-1/2 laptop:max-w-[50%] laptop:h-full'}
                         placeholder="blurred"
                     alt='Hero'
-                    src='../../../assets/home/illustration_preview-dark.png' />
+                    src='../../../assets/home/illustration_preview-dark.webp' />
                 :
                 <StaticImage
                     className={
@@ -120,7 +120,7 @@ export default function BlockPreview() {
                         + 'laptop:basis-1/2 laptop:max-w-[50%] laptop:h-full'}
                         placeholder="blurred"
                     alt='Hero'
-                    src='../../../assets/home/illustration_preview-light.png' />
+                    src='../../../assets/home/illustration_preview-light.webp' />
             }
 
         </section>

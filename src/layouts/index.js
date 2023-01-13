@@ -21,8 +21,8 @@ import Header from "../components/common/blocks/Header";
 /**
  * Imports : media
  */
-import BgLight from '../assets/home/background-light.png';
-import BgDark from '../assets/home/background-dark.png';
+import BgLight from '../assets/home/background-light.webp';
+import BgDark from '../assets/home/background-dark.webp';
 
 
 export const ThemeContext = React.createContext();

@@ -14,16 +14,14 @@ import 'swiper/css/pagination';
 /**
  * Imports: media
  */
-import ScreenshotPortfolio1 from "../../../assets/telegram/screenshot_portfolio_1.png";
-import ScreenshotPortfolio2 from "../../../assets/telegram/screenshot_portfolio_2.png";
-import ScreenshotPortfolio3 from "../../../assets/telegram/screenshot_portfolio_3.png";
-import ScreenshotPortfolio5 from "../../../assets/telegram/screenshot_portfolio_5.png";
-import ScreenshotPortfolio4 from "../../../assets/telegram/screenshot_portfolio_4.png";
-import QrPorftolio1 from '../../../assets/telegram/qr_portfolio_1.jpg';
-import QrPorftolio2 from '../../../assets/telegram/qr_portfolio_2.jpg';
-import QrPorftolio3 from '../../../assets/telegram/qr_portfolio_3.jpg';
-import QrPorftolio4 from '../../../assets/telegram/qr_portfolio_4.jpg';
-import QrPorftolio5 from '../../../assets/telegram/qr_portfolio_5.jpg';
+import ScreenshotPortfolio1 from "../../../assets/telegram/screenshot_portfolio_1.webp";
+import ScreenshotPortfolio2 from "../../../assets/telegram/screenshot_portfolio_2.webp";
+import ScreenshotPortfolio3 from "../../../assets/telegram/screenshot_portfolio_3.webp";
+import ScreenshotPortfolio4 from "../../../assets/telegram/screenshot_portfolio_4.webp";
+import QrPorftolio1 from '../../../assets/telegram/qr_portfolio_1.webp';
+import QrPorftolio2 from '../../../assets/telegram/qr_portfolio_2.webp';
+import QrPorftolio3 from '../../../assets/telegram/qr_portfolio_3.webp';
+import QrPorftolio4 from '../../../assets/telegram/qr_portfolio_4.webp';
 
 /**
  * Imports: blocks
@@ -65,16 +63,6 @@ function Gallery() {
       pagination={pagination}
       modules={[Pagination]}>
 
-      <SwiperSlide>
-        <CardPortfolio
-          title='Больше, чем работа'
-          description='Разработка бота для проекта "Больше, чем работа" для Ростуризм '
-          budget={<span>100.000 <Symbol symbol='₽' /></span>}
-          result={<span>100.000 <Symbol symbol='₽' /></span>}
-          screenshot={ScreenshotPortfolio3}
-          qr={QrPorftolio3} 
-          link='https://t.me/Morethanjob_bot'/>
-      </SwiperSlide>
 
       <SwiperSlide>
         <CardPortfolio
@@ -82,8 +70,8 @@ function Gallery() {
           description='Бот - магазин программного обеспечения'
           budget={<span>100.000 <Symbol symbol='₽' /></span>}
           result={<span>100.000 <Symbol symbol='₽' /></span>}
-          screenshot={ScreenshotPortfolio5}
-          qr={QrPorftolio5} 
+          screenshot={ScreenshotPortfolio4}
+          qr={QrPorftolio4} 
           link='https://t.me/software_shop'/>
       </SwiperSlide>
 
@@ -93,8 +81,8 @@ function Gallery() {
           description='Бот для сервиса продвижений в социальных сетях'
           budget={<span>100.000 <Symbol symbol='₽' /></span>}
           result={<span>100.000 <Symbol symbol='₽' /></span>}
-          screenshot={ScreenshotPortfolio4}
-          qr={QrPorftolio4} 
+          screenshot={ScreenshotPortfolio3}
+          qr={QrPorftolio3} 
           link='https://t.me/Nakrutka_Artemkabot'/>
       </SwiperSlide>
 

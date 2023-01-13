@@ -19,16 +19,16 @@ import CardWebApp from "./CardWebApp";
 /**
  * Imports : media
  */
-import QrBusiness from '../../../assets/telegram/qr_business.jpg';
-import ScreenshotBusiness from '../../../assets/telegram/screenshot_web-app_business.png';
-import QrCoffee from '../../../assets/telegram/qr_coffee.jpg';
-import ScreenshotCoffee from '../../../assets/telegram/screenshot_web-app_food.png';
-import QrEcom from '../../../assets/telegram/qr_ecom.jpg';
-import ScreenshotEcom from '../../../assets/telegram/screenshot_web-app_ecom.png';
-import QrService from '../../../assets/telegram/qr_service.jpg';
-import ScreenshotService from '../../../assets/telegram/screenshot_web-app_service.png';
-import QrEducation from '../../../assets/telegram/qr_education.jpg';
-import ScreenshotEducation from '../../../assets/telegram/screenshot_web-app_education.png';
+import QrBusiness from '../../../assets/telegram/qr_business.webp';
+import ScreenshotBusiness from '../../../assets/telegram/screenshot_web-app_business.webp';
+import QrCoffee from '../../../assets/telegram/qr_coffee.webp';
+import ScreenshotCoffee from '../../../assets/telegram/screenshot_web-app_food.webp';
+import QrEcom from '../../../assets/telegram/qr_ecom.webp';
+import ScreenshotEcom from '../../../assets/telegram/screenshot_web-app_ecom.webp';
+import QrService from '../../../assets/telegram/qr_service.webp';
+import ScreenshotService from '../../../assets/telegram/screenshot_web-app_service.webp';
+import QrEducation from '../../../assets/telegram/qr_education.webp';
+import ScreenshotEducation from '../../../assets/telegram/screenshot_web-app_education.webp';
 
 
 

@@ -18,8 +18,8 @@ import { RiServiceFill } from 'react-icons/ri';
 import Symbol from '../../common/view/Symbol';
 import CardAdvantageMobile from '../view/CardAdvantageMobile';
 import CardAdvantage from '../view/CardAdvantage';
-import AwardLight from '../../../assets/telegram/award.svg';
-import AwardDark from '../../../assets/telegram/award-dark.svg';
+import AwardLight from '../../../assets/telegram/award_light.svg';
+import AwardDark from '../../../assets/telegram/award_dark.svg';
 
 
 

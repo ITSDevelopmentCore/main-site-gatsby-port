@@ -15,7 +15,7 @@ export default function BlockPortfolio() {
     return (
         <section className={
             'mt-[110px] '
-            + 'laptop:mt-[210px]'}>
+            + 'laptop:mt-[210px] '}>
 
             <h2 className={'mb-12 section-title'}>
                 Портфолио

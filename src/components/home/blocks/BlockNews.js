@@ -52,7 +52,7 @@ export default function BlockNews() {
                     <div className="relative">
                         <StaticImage
                             className='w-full'
-                            src={'../../../assets/home/STUB_news.png'}
+                            src={'../../../assets/home/STUB_news.webp'}
                             alt='Videoblog preview'/>
 
                         <AiFillPlayCircle className="w-[40px] h-[40px] z-20 absolute top-[45%] left-[45%] right-[45%] bottom-[45%]" />

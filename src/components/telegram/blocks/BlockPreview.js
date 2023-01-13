@@ -7,8 +7,8 @@ import Symbol from '../../common/view/Symbol';
 /**
  * Imports : Media
  */
-import IllustrationMobileMockupDouble from '../../../assets/telegram/illustration-mobile-mockup-double.png';
 import MockupGIF from '../../../assets/telegram/video/mockup.gif';
+import IllustrationMobileMockupDouble from '../../../assets/telegram/illustration-mobile-mockup-double.webp';
 
 export default function BlockPreview() {
 

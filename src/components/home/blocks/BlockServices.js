@@ -7,10 +7,10 @@ import CardService from "../view/CardService";
 /**
  * Imports : Media
  */
-import IllustrationServiceMobile from '../../../assets/home/illustration_service-mobile.png';
-import IllustrationServiceWeb from '../../../assets/home/illustration_service-web.png';
-import IllustrationServiceTelegram from '../../../assets/home/illustration_service-telegram.png';
-import IllustrationServiceMVP from '../../../assets/home/illustration_service-mvp.png';
+import IllustrationServiceMobile from '../../../assets/home/illustration_service-mobile.webp';
+import IllustrationServiceWeb from '../../../assets/home/illustration_service-web.webp';
+import IllustrationServiceTelegram from '../../../assets/home/illustration_service-telegram.webp';
+import IllustrationServiceMVP from '../../../assets/home/illustration_service-mvp.webp';
 
 
 export default function BlockServices() {
