@@ -7,8 +7,7 @@ import { ThemeContext } from '../../../layouts/index';
 /**
  * Imports : media
  */
-import IllustrationPreviewLight from '../../../assets/home/illustration_preview-light.png';
-import IllustrationPreviewDark from '../../../assets/home/illustration_preview-dark.png';
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function BlockPreview() {
 
@@ -106,14 +105,23 @@ export default function BlockPreview() {
 
             </div>
 
-            <img
-                className={
-                    'h-[240px] '
-                    + 'laptop:basis-1/2 laptop:max-w-[50%] laptop:h-full'}
-
-                alt='Main page preview illustration'
-                src={theme === 'dark' ? IllustrationPreviewDark : IllustrationPreviewLight}
-            />
+            {theme === 'dark' ?
+                <StaticImage
+                    className={
+                        'h-[240px] '
+                        + 'laptop:basis-1/2 laptop:max-w-[50%] laptop:h-full'}
+                        placeholder="blurred"
+                    alt='Hero'
+                    src='../../../assets/home/illustration_preview-dark.png' />
+                :
+                <StaticImage
+                    className={
+                        'h-[240px] '
+                        + 'laptop:basis-1/2 laptop:max-w-[50%] laptop:h-full'}
+                        placeholder="blurred"
+                    alt='Hero'
+                    src='../../../assets/home/illustration_preview-light.png' />
+            }
 
         </section>
     )
