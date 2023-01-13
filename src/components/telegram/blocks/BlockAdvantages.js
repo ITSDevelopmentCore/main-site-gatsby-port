@@ -69,6 +69,7 @@ export default function BlockAdvantages() {
 
                         <img
                             src={theme === 'dark' ? AwardDark : AwardLight}
+                            alr='Our company rewards'
                             className={'absolute top-0 right-0 left-0 bottom-0'} />
                             
                         <p className='flex flex-col items-center w-[40%] text-center desktop:pt-[20%] laptop:scale-75 laptop:pt-[30%] desktop:scale-100'>

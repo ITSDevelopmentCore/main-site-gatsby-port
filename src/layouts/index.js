@@ -9,12 +9,12 @@ import { CookiesProvider } from "react-cookie";
  * Imports : scripts
  */
 import { applyTailwindDarkTheme } from "../scripts/themeScripts";
-import { showDarkThemeModal } from "../scripts/changeViewByIdScripts";
+import { showDarkThemeModal, showModalAccepted } from "../scripts/changeViewByIdScripts";
 
 /**
  * Imports : components
  */
-import ModalDarkTheme from "../components/common/modals/ModalDarkTheme";
+import Modals from "../components/common/modals/ModalDarkTheme";
 import Footer from "../components/common/blocks/Footer";
 import Header from "../components/common/blocks/Header";
 
@@ -35,6 +35,7 @@ export default function Layout(props) {
     useEffect(() => {
         workWithFirstVisit();
         workWithTheme();
+        workWithLastRequest();
     })
 
     return (
@@ -45,7 +46,7 @@ export default function Layout(props) {
 
                     <CookiesProvider>
                         <Header />
-                        <ModalDarkTheme />
+                        <Modals />
                         <main className="min-h-[100vh]">
                             {props.children}
                         </main>
@@ -86,6 +87,14 @@ export default function Layout(props) {
         if (cookies.theme === 'light') {
             applyTailwindDarkTheme(false);
             setTheme('light')
+        }
+    }
+
+    function workWithLastRequest()
+    {
+        if (cookies.requestAccepted) {
+            showModalAccepted();
+            setCookie('requestAccepted', undefined)
         }
     }
 

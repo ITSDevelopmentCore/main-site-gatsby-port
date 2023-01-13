@@ -56,7 +56,8 @@ function FeedbackForm() {
                         type='tel'
                         placeholder='7 999 999 99 99'
                         id="number"
-                        name="number">
+                        name="number"
+                        required>
                     </input>
 
                     <p className={'mb-[10px] text-[16px] leading-[30px] '
@@ -92,7 +93,8 @@ function FeedbackForm() {
                             + 'dark:bg-slate-800'}
                         placeholder="my@gmail.com"
                         id="email"
-                        name="email" />
+                        name="email"
+                        required />
 
                     <p className={'mb-[10px] text-[16px] leading-[30px] '
                         + 'laptop:mb-[14px] laptop:text-[20px] laptop:leading-[38px]'}>

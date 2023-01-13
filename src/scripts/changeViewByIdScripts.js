@@ -16,6 +16,16 @@ export function showDarkThemeModal() {
     document.getElementById('modal-dark-theme').classList.remove('hidden');
 }
 
+export function showModalAccepted() {
+    document.getElementById('feedback-request-accepted-modal').classList.add('block');
+    document.getElementById('feedback-request-accepted-modal').classList.remove('hidden');
+}
+
+export function hideModalAccepted() {
+    document.getElementById('feedback-request-accepted-modal').classList.remove('block');
+    document.getElementById('feedback-request-accepted-modal').classList.add('hidden');
+}
+
 export function showMobileMenu()
 {
     document.getElementById('dropdownMenuMobile').classList.remove('hidden');

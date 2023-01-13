@@ -1,32 +1,24 @@
 /**
  * Imports : React
  */
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../../layouts';
 
 /**
  * Imports : media
  */
 import { BsMoonStarsFill } from 'react-icons/bs';
 
-/**
- * Imports : scripts
- */
-import { applyTailwindDarkTheme } from "../../../scripts/themeScripts";
-import useCookies from 'react-cookie/cjs/useCookies';
-
-
 function DarkThemeModal() {
 
-    const [,, setCookie] = useCookies(["user"]);
+    const { changeThemeCallback } = useContext(ThemeContext);
 
     function positiveClick() {
-        applyTailwindDarkTheme(true);
-        setCookie('theme', 'dark');
+        changeThemeCallback(true)
     }
 
     function negativeClick() {
-        applyTailwindDarkTheme(false);
-        setCookie('theme', 'light');
+        changeThemeCallback(false)
     }
 
     return (
@@ -50,4 +42,6 @@ function DarkThemeModal() {
         </div>
     )
 }
+
+
 export default DarkThemeModal;

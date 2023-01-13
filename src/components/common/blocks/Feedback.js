@@ -2,7 +2,6 @@
  * Imports : React
  */
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby"
 
 /**
  * Imports : components
@@ -11,14 +10,6 @@ import FeedbackForm from "./FeedbackForm";
 
 
 function Form() {
-
-  const data = useStaticQuery(graphql`query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }`)
 
   return (
     <section
@@ -36,8 +27,7 @@ function Form() {
           'mb-[15px] ' 
           + 'text-[28px] leading-[32px] font-extrabold text-center '
           + 'laptop:text-[52px] laptop:leading-[58px] laptop:text-left '}>
-            {data.site.siteMetadata.title}
-          {/* Оставьте заявку<br /> и мы <span className="text-sky-500"> свяжемся <br />с вами </span> */}
+          Оставьте заявку<br /> и мы <span className="text-sky-500"> свяжемся <br />с вами </span>
         </h3>
 
         <p className={
