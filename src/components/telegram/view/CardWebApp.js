@@ -7,7 +7,7 @@ export default function CardWebApp(props) {
 
     return (
         <section className={
-            'mb-[100px] w-[852px] h-[609px] flex justify-between '
+            'mb-[100px] w-[850px] h-[610px] flex justify-between '
             + 'card_primary'}>
 
             <div className='basis-[380px] flex flex-col justify-between'>

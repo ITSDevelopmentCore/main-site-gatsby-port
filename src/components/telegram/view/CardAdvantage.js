@@ -31,11 +31,7 @@ export default function CardAdvantage(props) {
 
             </div>
 
-            <p className={
-                'opacity-60 '
-                + 'laptop:text-[14px] '
-                + 'large:text-[16px] '
-                + 'desktop:text-[18px] '}>
+            <p className={'opacity-60 '}>
                 {props.description}
             </p>
 

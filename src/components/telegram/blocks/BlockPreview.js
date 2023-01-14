@@ -107,8 +107,8 @@ export default function BlockPreview() {
                     <div className={classesPreviewAdvantageDividerLaptop} />
 
                     <div className="flex flex-col">
-                        <div className={classesPreviewAdvantageDigitLaptop}>50</div>
-                        <p className={classesPreviewAdvantageTextLaptop}>Готовых<br /> проектов</p>
+                        <div className={classesPreviewAdvantageDigitLaptop}>5<Symbol symbol='+'/></div>
+                        <p className={classesPreviewAdvantageTextLaptop}>Дней</p>
                     </div>
 
                     <div className={classesPreviewAdvantageDividerLaptop} />
@@ -137,8 +137,8 @@ export default function BlockPreview() {
                 <div className={classesPreviewAdvantageDivider} />
 
                 <div className="flex justify-between items-center">
-                    <div className={classesPreviewAdvantageDigit}>50</div>
-                    <p className={classesPreviewAdvantageText}>Готовых<br /> проектов</p>
+                    <div className={classesPreviewAdvantageDigit}>5<Symbol symbol='+'/></div>
+                    <p className={classesPreviewAdvantageText}>Дней</p>
                 </div>
 
                 <div className={classesPreviewAdvantageDivider} />

@@ -41,26 +41,26 @@ export default function BlockAdvantages() {
 
                         <CardAdvantage
                             icon={<RiApps2Fill className='w-full h-full' />}
-                            title={<span><span className='text-sky-500'>60<Symbol symbol='+' /></span><br />проектов</span>}
+                            title={<span><span className='text-sky-500'>20<Symbol symbol='+' /></span><br />проектов</span>}
                             description={"Предприниматели по всей России и ближнему зарубежью доверяют нам."}>
                         </CardAdvantage>
 
                         <CardAdvantage
                             icon={<BsGem className='w-full h-full' />}
-                            title={"Современное решение"}
-                            description={"Telegram бот с приложением - современное бюджетное решение для любого бизнеса для вовлечения и увеличения конверсионности."}>
+                            title={"Чистый процесс"}
+                            description={"По всем услугам мы работаем исключительно по договору об оказании услуг, предоставляя регулярную отчетность."}>
                         </CardAdvantage>
 
                         <CardAdvantage
                             icon={<SiMusicbrainz className='w-full h-full' />}
-                            title={"Работа на результат"}
-                            description={"Наша цель - оправдать все ожидания заказчика и дать ему преимущество на рынке."}>
+                            title={"Быстро и просто"}
+                            description={"Телеграм бот способен быстро и просто закрыть потребность в мобильном приложении, или автоматизировать любую задачу."}>
                         </CardAdvantage>
 
                         <CardAdvantage
                             icon={<RiServiceFill className='w-full h-full' />}
-                            title={"Безупречный сервис"}
-                            description={"За годы мы отточили весь цикл разработки ПО, а наша поддержка работает как часы."}>
+                            title={"Работа под ключ"}
+                            description={"Мы проводим полный цикл разработки для каждого проекта. От дизайна и до внедрения в работу."}>
                         </CardAdvantage>
 
                     </div>
@@ -70,12 +70,12 @@ export default function BlockAdvantages() {
                         <img
                             src={theme === 'dark' ? AwardDark : AwardLight}
                             alr='Our company rewards'
-                            className={'absolute top-0 right-0 left-0 bottom-0'} />
+                            className={'absolute h-full'} />
                             
                         <p className='flex flex-col items-center w-[40%] text-center desktop:pt-[20%] laptop:scale-75 laptop:pt-[30%] desktop:scale-100'>
                             <span className='font-extrabold text-[100px] leading-[50px] text-sky-500'>4</span><br />
                             <span className='font-bold text-[30px] leading-[30px] text-sky-500'>место</span><br />
-                            <span className='font-light text-[18px] leading-[18px] opacity-80'>в премии рунета «Digital Агентства»</span>
+                            <span className='font-light opacity-80'>в премии рунета «Digital Агентства»</span>
                         </p>
                     </div>
 
