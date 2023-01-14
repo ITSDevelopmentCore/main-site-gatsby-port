@@ -40,7 +40,7 @@ export default function Layout(props) {
 
     return (
         <ThemeContext.Provider value={{ theme, changeThemeCallback }}>
-            <div style={theme === 'dark' ? { backgroundImage: `url(${BgDark})`, backgroundSize : '100% 100%'} : { backgroundImage: `url(${BgLight})`, backgroundSize : '100% 100%' }}>
+            <div style={theme === 'dark' ? { backgroundImage: `url(${BgDark})`, backgroundSize : 'cover'} : { backgroundImage: `url(${BgLight})`, backgroundSize : 'cover' }}>
                 <div
                     className={'mx-5 laptop:mx-10 desktop:w-[1500px] desktop:mx-auto'}>
 
