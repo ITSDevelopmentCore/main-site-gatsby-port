@@ -7,9 +7,9 @@ const NotFoundPage = () => {
   return (
     <section className={'card_primary mt-[100px]'}>
 
-      <h4 className={'mb-6 font-extrabold text-[24px]'}>
+      <h1 className={'mb-6 font-extrabold text-[24px]'}>
         404
-      </h4>
+      </h1>
 
       <p className={'opacity-60'}>
         {'Страница не найдена.'}

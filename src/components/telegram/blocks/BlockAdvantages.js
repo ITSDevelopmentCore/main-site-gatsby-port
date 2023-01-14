@@ -69,10 +69,10 @@ export default function BlockAdvantages() {
 
                         <img
                             src={theme === 'dark' ? AwardDark : AwardLight}
-                            alr='Our company rewards'
+                            alt='Our company rewards'
                             className={'absolute h-full'} />
                             
-                        <p className='flex flex-col items-center w-[40%] text-center desktop:pt-[20%] laptop:scale-75 laptop:pt-[30%] desktop:scale-100'>
+                        <p className='flex flex-col items-center w-[40%] text-center desktop:pt-[10%] laptop:scale-75 laptop:pt-[30%] desktop:scale-100'>
                             <span className='font-extrabold text-[100px] leading-[50px] text-sky-500'>4</span><br />
                             <span className='font-bold text-[30px] leading-[30px] text-sky-500'>место</span><br />
                             <span className='font-light opacity-80'>в премии рунета «Digital Агентства»</span>
