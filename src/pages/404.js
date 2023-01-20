@@ -23,5 +23,6 @@ export default NotFoundPage
 
 export function Head() {
   return (
-    <title>Not found</title>)
+    <title>Not found</title>
+    )
 }
