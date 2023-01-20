@@ -11,6 +11,11 @@ import {SlSocialVkontakte} from 'react-icons/sl';
 import {AiOutlineYoutube} from 'react-icons/ai';
 import {TbBrandTelegram} from 'react-icons/tb';
 
+/**
+ * Imports : components
+ */
+import Symbol from '../view/Symbol'
+
 
 const Footer = () => {
 
@@ -43,12 +48,12 @@ const Footer = () => {
       <footer className="footer py-10 border-t border-[#D9D9D9] dark:border-[#253646]">
         
         <div className="items-center grid-flow-col">
-          <p>ITS Development <br />Работа в сфере информационных технологий с 2021 <br /> itsdevelopmentru@gmail.com</p>
+          <p>ITS Development <br />Работа в сфере информационных технологий с 2019 <br /> itsdevelopmentru<Symbol symbol='@'></Symbol>gmail.com</p>
         </div>
 
-        <div className="md:place-self-center md:justify-self-end">
+        <div className="justify-self-end">
           <div className="grid grid-flow-col gap-4">
-            <Link to="https://vk.com/itsdevelopmentru"><SlSocialVkontakte className='w-[30px] h-[30px] hover:scale-125'/></Link>
+            <Link to="https://vk.com/itsdevelopmentru"><SlSocialVkontakte className='w-[30px] h-[30px] hover:scale-125 stroke-custom'/></Link>
             <Link to="https://www.youtube.com/@user-fy4lv8pi4g"><AiOutlineYoutube className='w-[30px] h-[30px] hover:scale-125'/></Link>
             <Link to="https://t.me/+3ERzYQm6fUxhNjky"><TbBrandTelegram className='w-[30px] h-[30px] hover:scale-125'/></Link>
           </div>
