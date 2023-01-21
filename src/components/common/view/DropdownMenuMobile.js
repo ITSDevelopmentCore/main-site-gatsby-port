@@ -55,7 +55,7 @@ const DropdownMenuMobileCategory = (props) => {
         <li 
             className={
                 'collapse '
-                + 'card_primary '}>
+                + 'card_primary rounded-none'}>
 
             <p className="collapse-title text-xl font-medium block">
                 {props.title}

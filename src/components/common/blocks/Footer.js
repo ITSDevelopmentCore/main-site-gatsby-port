@@ -41,6 +41,7 @@ const Footer = () => {
         <span className="mb-10px uppercase text-sky-500 font-bold">Правовые документы</span>
           <Link to='/policy-privacy' className="link link-hover">Политика конфиденциальности</Link>
           <Link to='/policy-cookie' className="link link-hover">Политика использования Cookies</Link>
+          <Link to='/policy-organization' className="link link-hover">О компании</Link>
         </div>
 
       </footer>

@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_gatsby_site=self.webpackChunkmy_gatsby_site||[]).push([[883],{429:function(e,t,a){a.r(t),a.d(t,{Head:function(){return c}});var n=a(7294);function c(){return n.createElement("title",null,"Not found")}t.default=()=>n.createElement("section",{className:"card_primary mt-[100px]"},n.createElement("h1",{className:"mb-6 font-extrabold text-[24px]"},"404"),n.createElement("p",{className:"opacity-60"},"Страница не найдена."))}}]);
-//# sourceMappingURL=component---src-pages-404-js-7892b5c55ca348cc7f26.js.map

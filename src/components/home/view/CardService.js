@@ -13,24 +13,24 @@ export default function CardService(props) {
 
     return (
         <section className={
-            'h-[220px] relative flex flex-col justify-between overflow-hidden card_primary '
+            'h-[240px] relative flex flex-col justify-between overflow-hidden card_primary '
             + 'laptop:h-[290] laptop:w-[430] '
             + 'large:h-[325px] large:w-[480px] '
             + 'desktop:h-[367px] desktop:w-[540px] '
         }>
 
             <h4 className={
-                'text-[24px] leading-[26px] font-extrabold '
+                'text-[24px] leading-[26px] font-extrabold mb-[100px]'
                 + 'laptop:text-[32px] laptop:leading-[36px] '
                 + 'large:text-[36px] large:leading-[40px] '
                 + 'desktop:text-[40px] desktop:leading-[44px] '}>
-                <span className='text-sky-500'>{props.title.split(' ')[0]}</span>
+                <span className='text-sky-500 '>{props.title.split(' ')[0]}</span>
                 <br />
-                <span>{props.title.split(' ')[1]}</span>
+                <span className=''>{props.title.split(' ')[1]}</span>
             </h4>
 
             <p className={
-                'opacity-60 w-2/3 '
+                'opacity-60 w-2/3 mt-[15px]'
             }>
                 {props.description}
             </p>
