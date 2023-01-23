@@ -11,7 +11,11 @@ const PolicyPrivacy = () => {
                 Политика конфиденциальности
             </h1>
 
-            <iframe className="w-full h-[1000px]" src="https://drive.google.com/file/d/1OnSnS-oZg3Sz6VXWdkDgfeLnn7GN98ab/preview" allow="autoplay"></iframe>
+            <iframe
+                title="policyPrivacyIframe"
+                className="w-full h-[1000px]"
+                src="https://drive.google.com/file/d/1OnSnS-oZg3Sz6VXWdkDgfeLnn7GN98ab/preview"
+                allow="autoplay" />
 
         </section>
     )

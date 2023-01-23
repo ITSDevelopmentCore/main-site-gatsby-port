@@ -11,7 +11,11 @@ const PolicyCookie = () => {
                 Политика использования файлов Cookie
             </h1>
 
-            <iframe className="w-full h-[1000px]" src="https://drive.google.com/file/d/1tGt4ElBK6qEBSeU6_espWpvpj4k6touH/preview" allow="autoplay"></iframe>
+            <iframe 
+            title="policyCookieIframe"
+            className="w-full h-[1000px]" 
+            src="https://drive.google.com/file/d/1tGt4ElBK6qEBSeU6_espWpvpj4k6touH/preview" 
+            allow="autoplay"/>
 
         </section>
     )

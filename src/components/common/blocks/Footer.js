@@ -51,14 +51,16 @@ const Footer = () => {
         <div className="space-y-[12px] text-[24px]">
 
           <a
+            rel="noreferrer"
             href="tel:88000000000">
             8 <Symbol symbol="(" />800<Symbol symbol=")" /> 000-00-00
           </a>
 
           <a
+            rel="noreferrer"
             href="mailto:support@itsdevelopment.ru&body=Здравствуйте,?subject=Служба поддержки ITS Development"
             target="_blank">
-            support<Symbol symbol='@'/>itsdevelopment.ru
+            support<Symbol symbol='@' />itsdevelopment.ru
           </a>
 
         </div>
