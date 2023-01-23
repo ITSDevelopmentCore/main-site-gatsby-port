@@ -6,7 +6,7 @@ import React from 'react';
 export default function CardAdvantageMobile(props) {
 
     return (
-        <section className={'p-[27px] card_primary'}>
+        <section className={'w-[290px] card_primary'}>
 
             <div className={
                 'w-[108px] h-[108px] mb-[40px] '

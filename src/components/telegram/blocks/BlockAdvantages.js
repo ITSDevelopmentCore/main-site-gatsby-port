@@ -71,7 +71,7 @@ export default function BlockAdvantages() {
                             src={theme === 'dark' ? AwardDark : AwardLight}
                             alt='Our company rewards'
                             className={'absolute h-full'} />
-                            
+
                         <p className='flex flex-col items-center w-[40%] text-center desktop:pt-[10%] laptop:scale-75 laptop:pt-[30%] desktop:scale-100'>
                             <span className='font-extrabold text-[100px] leading-[50px] text-sky-500'>4</span><br />
                             <span className='font-bold text-[30px] leading-[30px] text-sky-500'>место</span><br />
@@ -87,29 +87,29 @@ export default function BlockAdvantages() {
                     <div className="carousel-item">
                         <CardAdvantageMobile
                             icon={<RiApps2Fill className='w-full h-full' />}
-                            title={<span><span className='text-sky-500'>60<Symbol symbol='+' /></span><br />проектов</span>}
+                            title={<span><span className='text-sky-500'>20<Symbol symbol='+' /></span><br />проектов</span>}
                             description={"Предприниматели по всей России и ближнему зарубежью доверяют нам."}>
                         </CardAdvantageMobile>
                     </div>
                     <div className="carousel-item">
                         <CardAdvantageMobile
-                            icon={<RiApps2Fill className='w-full h-full' />}
-                            title={<span><span className='text-sky-500'>60<Symbol symbol='+' /></span><br />проектов</span>}
-                            description={"Предприниматели по всей России и ближнему зарубежью доверяют нам."}>
+                            icon={<BsGem className='w-full h-full' />}
+                            title={"Чистый процесс"}
+                            description={"По всем услугам мы работаем исключительно по договору об оказании услуг, предоставляя регулярную отчетность."}>
                         </CardAdvantageMobile>
                     </div>
                     <div className="carousel-item">
                         <CardAdvantageMobile
-                            icon={<RiApps2Fill className='w-full h-full' />}
-                            title={<span><span className='text-sky-500'>60<Symbol symbol='+' /></span><br />проектов</span>}
-                            description={"Предприниматели по всей России и ближнему зарубежью доверяют нам."}>
+                            icon={<SiMusicbrainz className='w-full h-full' />}
+                            title={"Быстро и просто"}
+                            description={"Телеграм бот способен быстро и просто закрыть потребность в мобильном приложении, или автоматизировать любую задачу."}>
                         </CardAdvantageMobile>
                     </div>
                     <div className="carousel-item">
                         <CardAdvantageMobile
-                            icon={<RiApps2Fill className='w-full h-full' />}
-                            title={<span><span className='text-sky-500'>60<Symbol symbol='+' /></span><br />проектов</span>}
-                            description={"Предприниматели по всей России и ближнему зарубежью доверяют нам."}>
+                            icon={<RiServiceFill className='w-full h-full' />}
+                            title={"Работа под ключ"}
+                            description={"Мы проводим полный цикл разработки для каждого проекта. От дизайна и до внедрения в работу."}>
                         </CardAdvantageMobile>
                     </div>
 
