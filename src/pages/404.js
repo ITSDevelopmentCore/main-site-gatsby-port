@@ -23,6 +23,9 @@ export default NotFoundPage
 
 export function Head() {
   return (
-    <title>Not found</title>
-    )
+    <>
+      <title>Not found</title>
+      <meta name="description" content="Мы стараемся постоянно улучшать наши показатели, но пока не успели сделать эту страничку" />
+    </>
+  )
 }

@@ -11,7 +11,7 @@ const PolicyPrivacy = () => {
                 Политика конфиденциальности
             </h1>
 
-            <iframe className="w-full h-[1000px]" src="https://drive.google.com/file/d/1OnSnS-oZg3Sz6VXWdkDgfeLnn7GN98ab/preview"  allow="autoplay"></iframe>
+            <iframe className="w-full h-[1000px]" src="https://drive.google.com/file/d/1OnSnS-oZg3Sz6VXWdkDgfeLnn7GN98ab/preview" allow="autoplay"></iframe>
 
         </section>
     )
@@ -20,8 +20,8 @@ const PolicyPrivacy = () => {
 export function Head() {
     return (
         <>
-            <title>Страница недоступна</title>
-            <meta name="description" content="Мы стараемся соответствовать стандартам IT-индустрии, поэтому в настоящий момент часть страниц сайта находится на полной переработке. Приносим извинения за неудобства." />
+            <title>Политика конфиденциальности</title>
+            <meta name="description" content="Политика использования Персональных данных на сайте itsdevelopment.ru" />
         </>
     )
 }

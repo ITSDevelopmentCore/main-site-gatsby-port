@@ -20,8 +20,8 @@ const PolicyCookie = () => {
 export function Head() {
     return (
         <>
-            <title>Страница недоступна</title>
-            <meta name="description" content="Мы стараемся соответствовать стандартам IT-индустрии, поэтому в настоящий момент часть страниц сайта находится на полной переработке. Приносим извинения за неудобства." />
+            <title>Политика Cookie</title>
+            <meta name="description" content="Политика использования файлов Cookies на сайте itsdevelopment.ru" />
         </>
     )
 }
