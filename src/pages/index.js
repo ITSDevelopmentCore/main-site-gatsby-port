@@ -12,7 +12,6 @@ import BlockPreview from "../components/home/blocks/BlockPreview";
 import BlockAdvantages from "../components/home/blocks/BlockAdvantages";
 import BlockServices from "../components/home/blocks/BlockServices";
 import BlockNews from "../components/home/blocks/BlockNews";
-import { Script } from "gatsby";
 
 const HomePage = () => {
   return (
@@ -29,11 +28,9 @@ const HomePage = () => {
 export default HomePage;
 
 export function Head() {
+
   return (
     <>
-    <Script>
-      
-    </Script>
       <title>ITS.dev - Разработка программного обеспечения</title>
       <meta name="yandex-verification" content="79fd5841a033d1e4" />
       <meta name="description" content="ITS Development предлагает качественную и сертифицированную разработку ПО от мобильных платформ и сайтов до сложных систем автоматизации на базе ИИ." />
