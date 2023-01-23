@@ -8,16 +8,23 @@ import React from 'react';
  */
 import { FiArrowDownRight } from 'react-icons/fi';
 
+/**
+ * Imports : components
+ */
+import { Link } from 'gatsby';
+
 
 export default function CardService(props) {
 
     return (
-        <section className={
-            'relative '
-            + 'overflow-hidden card_primary text-[14px] cursor-pointer hover:scale-105 transition-all duration-200 '
-            + 'laptop:min-w-[430px] laptop:text-[18px] '
-            + 'large:w-[480px] '
-            + 'desktop:w-[540px] '}>
+        <Link
+            to={props.link}
+            className={
+                'relative '
+                + 'overflow-hidden card_primary text-[14px] cursor-pointer hover:scale-105 transition-all duration-200 '
+                + 'laptop:min-w-[430px] laptop:text-[18px] '
+                + 'large:w-[480px] '
+                + 'desktop:w-[540px] '}>
 
             <h4 className={
                 'text-[24px] leading-[26px] font-extrabold mb-[25px] '
@@ -40,6 +47,6 @@ export default function CardService(props) {
 
             <FiArrowDownRight className="absolute bottom-[20px] right-[20px] w-[24px] h-[24px] block" />
 
-        </section>
+        </Link>
     )
 }
