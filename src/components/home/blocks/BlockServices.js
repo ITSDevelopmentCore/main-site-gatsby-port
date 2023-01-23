@@ -37,23 +37,19 @@ export default function BlockServices() {
                 'flex flex-col space-y-[15px] '
         +'laptop:space-y-[40px]'}>
 
-                <div className={
-                    'flex flex-col laptop:flex-row laptop:justify-end laptop:space-x-[50px] laptop:space-y-0 space-y-[15px] '
-                }>
+                <div className={'flex flex-col laptop:flex-row laptop:justify-end laptop:space-x-[50px] laptop:space-y-0 space-y-[15px]'}>
                     <CardService
                         title={'Mobile разработка'}
-                        description={'Разработка современных мобильных приложений для бизнеса в различных нишах. IOS Android Crossplatform PWA.'}
+                        description={'Разработка современных мобильных приложений для бизнеса в различных нишах и все платформы.'}
                         image={IllustrationServiceMobile} />
 
                     <CardService
                         title={'Web разработка'}
-                        description={'Разработка SEO-оптимизированных сайтов и веб-приложений под ключ.'}
+                        description={'Разработка SEO-оптимизированных продающих сайтов и веб-приложений под ключ.'}
                         image={IllustrationServiceWeb} />
                 </div>
 
-                <div className={
-                    'flex flex-col laptop:flex-row laptop:justyfy-start laptop:space-x-[50px] laptop:space-y-0 space-y-[15px] '
-                }>
+                <div className={'flex flex-col laptop:flex-row laptop:justyfy-start laptop:space-x-[50px] laptop:space-y-0 space-y-[15px]'}>
                     <CardService
                         title={'Telegram разработка'}
                         description={'Разработка современных Telegram ботов под ключ с интеграцией Telegram Web Apps.'}

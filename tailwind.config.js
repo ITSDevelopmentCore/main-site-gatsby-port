@@ -14,6 +14,10 @@ module.exports = {
         'inherit' : 'inherit'
       },
 
+      color : {
+        'inherit' : 'black'
+      },
+
       colors: {
         neutral: colors.neutral,
         inherit: colors.white,

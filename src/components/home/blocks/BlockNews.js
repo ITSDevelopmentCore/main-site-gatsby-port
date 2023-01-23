@@ -7,6 +7,7 @@ import React from "react";
  * Import : components
  */
 import CardNews from "../view/CardNews";
+import { Link } from 'gatsby'
 
 /**
  * Imports : media
@@ -15,7 +16,6 @@ import { TbChristmasTree } from 'react-icons/tb';
 import { GiUpgrade } from 'react-icons/gi';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { AiFillPlayCircle } from 'react-icons/ai';
-
 import IcYoutube from "../../../assets/home/icons/IcYoutube";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -34,14 +34,16 @@ export default function BlockNews() {
             <div className={'flex flex-col '
                 + 'laptop:flex-row laptop:space-x-[70px]'}>
 
-                <div className={
-                    'flex flex-col justify-between basis-1/2 space-y-[20px] mb-[40px] '
-                    + 'card_primary cursor-pointer '
-                    + 'laptop:mb-0 '}>
+                <Link
+                    to='https://www.youtube.com/channel/UC5KeHKJpQQLd1l32sbLuFag'
+                    className={
+                        'flex flex-col justify-between basis-1/2 space-y-[20px] mb-[40px] '
+                        + 'card_primary cursor-pointer '
+                        + 'laptop:mb-0 '}>
 
                     <h4 className="flex justify-start items-center space-x-[10px]">
-                        <IcYoutube />
-                        <span className="text-[14px]">Видеоблог</span>
+                        <IcYoutube/>
+                        <span className="text-[16px] font-extrabold laptop:text-[35px]">Видеоблог</span>
                     </h4>
 
                     <p className={'opacity-60'}>
@@ -53,14 +55,14 @@ export default function BlockNews() {
                         <StaticImage
                             className='w-full'
                             src={'../../../assets/home/STUB_news.webp'}
-                            alt='Videoblog preview'/>
+                            alt='Videoblog preview' />
 
                         <AiFillPlayCircle className="w-[40px] h-[40px] z-20 absolute top-[45%] left-[45%] right-[45%] bottom-[45%]" />
                     </div>
 
                     <span className={'opacity-60'}>13.02.22</span>
 
-                </div>
+                </Link>
 
                 <div className={'flex flex-col space-y-[15px] basis-1/2'}>
 

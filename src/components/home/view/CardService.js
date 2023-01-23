@@ -13,14 +13,14 @@ export default function CardService(props) {
 
     return (
         <section className={
-            'h-[240px] relative flex flex-col justify-between overflow-hidden card_primary '
-            + 'laptop:h-[290] laptop:w-[430] '
-            + 'large:h-[325px] large:w-[480px] '
-            + 'desktop:h-[367px] desktop:w-[540px] '
-        }>
+            'relative '
+            + 'overflow-hidden card_primary text-[14px] cursor-pointer hover:scale-105 transition-all duration-200 '
+            + 'laptop:min-w-[430px] laptop:text-[18px] '
+            + 'large:w-[480px] '
+            + 'desktop:w-[540px] '}>
 
             <h4 className={
-                'text-[24px] leading-[26px] font-extrabold mb-[100px]'
+                'text-[24px] leading-[26px] font-extrabold mb-[25px] '
                 + 'laptop:text-[32px] laptop:leading-[36px] '
                 + 'large:text-[36px] large:leading-[40px] '
                 + 'desktop:text-[40px] desktop:leading-[44px] '}>
@@ -29,9 +29,7 @@ export default function CardService(props) {
                 <span className=''>{props.title.split(' ')[1]}</span>
             </h4>
 
-            <p className={
-                'opacity-60 w-2/3 mt-[15px]'
-            }>
+            <p className={'opacity-60 w-[80%]'}>
                 {props.description}
             </p>
 
@@ -39,7 +37,6 @@ export default function CardService(props) {
                 src={props.image}
                 alt='Service card illustration'
                 className={'absolute top-0 right-0'} />
-
 
             <FiArrowDownRight className="absolute bottom-[20px] right-[20px] w-[24px] h-[24px] block" />
 
