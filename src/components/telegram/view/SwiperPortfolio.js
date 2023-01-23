@@ -68,8 +68,8 @@ function Gallery() {
         <CardPortfolio
           title='Softwareshop'
           description='Бот - магазин программного обеспечения'
-          budget={<span>100.000 <Symbol symbol='₽' /></span>}
-          result={<span>100.000 <Symbol symbol='₽' /></span>}
+          budget={<span>50.000 <Symbol symbol='₽' /></span>}
+          result={<span>50.000 <Symbol symbol='₽' /></span>}
           screenshot={ScreenshotPortfolio4}
           qr={QrPorftolio4} 
           link='https://t.me/software_shop'/>
@@ -79,8 +79,8 @@ function Gallery() {
         <CardPortfolio
           title='SMM Бот'
           description='Бот для сервиса продвижений в социальных сетях'
-          budget={<span>100.000 <Symbol symbol='₽' /></span>}
-          result={<span>100.000 <Symbol symbol='₽' /></span>}
+          budget={<span>50.000 <Symbol symbol='₽' /></span>}
+          result={<span>30.000 <Symbol symbol='₽' /></span>}
           screenshot={ScreenshotPortfolio3}
           qr={QrPorftolio3} 
           link='https://t.me/Nakrutka_Artemkabot'/>
@@ -90,8 +90,8 @@ function Gallery() {
         <CardPortfolio
           title='Andy'
           description='Бот для частной школы английского языка'
-          budget={<span>100.000 <Symbol symbol='₽' /></span>}
-          result={<span>100.000 <Symbol symbol='₽' /></span>}
+          budget={<span>40.000 <Symbol symbol='₽' /></span>}
+          result={<span>20.000 <Symbol symbol='₽' /></span>}
           screenshot={ScreenshotPortfolio1}
           qr={QrPorftolio1} 
           link='https://t.me/AndyRobot'/>
@@ -101,8 +101,8 @@ function Gallery() {
         <CardPortfolio
           title='Banksman'
           description='Бот - для сервиса по безопасному обмену валют'
-          budget={<span>100.000 <Symbol symbol='₽' /></span>}
-          result={<span>100.000 <Symbol symbol='₽' /></span>}
+          budget={<span>90.000 <Symbol symbol='₽' /></span>}
+          result={<span>70.000 <Symbol symbol='₽' /></span>}
           screenshot={ScreenshotPortfolio2}
           qr={QrPorftolio2} 
           link='https://t.me/Baksman_wallet_bot'/>
