@@ -36,7 +36,7 @@ const PolicyOrganization = () => {
                 <span>support<Symbol symbol='@'></Symbol>itsdevelopment.ru</span>
                 <span className='font-bold'>Горячая линия: </span>
                 <span>
-                    <Symbol symbol='+' />7<Symbol symbol=' ' /><Symbol symbol='(' />999<Symbol symbol=')' /><Symbol symbol=' ' />999-99-99
+                    8 <Symbol symbol="(" />800<Symbol symbol=")" /> 101-52-28
                 </span>
             </div>
 

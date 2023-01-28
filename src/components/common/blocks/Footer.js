@@ -52,8 +52,8 @@ const Footer = () => {
 
           <a
             rel="noreferrer"
-            href="tel:88000000000">
-            8 <Symbol symbol="(" />800<Symbol symbol=")" /> 000-00-00
+            href="tel:88001015228">
+            8 <Symbol symbol="(" />800<Symbol symbol=")" /> 101-52-28
           </a>
 
           <a
@@ -67,9 +67,9 @@ const Footer = () => {
 
         <div className="justify-self-end">
           <div className="grid grid-flow-col gap-4">
-            <Link to="https://vk.com/itsdevelopmentru"><SlSocialVkontakte className='w-[30px] h-[30px] hover:scale-125 stroke-custom' /></Link>
-            <Link to="https://www.youtube.com/@user-fy4lv8pi4g"><AiOutlineYoutube className='w-[30px] h-[30px] hover:scale-125' /></Link>
-            <Link to="https://t.me/+3ERzYQm6fUxhNjky"><TbBrandTelegram className='w-[30px] h-[30px] hover:scale-125' /></Link>
+            <a href="https://vk.com/itsdevelopmentru"><SlSocialVkontakte className='w-[30px] h-[30px] hover:scale-125 stroke-custom' /></a>
+            <a href="https://www.youtube.com/@user-fy4lv8pi4g"><AiOutlineYoutube className='w-[30px] h-[30px] hover:scale-125' /></a>
+            <a href="https://t.me/+3ERzYQm6fUxhNjky"><TbBrandTelegram className='w-[30px] h-[30px] hover:scale-125' /></a>
           </div>
         </div>
       </footer>

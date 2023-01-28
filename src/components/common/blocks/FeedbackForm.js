@@ -27,6 +27,7 @@ function FeedbackForm() {
 
     return (
         <form
+            id="feedback-form"
             className={'grow flex flex-col'}
             action='https://submit-form.com/F8bMh3aV'>
 
@@ -149,7 +150,14 @@ function FeedbackForm() {
                 id="description"
                 name="description" />
 
+            <div 
+            className='g-recaptcha' 
+            data-sitekey="6LdiLSskAAAAAFS84Dd-qzyoKyCnIoKV2c5lxKpn">
+            </div>
+
             <button
+                id="form-submit-button"
+                disabled
                 type="submit"
                 className={
                     'mt-[53px] px-[50px] py-[11px] w-fit mx-auto '
@@ -157,6 +165,7 @@ function FeedbackForm() {
                     + 'laptop:mx-0 laptop:px-[80px] laptop:py-[20px] laptop:text-[22px] laptop:leading-[33px] laptop:mt-[42px]'}>
                 Отправить
             </button>
+
 
         </form>
     )

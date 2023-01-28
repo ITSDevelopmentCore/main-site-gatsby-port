@@ -25,6 +25,7 @@ export function Head() {
     return (
         <>
             <title>Политика конфиденциальности</title>
+        
             <meta name="description" content="Политика использования Персональных данных на сайте itsdevelopment.ru" />
         </>
     )

@@ -3,10 +3,12 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Site`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `ITS Development - Разработка ПО для бизнеса`,
+    siteUrl: `https://www.itsdevelopment.ru`
   },
+
   plugins: [
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-postcss',
     "gatsby-plugin-image",

@@ -110,9 +110,9 @@ const Header = () => {
                     <BsFillTelephoneFill className="text-sky-500 w-[25px] aspect-square mx-[10px]" />
 
                     <a
-                        href="tel:89122486136"
+                        href="tel:88001015228"
                         className="mr-[52px]">
-                        8 <Symbol symbol="(" />800<Symbol symbol=")" /> 000-00-00
+                        8 <Symbol symbol="(" />800<Symbol symbol=")" /> 101-52-28
                     </a>
 
                     <button
