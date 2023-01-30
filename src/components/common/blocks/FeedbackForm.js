@@ -149,15 +149,10 @@ function FeedbackForm() {
                 placeholder="Кратко опишите вашу задачу"
                 id="description"
                 name="description" />
-
-            <div 
-            className='g-recaptcha' 
-            data-sitekey="6LdiLSskAAAAAFS84Dd-qzyoKyCnIoKV2c5lxKpn">
-            </div>
-
+                
             <button
                 id="form-submit-button"
-                disabled
+        
                 type="submit"
                 className={
                     'mt-[53px] px-[50px] py-[11px] w-fit mx-auto '

@@ -42,19 +42,19 @@ export default function BlockAdvantages() {
                         <CardAdvantage
                             icon={<RiApps2Fill className='w-full h-full' />}
                             title={<span><span className='text-sky-500'>20<Symbol symbol='+' /></span><br />проектов</span>}
-                            description={"Предприниматели по всей России и ближнему зарубежью доверяют нам."}>
+                            description={"Максимальные оценки качества работы на Российских площадках по поиску подрядчиков"}>
                         </CardAdvantage>
 
                         <CardAdvantage
                             icon={<BsGem className='w-full h-full' />}
                             title={"Чистый процесс"}
-                            description={"По всем услугам мы работаем исключительно по договору об оказании услуг, предоставляя регулярную отчетность."}>
+                            description={"Мы работаем по официальному договору, предоставляя ежедневную отчетность о ходе работы."}>
                         </CardAdvantage>
 
                         <CardAdvantage
                             icon={<SiMusicbrainz className='w-full h-full' />}
                             title={"Быстро и просто"}
-                            description={"Телеграм бот способен быстро и просто закрыть потребность в мобильном приложении, или автоматизировать любую задачу."}>
+                            description={"Телеграм бот способен быстро закрыть потребность в мобильном приложении, или автоматизировать бизнес процесс."}>
                         </CardAdvantage>
 
                         <CardAdvantage
@@ -88,7 +88,7 @@ export default function BlockAdvantages() {
                         <CardAdvantageMobile
                             icon={<RiApps2Fill className='w-full h-full' />}
                             title={<span><span className='text-sky-500'>20<Symbol symbol='+' /></span><br />проектов</span>}
-                            description={"Предприниматели по всей России и ближнему зарубежью доверяют нам."}>
+                            description={"Максимальные оценки качества работы на Российских площадках по поиску подрядчиков"}>
                         </CardAdvantageMobile>
                     </div>
                     <div className="carousel-item">
@@ -102,7 +102,7 @@ export default function BlockAdvantages() {
                         <CardAdvantageMobile
                             icon={<SiMusicbrainz className='w-full h-full' />}
                             title={"Быстро и просто"}
-                            description={"Телеграм бот способен быстро и просто закрыть потребность в мобильном приложении, или автоматизировать любую задачу."}>
+                            description={"Телеграм бот способен быстро закрыть потребность в мобильном приложении, или автоматизировать бизнес процесс."}>
                         </CardAdvantageMobile>
                     </div>
                     <div className="carousel-item">
