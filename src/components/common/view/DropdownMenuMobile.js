@@ -31,6 +31,7 @@ const DropdownMenuMobile = () => {
                     content={
                         [
                             { title: 'Telegram разработка', href: '/telegram' },
+                            { title: 'Avito разработка', href: '/avito' },
                             { title: 'Mobile разработка', href: '/underDevelopment' },
                             { title: 'Web разработка', href: '/underDevelopment' },
                             { title: 'Startup MVP', href: '/underDevelopment' },

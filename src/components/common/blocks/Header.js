@@ -74,6 +74,11 @@ const Header = () => {
                                     link: '/telegram'
                                 },
                                 {
+                                    title: "Avito",
+                                    link: '/avito'
+
+                                },
+                                {
                                     title: "Мобильная разработка",
                                     link: '/underDevelopment'
                                 },
