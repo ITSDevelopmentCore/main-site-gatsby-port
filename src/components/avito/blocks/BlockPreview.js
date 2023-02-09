@@ -71,8 +71,8 @@ export default function BlockPreview() {
 
             {/* Везде убираем все tailwind классы, относящиеся к адаптивам. Оставляем только десктоп. */}
             {/* Тут по кнопке редирект на наше объявление Авито Москва. */}
+            <a href='https://www.avito.ru/moskva/predlozheniya_uslug/razrabotka_chat-botov._telegram_avito_vkontakte_2743395912'>
             <button
-              onClick={buttonClickHandler}
               className={
                 'py-[19px] px-[46px] w-max mx-auto -mb-[80px] ' +
                 'leading-[30px] font-bold bg-white border-[2px] border-white rounded-xl text-sky-500 hover:text-white hover:bg-transparent transition-all duration-200' +
@@ -80,6 +80,7 @@ export default function BlockPreview() {
               }>
               Быстрый обзор
             </button>
+            </a>
           </span>
 
           {/* Переделать в комплексный элемент, это не изображение.  */}
