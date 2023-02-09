@@ -11,20 +11,6 @@ import AvitoPrewCom from '../../../assets/avito/illustration_preview-light.webp'
 import YandexPartner from '../../../assets/avito/Yandex_partner_btn.webp';
 
 export default function BlockPreview() {
-  /**
-   * Неиспользуемые константы. Зачем?
-   */
-  const classesPreviewAdvantageDigitLaptop =
-    'text-center desktop:text-[70px] desktop:leading-[75px] large:text-[60px] large:leading-[65px] laptop:text-[50px] laptop:leading-[55px]';
-  const classesPreviewAdvantageTextLaptop = 'font-base opacity-60 text-center';
-  const classesPreviewAdvantageDividerLaptop =
-    'h-[2px] w-full bg-neutral-900 opacity-10 my-10 dark:bg-white';
-  const classesPreviewAdvantageDivider =
-    'h-[2px] w-full bg-neutral-900 opacity-10 my-[20px] dark:bg-white';
-  const classesPreviewAdvantageDigit =
-    'basis-1/2 text-center text-[50px] leading-[50px]';
-  const classesPreviewAdvantageText =
-    'basis-1/2 text-[14px] font-base opacity-60';
 
   const buttonClickHandler = () => {
     document.getElementById('feedback').scrollIntoView({
@@ -66,9 +52,7 @@ export default function BlockPreview() {
 
           <p
             className='mb-[60px] text-white 
-                        leading-[28px] text-center
-                        laptop:text-left 
-                        large:leading-[32px] 
+                         text-center
                         desktop:leading-[34px]'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
@@ -78,9 +62,7 @@ export default function BlockPreview() {
               onClick={buttonClickHandler}
               className={
                 'py-[19px] px-[46px] w-max mx-auto -mb-[80px] ' +
-                'leading-[30px] font-bold  bg-white border-[2px] border-white rounded-xl text-sky-500 hover:text-white hover:bg-transparent transition-all duration-200  ' +
-                'laptop:text-[19px] laptop:mx-0 laptop:mb-0 ' +
-                'large:py-[17px] large:px-[41px] ' +
+                ' font-bold  bg-white border-[2px] border-white rounded-xl text-sky-500 hover:text-white hover:bg-transparent transition-all duration-200  ' +
                 'desktop:text-[22px] desktop:leading-[33px] ' +
                 'dark:to-sky-500'
               }>
@@ -94,8 +76,6 @@ export default function BlockPreview() {
               className={
                 'py-[19px] px-[46px] w-max mx-auto -mb-[80px] ' +
                 'leading-[30px] font-bold bg-white border-[2px] border-white rounded-xl text-sky-500 hover:text-white hover:bg-transparent transition-all duration-200' +
-                'laptop:text-[19px] laptop:mx-0 laptop:mb-0 ' +
-                'large:py-[17px] large:px-[41px] ' +
                 'desktop:text-[22px] desktop:leading-[33px] '
               }>
               Быстрый обзор
@@ -106,16 +86,16 @@ export default function BlockPreview() {
           {/* alt атрибуты на русском, что бы было понятно, что на изображении. (Знак партнерства с ООО "Яндекс Облако") Можно посмотреть примеры в других страничках */}
           <img
             src={YandexPartner}
-            alt='Yandex Partner'
-            className={'h-full w-[310px]'}
+            alt='Знак партнерства с ООО "Яндекс Облако"'
+            className={'h-full w-[45%]'}
           />
         </div>
 
 {/* Прошу еще раз ознакомиться с тем, что я писал в описании в трелло, там было указано, какой ширины мы делаем изображение и остальной контент. 50x50, без фиксированной ширины */}
         <img
           src={AvitoPrewCom}
-          alt='Avito Working Bot'
-          className={'h-full w-[670px]'}
+          alt='Компьютер с примером бота авито'
+          className={'h-full w-[50%]'}
         />
       </div>
     </section>
