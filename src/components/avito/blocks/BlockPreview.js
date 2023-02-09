@@ -20,22 +20,18 @@ export default function BlockPreview() {
 
   return (
     <section className={
-        'mt-[100px] mb-[110px] ' + 
-    'laptop:mb-[220px]'}>
+        'mt-[100px] mb-[110px] '}>
       <div
         className={
-          'block ' + 
-          'laptop:flex laptop:items-center laptop:justify-between'
+          'block ' 
         }>
         <div
           className={
-            'flex flex-col justify-center basis-1/2 mb-[240px] large:min-w-[670px]'
+            'flex flex-col justify-center basis-1/2 mb-[240px] '
           }>
           <h1
             className={
               'font-extrabold text-center text-white text-[35px] leading-[45px] mb-[44px] ' +
-              'laptop:text-[50px] laptop:leading-[55px] laptop:text-left ' +
-              'large:text-[75px] large:leading-[85px] ' +
               'desktop:text-[95px] desktop:leading-[105px]'
             }>
             Разработка
