@@ -9,6 +9,9 @@ import React from 'react';
 
 import Feedback from '../components/common/blocks/Feedback';
 import BlockPreview from '../components/avito/blocks/BlockPreview';
+import BlockPossibilities from '../components/avito/blocks/BlockPossibilities';
+import BlockStages from '../components/avito/blocks/BlockStages';
+import BlockCost from '../components/avito/blocks/BlockCost';
 
 const AvitoPage = () => {
   return (
@@ -16,6 +19,9 @@ const AvitoPage = () => {
 
     {/* Изменил имя */}
       <BlockPreview />
+      <BlockPossibilities/>
+      <BlockStages/>
+      <BlockCost/>
       <Feedback />
     </>
   );
