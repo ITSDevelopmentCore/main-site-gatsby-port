@@ -12,6 +12,7 @@ import BlockPreview from '../components/avito/blocks/BlockPreview';
 import BlockPossibilities from '../components/avito/blocks/BlockPossibilities';
 import BlockStages from '../components/avito/blocks/BlockStages';
 import BlockCost from '../components/avito/blocks/BlockCost';
+import BlockFAQ from '../components/avito/blocks/BlockFAQ';
 
 const AvitoPage = () => {
   return (
@@ -22,6 +23,7 @@ const AvitoPage = () => {
       <BlockPossibilities/>
       <BlockStages/>
       <BlockCost/>
+      <BlockFAQ/>
       <Feedback />
     </>
   );
