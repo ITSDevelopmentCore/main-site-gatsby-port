@@ -17,10 +17,10 @@ const AvitoPage = () => {
   return (
     <>
       <BlockPreview />
-      <BlockPossibilities/>
+      {/* <BlockPossibilities/>
       <BlockStages/>
       <BlockCost/>
-      <BlockFAQ/>
+      <BlockFAQ/> */}
       <Feedback />
     </>
   );
