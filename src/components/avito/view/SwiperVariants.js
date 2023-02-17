@@ -11,10 +11,7 @@ import { Pagination } from 'swiper/core';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-/**
- * Imports: media
- */
-import RobotIco from '../../../assets/avito/Robot-icon.webp';
+
 /**
  * Imports: blocks
  */
@@ -58,7 +55,6 @@ function Gallery() {
 
       <SwiperSlide>
         <CardVariants
-          icon={RobotIco}
           title='Бот-автоответчик'
           description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
            non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
@@ -71,34 +67,6 @@ function Gallery() {
 
       <SwiperSlide>
         <CardVariants
-          icon={RobotIco}
-          title='Бот-автоответчик'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
-           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
-           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
-           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
-           price={<span><Symbol symbol='+' />10.000 <Symbol symbol='₽' /></span>}
-          timing='1 день'
-          />
-      </SwiperSlide>
-
-
-      <SwiperSlide>
-        <CardVariants
-          icon={RobotIco}
-          title='Бот-автоответчик'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
-           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
-           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
-           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
-           price={<span><Symbol symbol='+' />10.000 <Symbol symbol='₽' /></span>}
-          timing='1 день'
-          />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <CardVariants
-          icon={RobotIco}
           title='Бот-автоответчик'
           description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
            non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
@@ -112,7 +80,18 @@ function Gallery() {
 
       <SwiperSlide>
         <CardVariants
-          icon={RobotIco}
+          title='Бот-автоответчик'
+          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
+           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
+           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
+           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
+           price={<span><Symbol symbol='+' />10.000 <Symbol symbol='₽' /></span>}
+          timing='1 день'
+          />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <CardVariants
           title='Бот-автоответчик'
           description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
            non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
@@ -126,7 +105,19 @@ function Gallery() {
 
       <SwiperSlide>
         <CardVariants
-          icon={RobotIco}
+          title='Бот-автоответчик'
+          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
+           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
+           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
+           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
+           price={<span><Symbol symbol='+' />10.000 <Symbol symbol='₽' /></span>}
+          timing='1 день'
+          />
+      </SwiperSlide>
+
+
+      <SwiperSlide>
+        <CardVariants
           title='Бот-автоответчик'
           description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
            non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 

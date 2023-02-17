@@ -18,7 +18,7 @@ import BlockFAQ from '../components/avito/blocks/BlockFAQ';
  * Imports : media
  */
 import BackgroundDarkDefault from '../assets/home/background-dark.webp';
-import BackgroundLightDefault from '../assets/home/background-light.webp';
+import BackgroundLightDefault from '../assets/avito/background-light.webp';
 
 const AvitoPage = () => {
   return (

@@ -11,4 +11,8 @@
         @apply mb-[48px] text-[28px] leading-[32px] font-extrabold text-center laptop:text-[46px] laptop:leading-[52px] laptop:text-left large:text-[58px] large:leading-[66px] desktop:text-[64px] desktop:leading-[72px]
     }
 
+    .button {
+        @apply py-[20px] px-[30px] laptop:py-[16px] laptop:px-[25px] large:py-[18px] large:px-[28px] desktop:py-[20px] desktop:px-[30px] desktop:text-[20px] desktop:leading-[30px]
+    }
+
 }
