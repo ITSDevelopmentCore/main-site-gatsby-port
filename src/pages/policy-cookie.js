@@ -3,8 +3,22 @@
  */
 import React from "react"
 
+/**
+ * Imports : media
+ */
+import BackgroundDarkDefault from '../assets/home/background-dark.webp';
+import BackgroundLightDefault from '../assets/home/background-light.webp';
+
+/**
+ * Imports: Blocks
+ */
+import Layout from "../layouts";
+
 const PolicyCookie = () => {
     return (
+        <Layout
+            backgroundDark={BackgroundDarkDefault}
+            backgroundLight={BackgroundLightDefault}>
         <section className={'card_primary  mb-[100px]'}>
 
             <h1 className={'mb-6 font-extrabold text-[24px]'}>
@@ -18,6 +32,7 @@ const PolicyCookie = () => {
             allow="autoplay"/>
 
         </section>
+        </Layout>
     )
 }
 

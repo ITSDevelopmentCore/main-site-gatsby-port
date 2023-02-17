@@ -42,7 +42,6 @@ module.exports = {
     },
 
     screens: {
-      'tablets': '768px',
       'laptop': '1024px',
       'large': '1300px',
       'desktop': '1550px'

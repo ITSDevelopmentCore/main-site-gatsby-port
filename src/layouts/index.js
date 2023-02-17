@@ -18,13 +18,6 @@ import Modals from "../components/common/modals/ModalDarkTheme";
 import Footer from "../components/common/blocks/Footer";
 import Header from "../components/common/blocks/Header";
 
-/**
- * Imports : media
- */
-import BgLight from '../assets/home/background-light.webp';
-import BgDark from '../assets/home/background-dark.webp';
-
-
 export const ThemeContext = React.createContext();
 
 export default function Layout(props) {
@@ -40,7 +33,7 @@ export default function Layout(props) {
 
     return (
         <ThemeContext.Provider value={{ theme, changeThemeCallback }}>
-            <div style={theme === 'dark' ? { backgroundImage: `url(${BgDark})`, backgroundSize : 'cover'} : { backgroundImage: `url(${BgLight})`, backgroundSize : 'cover' }}>
+            <div style={theme === 'dark' ? { backgroundImage: `url(${props.backgroundDark})`, backgroundSize : 'cover'} : { backgroundImage: `url(${props.backgroundLight})`, backgroundSize : 'cover' }}>
                 <div
                     className={'mx-5 laptop:mx-10 desktop:w-[1500px] desktop:mx-auto'}>
 

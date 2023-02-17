@@ -6,6 +6,7 @@ import React from "react"
 /**
  * Imports: Blocks
  */
+import Layout from "../layouts";
 import Feedback from "../components/common/blocks/Feedback";
 import Preview from "../components/telegram/blocks/BlockPreview";
 import BlockAdvantages from "../components/telegram/blocks/BlockAdvantages";
@@ -13,16 +14,24 @@ import BlockWebApps from "../components/telegram/blocks/BlockWebApps";
 import BlockStages from "../components/telegram/blocks/BlockStages";
 import BlockPortfolio from "../components/telegram/blocks/BlockPortfolio";
 
+/**
+ * Imports : media
+ */
+import BackgroundDarkDefault from '../assets/home/background-dark.webp';
+import BackgroundLightDefault from '../assets/home/background-light.webp';
+
 const TelegramPage = () => {
     return (
-        <>
+        <Layout
+            backgroundDark={BackgroundDarkDefault}
+            backgroundLight={BackgroundLightDefault}>
             <Preview />
             <BlockAdvantages />
             <BlockWebApps />
             <BlockStages />
             <BlockPortfolio />
             <Feedback />
-        </>
+        </Layout>
     )
 }
 
