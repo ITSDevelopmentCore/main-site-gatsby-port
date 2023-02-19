@@ -11,13 +11,13 @@ import Feedback from '../components/common/blocks/Feedback';
 import BlockPreview from '../components/avito/blocks/BlockPreview';
 import BlockPossibilities from '../components/avito/blocks/BlockPossibilities';
 import BlockStages from '../components/avito/blocks/BlockStages';
-import BlockCost from '../components/avito/blocks/BlockCost';
+import BlockPricing from '../components/avito/blocks/BlockPricing';
 import BlockFAQ from '../components/avito/blocks/BlockFAQ';
 
 /**
  * Imports : media
  */
-import BackgroundDarkDefault from '../assets/home/background-dark.webp';
+import BackgroundDarkDefault from '../assets/avito/background-dark.webp';
 import BackgroundLightDefault from '../assets/avito/background-light.webp';
 
 const AvitoPage = () => {
@@ -26,10 +26,10 @@ const AvitoPage = () => {
       backgroundDark={BackgroundDarkDefault}
       backgroundLight={BackgroundLightDefault}>
       <BlockPreview />
-      {/* <BlockPossibilities/>
+      <BlockPossibilities/>
       <BlockStages/>
-      <BlockCost/>
-      <BlockFAQ/> */}
+      <BlockPricing/>
+      {/* <BlockFAQ/> */}
       <Feedback />
     </Layout>
   );

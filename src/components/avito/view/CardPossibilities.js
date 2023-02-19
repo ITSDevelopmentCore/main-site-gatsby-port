@@ -2,49 +2,33 @@
  * Imports : React
  */
 import React from 'react';
-import { readMore } from '../../../scripts/changeViewByIdScripts';
 
 export default function CardStage(props) {
 
     return (
-        <section className={
-            'w-full aspect-[2/1] relative'}>
+        <section className={'space-y-[40px] '
+        +'card_primary'}>
 
+            <div className={'flex justify-between items-center'}>
 
-
-
-
-
-            <div className={
-                'absolute left-[10%] top-[10%] right-0 bottom-[-10%] justify-around '
-                + ' card_primary '}>
-                   
-                    
-                       
-<span className='absolute flex-col w-[60%] top-[20%]'>
-                <h3 className={
-                    'font-extrabold mb-6 text-neutral-900 '
-                    + 'desktop:text-[28px] '
-                    + 'dark:text-white'}>
+                <h4 className={
+                    'font-extrabold text-[26px] '
+                    + 'desktop:text-[30px]'}>
                     {props.title}
-                </h3>
+                </h4>
 
-                <p className={
-                    'opacity-60 text-neutral-900 '
-                    + 'dark:text-white'}>
-                    {props.description}
-                    <button id='dots' onClick={readMore} >...</button>
-                    <span id='more' className='hidden'>{props.more}</span>
-                </p>
+                <span className={
+                    'w-[56px] h-[56px] '
+                    + 'desktop:w-[64px] desktop:h-[64px] '
+                    + 'text-sky-500'}>
+                    {props.icon}
                 </span>
-                <img
-          src={props.icon}
-          alt='Иконка'
-          className={ 'w-[15%] ml-[90%]'
-          + ' bg-clip-text bg-gradient-to-t from-sky-500 via-sky-400 to-sky-300 '
-          }
-        />
+
             </div>
+
+            <p className={'opacity-60 '}>
+                {props.description}
+            </p>
 
         </section>
     )

@@ -19,9 +19,7 @@ export default function BlockPreview() {
   };
 
   return (
-    <section className={
-      'my-[50px] '
-      + 'laptop:mb-[220px]'}>
+    <section className={'mt-[50px] mb-[240px]'}>
 
       <div className={'flex flex-col '
         + 'laptop:flex-row laptop:space-x-[80px]'}>
@@ -57,23 +55,22 @@ export default function BlockPreview() {
 
 
           <div className={'my-[25px] flex flex-col space-y-[25px] '
-        +'laptop:flex-row laptop:space-x-[5%] laptop:my-0 laptop:space-y-0'}>
+            + 'laptop:flex-row laptop:space-x-[25px] laptop:my-0 laptop:space-y-0'}>
 
             <button
               onClick={buttonClickHandler}
-              className={
-                'button '
-                + 'font-bold bg-white rounded-xl text-sky-500 '}>
+              className={'button '
+                + 'font-bold bg-white rounded-xl text-sky-500 border-2 border-white transition-all duration-200 '
+                + 'hover:text-white hover:bg-transparent '}>
               Свяжитесь со мной
             </button>
 
             <a
-            className={
-              'button '
-              + 'font-bold border-2 border-sky-500 rounded-xl text-sky-500 text-center'}
+              className={'button '
+              + 'font-bold border-2 border-sky-500 rounded-xl text-sky-500 text-center transition-all duration-200 '
+              + 'hover:border-white hover:text-white '}
               href='https://www.avito.ru/moskva/predlozheniya_uslug/razrabotka_chat-botov._telegram_avito_vkontakte_2743395912'>
-              <button
-                >
+              <button>
                 Быстрый обзор
               </button>
             </a>
@@ -93,10 +90,10 @@ export default function BlockPreview() {
 
         </div>
 
-        <div className={'flex justify-center items-center my-[40px] basis-1/2 '
+        <div className={'my-[40px] basis-1/2 '
           + 'large:my-0'}>
           <img
-          className='mx-auto '
+            className='mx-auto '
             src={IllustrationAvitoPreview}
             alt='Окно с работающим ботом для авито' />
         </div>

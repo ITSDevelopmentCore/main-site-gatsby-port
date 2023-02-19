@@ -21,7 +21,7 @@ export default function BlockStages() {
 
     return (
         <section className={
-            'mt-[120px] '
+            'mt-[100px] '
             + 'laptop:mt-[265px]'}>
 
             <h2 className={'mb-12 section-title'}>
@@ -87,7 +87,7 @@ export default function BlockStages() {
                     description={'Следим за продуктом 24 на 7, оказывая реактивную поддержку по всем вопросам.'} />
             </div>
 
-            <div className={'flex flex-col mt-[90px] large:mt-[180px] space-y-[18px] '
+            <div className={'flex flex-col mt-[90px] large:mt-[100px] space-y-[18px] '
                 + 'laptop:flex-row laptop:justify-between laptop:space-y-0 laptop:space-x-[95px]'}>
 
                 <CardBonus
