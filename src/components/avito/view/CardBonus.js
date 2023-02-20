@@ -3,29 +3,26 @@
  */
 import React from 'react';
 
-function CardBonus(props) {
+let CardBonus = (props) =>
+    <article className={
+        'relative '
+        + 'card_primary '
+        + 'laptop:basis-0 laptop:grow'}>
 
-    return (
-        <article className={
-            'p-12 relative '
-            + 'card_primary '
-            + 'laptop:basis-0 laptop:grow'}>
-
+        <div className={'absolute w-[130px] h-[130px] top-[30px] right-[30px] ' 
+        + 'opacity-20 text-sky-500 '
+        + 'laptop:opacity-100 laptop:w-[65px] laptop:h-[65px]'}>
             {props.icon}
+        </div>
 
-            <h4 className={
-                'font-extrabold text-[28px] leading-[25px] mb-6 '}>
-                {props.title}
-            </h4>
+        <h4 className='font-extrabold text-[28px] mb-6'>
+            {props.title}
+        </h4>
 
-            <p className={
-                'w-[90%] text-[12px] leading-[16px] opacity-60 '
-                +'laptop:text-[18px] laptop:leading-[24px]'}>
-                {props.description}
-            </p>
+        <p className='text-justify opacity-60'>
+            {props.description}
+        </p>
 
-        </article>
-    )
-}
+    </article>
 
 export default CardBonus;
