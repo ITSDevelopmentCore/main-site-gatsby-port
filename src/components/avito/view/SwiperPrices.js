@@ -7,7 +7,6 @@ import React from "react";
  * Imports: Swiper library
  */
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/core';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -15,18 +14,11 @@ import 'swiper/css/pagination';
  * Imports: blocks
  */
 import CardPrice from "./CardPrice";
-import Symbol from '../../common/view/Symbol';
 
 function SwiperPrices() {
 
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span className="w-8 h-8 bg-sky-500 rounded-[5px] ' + className + '"></span>';
-    },
-  };
-
   return (
+    
     <Swiper
       breakpoints={{
         1550: {
@@ -45,82 +37,53 @@ function SwiperPrices() {
           slidesPerView: 2.3,
         },
       }}
-      slidesPerView={1.05}
-      pagination={pagination}
-      modules={[Pagination]}>
+      slidesPerView={1.05}>
 
-      <SwiperSlide>
+      <SwiperSlide >
         <CardPrice
           title='Бот-автоответчик'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
-           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
-           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
-           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
-           price={<span>10.000 <Symbol symbol='Р' /></span>}
-          timing='1 день'
-          />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <CardPrice
-          title='Бот-автоответчик'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
-           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
-           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
-           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
-           price={<span>10.000 <Symbol symbol='Р' /></span>}
-          timing='1 день'
-          />
-      </SwiperSlide>
-
-
-      <SwiperSlide>
-        <CardPrice
-          title='Бот-автоответчик'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
-           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
-           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
-           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
-           price={<span>10.000 <Symbol symbol='Р' /></span>}
+          description='Бот - автоответчик, моментально отвечающий всем клиентам в любое время суток, что в разы повышает вероятность конверсии. В ночное и нерабочее
+          время бот способен отвечать различными сообщениями'
+          price='4 900'
           timing='1 день'/>
       </SwiperSlide>
 
       <SwiperSlide>
         <CardPrice
-          title='Бот-автоответчик'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
-           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
-           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
-           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
-           price={<span>10.000 <Symbol symbol='Р' /></span>}
-          timing='1 день'/>
+          title='Бот-консультант'
+          description='Бот способен консультировать клиентов по любым вопросам и выполнять все функции автоответчика, разгружая оператора и позволяя автоматизировать продажи. 
+          Почти 100% клиентов пробуют контактировать с другим продавцом, если первый не ответил им моментально'
+           price='от 4 900'
+           timing='1-3 дня'/>
       </SwiperSlide>
-
 
       <SwiperSlide>
         <CardPrice
-          title='Бот-автоответчик'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
-           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
-           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
-           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
-           price={<span>10.000 <Symbol symbol='Р' /></span>}
-          timing='1 день'/>
+          title='Автоматизированная система для Авито'
+          description='Разработка системы для автоматизации работы продавца на Avito. Наши системы интегрируются с Avito всеми возможными способами, предоставляя возможность 
+          автозагрузки объявлений, получения расширенной статистики, анализ статистики, применение платных услуг для оптимизации продаж.'
+           price='от 29 000'
+           timing='от 7 дней'/>
       </SwiperSlide>
-
 
       <SwiperSlide>
         <CardPrice
-          title='Бот-автоответчик'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem,
-           non viverra arcu. Pellentesque at interdum leo, ac tristique elit. Etiam nec erat in eros dictum luctus. 
-           tiam et efficitur diam, nec imperdiet risus. Nulla at aliquam libero.
-           Nulla vitae turpis sollicitudin, volutpat sapien et, feugiat magna. Donec a leo lorem. Sed felis.'
-           price={<span>10.000 <Symbol symbol='Р' /></span>}
-          timing='1 день'/>
+          title='Комплексный бот'
+          description='Бот создан для выполнения нестандартных сценариев. 
+          К примеру - сложные интеграции с автоматизированными системами, выполнение пользовательских скриптов, комплексный диалог с клиентом'
+           price='от 9 000'
+           timing='1 день'/>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <CardPrice
+          title='Бот с интеграциями'
+          description='Бот выполняет все функции консультанта и автоответчика и способен интегрироваться с любыми внешними сервисами продавца. Будь то CRM система, 
+          мессенджеры операторов, или другая система автоматизации'
+           price='от 8 900'
+           timing='2-5 дней'/>
       </SwiperSlide>
     
-
     </Swiper>
   );
 

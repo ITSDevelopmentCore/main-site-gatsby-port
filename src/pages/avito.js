@@ -29,7 +29,7 @@ const AvitoPage = () => {
       <BlockPossibilities/>
       <BlockStages/>
       <BlockPricing/>
-      {/* <BlockFAQ/> */}
+      <BlockFAQ/>
       <Feedback />
     </Layout>
   );

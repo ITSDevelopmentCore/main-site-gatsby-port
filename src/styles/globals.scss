@@ -12,3 +12,12 @@
         visibility: visible;
     }
 }
+
+.swiper-slide {
+    height: auto !important;
+}
+
+.collapse-plus .collapse-title:after {
+    font-size: 48px;
+    font-weight: 400;
+}

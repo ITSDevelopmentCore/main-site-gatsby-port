@@ -17,55 +17,65 @@ function CardPrice(props) {
     }
 
     return (
-        <section className='w-[350px] group'>
+        <section className={'w-[250px] group flex h-full flex-col justify-between '
+            + 'laptop:w-[350px]'}>
 
-            <div className={'flex flex-col mt-[10px] bottom-[30px] left-[30px] right-[30px]'}>
+            <div className={'flex flex-col space-y-[10px]'}>
 
-                <FaRobot className={'w-[82px] h-[82px] '
-                    + 'text-white group-hover:text-sky-500 transition-all duration-200'}/>
+                <FaRobot className={'w-[80px] h-[80px] '
+                    + 'text-white group-hover:text-sky-500 transition-all duration-200'} />
 
-                <h4 className={'text-[26px] font-bold'}>
+                <h4 className={'text-[20px] font-bold '
+            +'laptop:text-[24px]'}>
                     {props.title}
                 </h4>
 
-                <p className={'text-justify text-[15px] leading-[21px] opacity-60 mb-[17px]'}>
+                <p className={'text-justify opacity-60'}>
                     {props.description}
                 </p>
 
             </div>
 
-            <div className='mb-[22px] mt-[43px] flex'>
 
-                <div className='flex flex-col'>
+            <div>
 
-                    <h4 className={'font-bold text-[23px] leading-[21px]'}>
-                        Цена:
-                    </h4>
+                <div className='mb-[20px] mt-[40px] flex justify-between'>
 
-                    <p className={'mt-[20px] text-[33px] leading-[30px] text-sky-500 font-extrabold'}>
-                        {props.price}
-                    </p>
+                    <div>
+
+                        <span className={'font-bold text-[18px] leading-[20px] '
+                            + 'laptop:text-[24px]'}>
+                            Цена:
+                        </span>
+
+                        <p className={'mt-[20px] text-[18px] leading-[20px] text-sky-500 '
+                            + 'laptop:text-[24px]'}>
+                            <span className={'font-extrabold'}>{props.price} Р</span>
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <span className={'font-bold text-[18px] leading-[20px] '
+                            + 'laptop:text-[24px]'}>
+                            Сроки:
+                        </span>
+
+                        <p className={'mt-[20px] text-[18px] leading-[20px] text-sky-500 font-extrabold '
+                            + 'laptop:text-[24px]'}>
+                            {props.timing}
+                        </p>
+                    </div>
                 </div>
 
-                <div className='flex flex-col'>
-                    <h4 className={'font-bold text-[23px] leading-[21px]'}>
-                        Сроки:
-                    </h4>
-
-                    <p className={'mt-[20px] text-[33px] leading-[30px] text-sky-500 font-extrabold'}>
-                        {props.timing}
-                    </p>
-
-                </div>
+                <button
+                    onClick={buttonClickHandler}
+                    className={'w-full button rounded-xl text-white bg-gradient-to-t from-sky-500 to-sky-300 border-2 group-hover:border-sky-500 group-hover:text-sky-500 group-hover:bg-none transition-all duration-200 '
+                    +'dark:border-sky-500 dark:to-sky-500 '}>
+                    Уточнить стоимость
+                </button>
             </div>
 
-            <button
-                onClick={buttonClickHandler}
-                className={'button w-full '
-                    + 'rounded-xl text-white bg-gradient-to-t from-sky-500 to-sky-300 border-2 group-hover:border-sky-500 group-hover:text-sky-500 group-hover:bg-none transition-all duration-200'
-                }>
-                Уточнить стоимость
-            </button>
 
         </section>
     )

@@ -59,15 +59,13 @@ export default function BlockPreview() {
 
             <button
               onClick={buttonClickHandler}
-              className={'button '
-                + 'font-bold bg-white rounded-xl text-sky-500 border-2 border-white transition-all duration-200 '
-                + 'hover:text-white hover:bg-transparent '}>
+              className={'button font-bold bg-white rounded-xl text-sky-500 border-2 border-white transition-all duration-200 hover:text-white hover:bg-transparent '
+                + 'dark:bg-sky-500 dark:text-white dark:border-sky-500 dark:hover:bg-transparent dark:hover:text-sky-500 '}>
               Свяжитесь со мной
             </button>
 
             <a
-              className={'button '
-              + 'font-bold border-2 border-sky-500 rounded-xl text-sky-500 text-center transition-all duration-200 '
+              className={'button font-bold border-2 border-sky-500 rounded-xl text-sky-500 text-center transition-all duration-200 '
               + 'hover:border-white hover:text-white '}
               href='https://www.avito.ru/moskva/predlozheniya_uslug/razrabotka_chat-botov._telegram_avito_vkontakte_2743395912'>
               <button>

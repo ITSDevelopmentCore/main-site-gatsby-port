@@ -12,7 +12,8 @@ import Swiper from '../view/SwiperPrices'
 export default function BlockPricing() {
 
     return (
-        <section className={'mt-[110px]'}>
+        <section className={'mt-[110px] '
+        + 'laptop:mt-[265px]'}>
 
             <h2 className={'mb-12 section-title'}>
                 Стоимость работы 
