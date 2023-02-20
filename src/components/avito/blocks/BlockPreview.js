@@ -3,19 +3,17 @@
  */
 import React, { useContext } from "react";
 import { ThemeContext } from '../../../layouts/index';
+import { StaticImage } from "gatsby-plugin-image";
 
 /**
  * Imports : Media
  */
-import { StaticImage } from "gatsby-plugin-image";
-import IllustrationAvitoPreviewLight from '../../../assets/avito/illustration_preview-light.webp';
-import IllustrationAvitoPreviewDark from '../../../assets/avito/illustration_preview-dark.webp';
 import IcYandexCloud from '../../../assets/avito/icons/ic_yandex-cloud.webp';
 import Symbol from '../../common/view/Symbol';
 
 export default function BlockPreview() {
+  
   const { theme } = useContext(ThemeContext)
-
 
   const buttonClickHandler = () => {
     document.getElementById('feedback').scrollIntoView({
@@ -72,8 +70,8 @@ export default function BlockPreview() {
 
             <a
               className={'button '
-              + 'font-bold border-2 border-sky-500 rounded-xl text-sky-500 text-center transition-all duration-200 '
-              + 'hover:border-white hover:text-white '}
+                + 'font-bold border-2 border-sky-500 rounded-xl text-sky-500 text-center transition-all duration-200 '
+                + 'hover:border-white hover:text-white '}
               href='https://www.avito.ru/moskva/predlozheniya_uslug/razrabotka_chat-botov._telegram_avito_vkontakte_2743395912'>
               <button>
                 Быстрый обзор
@@ -97,20 +95,20 @@ export default function BlockPreview() {
 
         <div className={'my-[40px] basis-1/2 '
           + 'large:my-0'}>
-            
-            {theme === 'dark' ?
-          <StaticImage
-            className='mx-auto '
-            placeholder="blurred"
-            src='../../../assets/avito/illustration_preview-dark.webp'
-            alt='Окно с работающим ботом для авито' />
+
+          {theme === 'dark' ?
+            <StaticImage
+              className='mx-auto '
+              placeholder="blurred"
+              src='../../../assets/avito/illustration_preview-dark.webp'
+              alt='Окно с работающим ботом для авито' />
             :
             <StaticImage
-            className='mx-auto '
-            placeholder="blurred"
-            src='../../../assets/avito/illustration_preview-light.webp'
-            alt='Окно с работающим ботом для авито' />
-            }
+              className='mx-auto '
+              placeholder="blurred"
+              src='../../../assets/avito/illustration_preview-light.webp'
+              alt='Окно с работающим ботом для авито' />}
+              
         </div>
 
       </div>

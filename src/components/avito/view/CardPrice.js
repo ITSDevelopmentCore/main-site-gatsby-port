@@ -26,7 +26,7 @@ function CardPrice(props) {
                     + 'text-white group-hover:text-sky-500 transition-all duration-200'} />
 
                 <h4 className={'text-[20px] font-bold '
-            +'laptop:text-[24px]'}>
+                    + 'laptop:text-[24px]'}>
                     {props.title}
                 </h4>
 
@@ -71,7 +71,7 @@ function CardPrice(props) {
                 <button
                     onClick={buttonClickHandler}
                     className={'w-full button rounded-xl text-white bg-gradient-to-t from-sky-500 to-sky-300 border-2 group-hover:border-sky-500 group-hover:text-sky-500 group-hover:bg-none transition-all duration-200 '
-                    +'dark:border-sky-500 dark:to-sky-500 '}>
+                        + 'dark:border-sky-500 dark:to-sky-500 '}>
                     Уточнить стоимость
                 </button>
             </div>

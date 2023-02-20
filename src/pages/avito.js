@@ -4,7 +4,7 @@
 import React from 'react';
 
 /**
- * Imports: Blocks
+ * Imports: components
  */
 import Layout from "../layouts";
 import Feedback from '../components/common/blocks/Feedback';
