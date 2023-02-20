@@ -1,16 +1,21 @@
 /**
  * Imports : React
  */
-import React from 'react';
+import React, { useContext } from "react";
+import { ThemeContext } from '../../../layouts/index';
 
 /**
  * Imports : Media
  */
-import IllustrationAvitoPreview from '../../../assets/avito/illustration_preview-light.webp';
+import { StaticImage } from "gatsby-plugin-image";
+import IllustrationAvitoPreviewLight from '../../../assets/avito/illustration_preview-light.webp';
+import IllustrationAvitoPreviewDark from '../../../assets/avito/illustration_preview-dark.webp';
 import IcYandexCloud from '../../../assets/avito/icons/ic_yandex-cloud.webp';
 import Symbol from '../../common/view/Symbol';
 
 export default function BlockPreview() {
+  const { theme } = useContext(ThemeContext)
+
 
   const buttonClickHandler = () => {
     document.getElementById('feedback').scrollIntoView({
@@ -59,13 +64,15 @@ export default function BlockPreview() {
 
             <button
               onClick={buttonClickHandler}
-              className={'button font-bold bg-white rounded-xl text-sky-500 border-2 border-white transition-all duration-200 hover:text-white hover:bg-transparent '
-                + 'dark:bg-sky-500 dark:text-white dark:border-sky-500 dark:hover:bg-transparent dark:hover:text-sky-500 '}>
+              className={'button '
+                + 'font-bold bg-white rounded-xl text-sky-500 border-2 border-white transition-all duration-200 '
+                + 'hover:text-white hover:bg-transparent '}>
               Свяжитесь со мной
             </button>
 
             <a
-              className={'button font-bold border-2 border-sky-500 rounded-xl text-sky-500 text-center transition-all duration-200 '
+              className={'button '
+              + 'font-bold border-2 border-sky-500 rounded-xl text-sky-500 text-center transition-all duration-200 '
               + 'hover:border-white hover:text-white '}
               href='https://www.avito.ru/moskva/predlozheniya_uslug/razrabotka_chat-botov._telegram_avito_vkontakte_2743395912'>
               <button>
@@ -90,10 +97,20 @@ export default function BlockPreview() {
 
         <div className={'my-[40px] basis-1/2 '
           + 'large:my-0'}>
-          <img
+            
+            {theme === 'dark' ?
+          <StaticImage
             className='mx-auto '
-            src={IllustrationAvitoPreview}
+            placeholder="blurred"
+            src='../../../assets/avito/illustration_preview-dark.webp'
             alt='Окно с работающим ботом для авито' />
+            :
+            <StaticImage
+            className='mx-auto '
+            placeholder="blurred"
+            src='../../../assets/avito/illustration_preview-light.webp'
+            alt='Окно с работающим ботом для авито' />
+            }
         </div>
 
       </div>
@@ -101,3 +118,4 @@ export default function BlockPreview() {
     </section>
   );
 }
+
