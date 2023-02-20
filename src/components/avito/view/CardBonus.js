@@ -3,7 +3,7 @@
  */
 import React from 'react';
 
-let CardBonus = (props) =>
+const CardBonus = (props) =>
     <article className={
         'relative '
         + 'card_primary '

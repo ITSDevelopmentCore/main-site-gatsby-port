@@ -20,32 +20,31 @@ import BlockFAQ from '../components/avito/blocks/BlockFAQ';
 import BackgroundDarkDefault from '../assets/avito/background-dark.webp';
 import BackgroundLightDefault from '../assets/avito/background-light.webp';
 
-const AvitoPage = () => {
-  return (
-    <Layout
-      backgroundDark={BackgroundDarkDefault}
-      backgroundLight={BackgroundLightDefault}>
-      <BlockPreview />
-      <BlockPossibilities/>
-      <BlockStages/>
-      <BlockPricing/>
-      <BlockFAQ/>
-      <Feedback />
-    </Layout>
-  );
-};
+const AvitoPage = () =>
+  <Layout
+    backgroundDark={BackgroundDarkDefault}
+    backgroundLight={BackgroundLightDefault}>
+    <BlockPreview />
+    <BlockPossibilities />
+    <BlockStages />
+    <BlockPricing />
+    <BlockFAQ />
+    <Feedback />
+  </Layout>
 
-export function Head() {
-  return (
-    <>
-      <title>Разработка ботов для Авито</title>
-      <meta
-        name='description'
-        content='У нас вы можете заказать разработку бота для Авито под ключ. Мы предлагаем ботов Авито для бизнеса, автоматизации и прочих задач. Бесплатная консультация и круглосуточная поддержка.'
-      />
-    </>
-  );
-}
+
+export const Head = () => 
+  <>
+    <title>Разработка ботов для Авито | Индивидуальные боты масштабирования бизнеса</title>
+    <meta name="description" content="Развивайте свой бизнес на Avito с помощью наших ботов! Наша команда экспертных разработчиков создает высокопроизводительные боты, которые автоматизируют задачи, экономят время и повышают эффективность. От генерации лидов до управления инвентарем, наши боты могут обработать все. Получите бесплатную консультацию и узнайте, как наши боты могут вывести ваш бизнес на Avito на новый уровень." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Разработка ботов для Avito" />
+    <meta property="og:description" content="Развивайте свой бизнес на Avito с помощью наших ботов! Наша команда экспертных разработчиков создает высокопроизводительные боты, которые автоматизируют задачи, экономят время и повышают эффективность. От генерации лидов до управления инвентарем, наши боты могут обработать все. Получите бесплатную консультацию и узнайте, как наши боты могут вывести ваш бизнес на Avito на новый уровень." />
+    <meta property="og:image" content="https://imgur.com/a/vJPrcKJ" />
+    <meta property="og:url" content="https://itsdevelopment.ru/avito" />
+    <link rel="canonical" href="https://itsdevelopment.ru/avito" />
+  </>
+
 
 export default AvitoPage;
 
