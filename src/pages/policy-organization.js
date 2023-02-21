@@ -4,8 +4,7 @@
 import React from 'react';
 import Symbol from '../components/common/view/Symbol';
 
-const PolicyOrganization = () => {
-    return (
+const PolicyOrganization = () => 
         <section className={'card_primary mb-[100px]'}>
 
             <h1 className={
@@ -41,17 +40,14 @@ const PolicyOrganization = () => {
             </div>
 
         </section>
-    )
-}
 
-export function Head() {
-    return (
+
+export const Head = () =>
         <>
             <title>Контактная информация</title>
             <meta name="description" content="ITS.Development прикладывает все усилия, что бы Ваши продукты не имели конкурентов в цифровом пространстве, а бизнес процессы приносили только удовольствие." />
         </>
-    )
-}
+
 
 export default PolicyOrganization;
 

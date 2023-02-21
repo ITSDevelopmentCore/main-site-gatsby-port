@@ -2,13 +2,13 @@
  * Imports : React
  */
 import React from "react";
-import Symbol from '../../common/view/Symbol';
+import Symbol from '../../../common/view/Symbol';
 
 /**
  * Imports : Media
  */
-import MockupGIF from '../../../assets/telegram/video/mockup.gif';
-import IllustrationMobileMockupDouble from '../../../assets/telegram/illustration-mobile-mockup-double.webp';
+import MockupGIF from '../../../../assets/telegram/video/mockup.gif';
+import IllustrationMobileMockupDouble from '../../../../assets/telegram/illustration-mobile-mockup-double.webp';
 
 export default function BlockPreview() {
 

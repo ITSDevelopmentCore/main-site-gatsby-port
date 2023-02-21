@@ -14,8 +14,7 @@ import BackgroundLightDefault from '../assets/home/background-light.webp';
  */
 import Layout from "../layouts";
 
-const DevelopmentPage = () => {
-    return (
+const DevelopmentPage = () => 
         <Layout
             backgroundDark={BackgroundDarkDefault}
             backgroundLight={BackgroundLightDefault}>
@@ -31,17 +30,13 @@ const DevelopmentPage = () => {
 
             </section>
         </Layout>
-    )
-}
 
-export function Head() {
-    return (
+export const Head = () =>
         <>
             <title>Страница недоступна</title>
             <meta name="description" content="Мы стараемся соответствовать стандартам IT-индустрии, поэтому в настоящий момент часть страниц сайта находится на полной переработке. Приносим извинения за неудобства." />
         </>
-    )
-}
+
 
 export default DevelopmentPage;
 

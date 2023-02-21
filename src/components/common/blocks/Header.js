@@ -71,11 +71,11 @@ const Header = () => {
                             items={[
                                 {
                                     title: "Telegram",
-                                    link: '/telegram'
+                                    link: '/bots/telegram'
                                 },
                                 {
                                     title: "Avito",
-                                    link: '/avito'
+                                    link: '/bots/avito'
 
                                 },
                                 {

@@ -2,7 +2,7 @@
  * Imports : React
  */
 import React, { useContext } from 'react';
-import { ThemeContext } from '../../../layouts/index';
+import { ThemeContext } from '../../../../layouts/index';
 
 /**
  * Imports: media
@@ -15,11 +15,11 @@ import { RiServiceFill } from 'react-icons/ri';
 /**
  * Imports: components
  */
-import Symbol from '../../common/view/Symbol';
+import Symbol from '../../../common/view/Symbol';
 import CardAdvantageMobile from '../view/CardAdvantageMobile';
 import CardAdvantage from '../view/CardAdvantage';
-import AwardLight from '../../../assets/telegram/award_light.svg';
-import AwardDark from '../../../assets/telegram/award_dark.svg';
+import AwardLight from '../../../../assets/telegram/award_light.svg';
+import AwardDark from '../../../../assets/telegram/award_dark.svg';
 
 
 

@@ -6,19 +6,19 @@ import React from 'react';
 /**
  * Imports: components
  */
-import Layout from "../layouts";
-import Feedback from '../components/common/blocks/Feedback';
-import BlockPreview from '../components/bots/avito/BlockPreview';
-import BlockPossibilities from '../components/bots/avito/BlockPossibilities';
-import BlockStages from '../components/bots/avito/BlockStages';
-import BlockPricing from '../components/bots/avito/BlockPricing';
-import BlockFAQ from '../components/bots/avito/BlockFAQ';
+import Layout from "../../layouts";
+import Feedback from '../../components/common/blocks/Feedback';
+import BlockPreview from '../../components/bots/avito/BlockPreview';
+import BlockPossibilities from '../../components/bots/avito/BlockPossibilities';
+import BlockStages from '../../components/bots/avito/BlockStages';
+import BlockPricing from '../../components/bots/avito/BlockPricing';
+import BlockFAQ from '../../components/bots/avito/BlockFAQ';
 
 /**
  * Imports : media
  */
-import BackgroundDarkDefault from '../assets/avito/background-dark.webp';
-import BackgroundLightDefault from '../assets/avito/background-light.webp';
+import BackgroundDarkDefault from '../../assets/avito/background-dark.webp';
+import BackgroundLightDefault from '../../assets/avito/background-light.webp';
 
 const AvitoPage = () =>
   <Layout

@@ -25,7 +25,7 @@ const Footer = () => {
 
         <div>
           <span className="mb-10px uppercase text-sky-500 font-bold">Услуги</span>
-          <Link to='/telegram' className="link link-hover">Телеграм разработка</Link>
+          <Link to='/bots/telegram' className="link link-hover">Телеграм разработка</Link>
           <Link to='/underDevelopment' className="link link-hover">Разработка мобильных приложений</Link>
           <Link to='/underDevelopment' className="link link-hover">Веб разработка</Link>
           <Link to='/underDevelopment' className="link link-hover">Поддержка стартапов</Link>

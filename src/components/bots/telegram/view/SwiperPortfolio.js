@@ -14,20 +14,20 @@ import 'swiper/css/pagination';
 /**
  * Imports: media
  */
-import ScreenshotPortfolio1 from "../../../assets/telegram/screenshot_portfolio_1.webp";
-import ScreenshotPortfolio2 from "../../../assets/telegram/screenshot_portfolio_2.webp";
-import ScreenshotPortfolio3 from "../../../assets/telegram/screenshot_portfolio_3.webp";
-import ScreenshotPortfolio4 from "../../../assets/telegram/screenshot_portfolio_4.webp";
-import QrPorftolio1 from '../../../assets/telegram/qr_portfolio_1.webp';
-import QrPorftolio2 from '../../../assets/telegram/qr_portfolio_2.webp';
-import QrPorftolio3 from '../../../assets/telegram/qr_portfolio_3.webp';
-import QrPorftolio4 from '../../../assets/telegram/qr_portfolio_4.webp';
+import ScreenshotPortfolio1 from "../../../../assets/telegram/screenshot_portfolio_1.webp";
+import ScreenshotPortfolio2 from "../../../../assets/telegram/screenshot_portfolio_2.webp";
+import ScreenshotPortfolio3 from "../../../../assets/telegram/screenshot_portfolio_3.webp";
+import ScreenshotPortfolio4 from "../../../../assets/telegram/screenshot_portfolio_4.webp";
+import QrPorftolio1 from '../../../../assets/telegram/qr_portfolio_1.webp';
+import QrPorftolio2 from '../../../../assets/telegram/qr_portfolio_2.webp';
+import QrPorftolio3 from '../../../../assets/telegram/qr_portfolio_3.webp';
+import QrPorftolio4 from '../../../../assets/telegram/qr_portfolio_4.webp';
 
 /**
  * Imports: blocks
  */
 import CardPortfolio from "./CardPortfolio";
-import Symbol from '../../common/view/Symbol';
+import Symbol from '../../../common/view/Symbol';
 
 function Gallery() {
 
