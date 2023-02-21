@@ -6,9 +6,9 @@ import React from 'react';
 /**
  * Imports : components
  */
-import CardStage from '../view/CardStages';
-import CardStageMobile from '../view/CardStageMobile';
-import CardBonus from '../view/CardBonus';
+import CardStage from '../commons/CardStages';
+import CardStageMobile from '../commons/CardStageMobile';
+import CardBonus from '..//commons/CardBonus';
 
 /**
  * Imports : media

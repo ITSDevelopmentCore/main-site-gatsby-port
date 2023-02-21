@@ -6,7 +6,7 @@ import React from 'react';
 /**
  * Imports : components
  */
-import Swiper from '../view/SwiperPrices'
+import Swiper from '../commons/SwiperPrices'
 
 
 export default function BlockPricing() {

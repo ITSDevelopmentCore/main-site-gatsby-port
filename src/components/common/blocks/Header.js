@@ -79,6 +79,11 @@ const Header = () => {
 
                                 },
                                 {
+                                    title: "Instagram",
+                                    link: '/bots/instagram'
+
+                                },
+                                {
                                     title: "Мобильная разработка",
                                     link: '/underDevelopment'
                                 },

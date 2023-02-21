@@ -2,7 +2,7 @@
  * Imports : React
  */
 import React from 'react';
-import CardStage from '../view/CardPossibilities';
+import CardStage from '../commons/CardPossibilities';
 
 /**
  * Imports : media

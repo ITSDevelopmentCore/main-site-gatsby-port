@@ -6,7 +6,7 @@ import React from 'react';
 /**
  * Imports : components
  */
-import ElementFAQ from '../view/ElementFAQ';
+import ElementFAQ from '../commons/ElementFAQ';
 
 export default function BlockFAQ() {
 

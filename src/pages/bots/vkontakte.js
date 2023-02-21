@@ -6,21 +6,21 @@ import React from 'react';
 /**
  * Imports: components
  */
-import Layout from "../layouts";
-import Feedback from '../components/common/blocks/Feedback';
-import BlockPreview from '../components/bots/avito/BlockPreview';
-import BlockPossibilities from '../components/bots/avito/BlockPossibilities';
-import BlockStages from '../components/bots/avito/BlockStages';
-import BlockPricing from '../components/bots/avito/BlockPricing';
-import BlockFAQ from '../components/bots/avito/BlockFAQ';
+import Layout from "../../layouts";
+import Feedback from '../../components/common/blocks/Feedback';
+import BlockPreview from '../../components/bots/vkontakte/BlockPreview';
+import BlockPossibilities from '../../components/bots/vkontakte/BlockPossibilities';
+import BlockStages from '../../components/bots/vkontakte/BlockStages';
+import BlockPricing from '../../components/bots/vkontakte/BlockPricing';
+import BlockFAQ from '../../components/bots/vkontakte/BlockFAQ';
 
 /**
  * Imports : media
  */
-import BackgroundDarkDefault from '../assets/avito/background-dark.webp';
-import BackgroundLightDefault from '../assets/avito/background-light.webp';
+import BackgroundDarkDefault from '../../assets/avito/background-dark.webp';
+import BackgroundLightDefault from '../../assets/avito/background-light.webp';
 
-const AvitoPage = () =>
+const VkontaktePage = () =>
   <Layout
     backgroundDark={BackgroundDarkDefault}
     backgroundLight={BackgroundLightDefault}>
@@ -35,7 +35,7 @@ const AvitoPage = () =>
 
 export const Head = () => 
   <>
-    <title>Разработка ботов для Авито | Индивидуальные боты для масштабирования бизнеса</title>
+    <title>Разработка ботов для Авито | Индивидуальные боты масштабирования бизнеса</title>
     <meta name="description" content="Развивайте свой бизнес на Avito с помощью наших ботов! Наша команда экспертных разработчиков создает высокопроизводительные боты, которые автоматизируют задачи, экономят время и повышают эффективность. От генерации лидов до управления инвентарем, наши боты могут обработать все. Получите бесплатную консультацию и узнайте, как наши боты могут вывести ваш бизнес на Avito на новый уровень." />
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="Разработка ботов для Avito" />
@@ -46,5 +46,5 @@ export const Head = () =>
   </>
 
 
-export default AvitoPage;
+export default VkontaktePage;
 
