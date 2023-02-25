@@ -9,7 +9,7 @@ import React from 'react';
 import Layout from "../../layouts";
 import Feedback from '../../components/common/blocks/Feedback';
 import BlockPreview from '../../components/bots/avito/BlockPreview';
-import BlockPossibilities from '../../components/bots/avito/BlockPossibilities';
+import BlockFunctions from '../../components/bots/avito/BlockFunctions';
 import BlockStages from '../../components/bots/avito/BlockStages';
 import BlockPricing from '../../components/bots/avito/BlockPricing';
 import BlockFAQ from '../../components/bots/avito/BlockFAQ';
@@ -25,7 +25,7 @@ const AvitoPage = () =>
     backgroundDark={BackgroundDarkDefault}
     backgroundLight={BackgroundLightDefault}>
     <BlockPreview />
-    <BlockPossibilities />
+    <BlockFunctions />
     <BlockStages />
     <BlockPricing />
     <BlockFAQ />

@@ -3,11 +3,9 @@
  */
 import React from 'react';
 
-export default function CardStage(props) {
-
-    return (
+const CardFunction = (props) => 
         <section className={'space-y-[40px] '
-        +'card_primary'}>
+            + 'card_primary'}>
 
             <div className={'flex justify-between items-center'}>
 
@@ -26,10 +24,10 @@ export default function CardStage(props) {
 
             </div>
 
-            <p className={'opacity-60 '}>
+            <p className={'opacity-60'}>
                 {props.description}
             </p>
 
         </section>
-    )
-}
+
+export default CardFunction;
