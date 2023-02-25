@@ -26,9 +26,10 @@ const Footer = () => {
         <div>
           <span className="mb-10px uppercase text-sky-500 font-bold">Услуги</span>
           <Link to='/bots/telegram' className="link link-hover">Телеграм разработка</Link>
-          <Link to='/underDevelopment' className="link link-hover">Разработка мобильных приложений</Link>
-          <Link to='/underDevelopment' className="link link-hover">Веб разработка</Link>
-          <Link to='/underDevelopment' className="link link-hover">Поддержка стартапов</Link>
+          <Link to='/bots/avito' className="link link-hover">Авито разработка</Link>
+          <Link to='/bots/instagram' className="link link-hover">Инстаграм разработка</Link>
+          <Link to='/bots/vkontakte' className="link link-hover">Вконтакте разработка</Link>
+
         </div>
 
         <div>

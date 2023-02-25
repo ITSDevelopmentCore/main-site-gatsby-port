@@ -58,11 +58,11 @@ const Header = () => {
                             title="О компании"
                             items={[
                                 {
-                                    title: "О нас",
+                                    title: 'О нас',
                                     link: '/'
                                 },
                                 {
-                                    title: "Вакансии и карьера",
+                                    title: 'Вакансии и карьера',
                                     link: '/underDevelopment'
                                 }
                             ]} />
@@ -70,37 +70,28 @@ const Header = () => {
                             title="Услуги"
                             items={[
                                 {
-                                    title: "Telegram",
+                                    title: 'Телеграм разработка',
                                     link: '/bots/telegram'
                                 },
                                 {
-                                    title: "Avito",
+                                    title: 'Авито разработка',
                                     link: '/bots/avito'
-
                                 },
                                 {
-                                    title: "Instagram",
+                                    title: 'Инстаграм разработка',
                                     link: '/bots/instagram'
-
                                 },
                                 {
-                                    title: "Мобильная разработка",
-                                    link: '/underDevelopment'
+                                    title: 'ВКонтакте разработка',
+                                    link: '/bots/instagram'
                                 },
-                                {
-                                    title: "Web разработка",
-                                    link: '/underDevelopment'
-                                },
-                                {
-                                    title: "Startup MVP",
-                                    link: '/underDevelopment'
-                                },
+                    
                             ]} />
                         <DropdownMenu
                             title="Решения"
                             items={[
                                 {
-                                    title: "Bot System",
+                                    title: 'Bot System',
                                     link: '/underDevelopment'
                                 }
                             ]} />

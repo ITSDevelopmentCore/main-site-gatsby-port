@@ -35,13 +35,11 @@ const TelegramPage = () => {
     )
 }
 
-export function Head() {
-    return (
+export const Head = () => 
         <>
             <title>Разработка Телеграм ботов</title>
             <meta name="description" content="У нас вы можете заказать разработку Телеграм бота под ключ. Мы предлагаем Телеграм боты для бизнеса, автоматизации и прочих задач. Бесплатная консультация и круглосуточная поддержка." />
-        </>)
-}
+        </>
 
 export default TelegramPage;
 

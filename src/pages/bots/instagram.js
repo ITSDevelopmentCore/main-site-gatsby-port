@@ -17,8 +17,8 @@ import BlockFAQ from '../../components/bots/instagram/BlockFAQ';
 /**
  * Imports : media
  */
-import BackgroundDarkDefault from '../../assets/avito/background-dark.webp';
-import BackgroundLightDefault from '../../assets/avito/background-light.webp';
+import BackgroundDarkDefault from '../../assets/instagram/background-dark.webp';
+import BackgroundLightDefault from '../../assets/instagram/background-light.webp';
 
 const InstagramPage = () =>
   <Layout
