@@ -12,8 +12,7 @@ import CardFunction from '../commons/CardFunction';
  * Imports : media
  */
 import { FaRobot } from 'react-icons/fa';
-import { MdSupportAgent } from 'react-icons/md';
-import { MdIntegrationInstructions } from 'react-icons/md';
+import { MdSupportAgent, MdIntegrationInstructions } from 'react-icons/md';
 import { RiSurveyFill } from 'react-icons/ri';
 import { AiOutlineCode, AiOutlineAppstore } from 'react-icons/ai';
 
@@ -53,34 +52,37 @@ const BlockFunctions = () =>
                 number={2}
                 icon={<MdSupportAgent className='w-full h-full' />}
                 title='Консультирование'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem, non viverra arcu' />
+                description='Бот с функциями консультирования поможет сократить время и расходы на ответы клиентам
+                на самые частозадаваемые вопросы, а так же рассказать больше о товаре и вашей компании, отбив у клиента
+                желание писать конкурентам и подарив ему доверие к продавцу.' />
 
             <CardFunction
                 number={3}
                 icon={<MdIntegrationInstructions className='w-full h-full' />}
                 title='Интеграции'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem, non viverra arcu'
-                more='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem, non viverra arcu
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem, non viverra arcu
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem, non viverra arcu'/>
+                description='Мы интегрируем ботов со всеми популярными системами, социальными сетями, базами данных и рассылок.
+                Из популярных интеграция стоит отметить CRM системы (AmoCRM, Bitrix24, 1C), мессенджеры (Telegram, VK, Viber).'/>
 
             <CardFunction
                 number={4}
                 icon={<RiSurveyFill className='w-full h-full' />}
-                title='Опросы'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem, non viverra arcu' />
+                title='Сбор данных'
+                description='Бот может собирать у клиента любые данные. К примеру, email, номер телефона, 
+                проводиться опросы' />
 
             <CardFunction
                 number={5}
                 icon={<AiOutlineCode className='w-full h-full' />}
                 title='Сложные скрипты'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem, non viverra arcu' />
+                description='Наши боты Avito могут реализовывать алгоритмы и сценарии любой сложности. 
+                Мы уже имели опыт интеграции бота и внутренней корпоративной системы складского учета' />
 
             <CardFunction
                 number={6}
                 icon={<AiOutlineAppstore className='w-full h-full' />}
-                title='Сложные скрипты'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac pulvinar lorem, non viverra arcu' />
+                title='Автоматизация Avito'
+                description='Боты могут автоматизировать почти все процессы Авито, включая загрузку объявлений, 
+                анализ креативов и многое другое.' />
         </div>
     </section>
 

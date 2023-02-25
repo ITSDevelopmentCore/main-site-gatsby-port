@@ -11,17 +11,16 @@ import { StaticImage } from "gatsby-plugin-image";
 import IcYandexCloud from '../../../assets/avito/icons/ic_yandex-cloud.webp';
 import Symbol from '../../common/view/Symbol';
 
-export default function BlockPreview() {
+/**
+ * Imports : scripts
+ */
+import {smoothToFeedback} from '../../../scripts/changeViewByIdScripts'
+
+
+const { theme } = useContext(ThemeContext)
+
+const BlockPreview = () => {
   
-  const { theme } = useContext(ThemeContext)
-
-  const buttonClickHandler = () => {
-    document.getElementById('feedback').scrollIntoView({
-      behavior: 'smooth',
-    });
-  };
-
-  return (
     <section className={'mt-[50px] mb-[240px]'}>
 
       <div className={'flex flex-col '
@@ -114,6 +113,7 @@ export default function BlockPreview() {
       </div>
 
     </section>
-  );
+
 }
 
+export default BlockPreview;
