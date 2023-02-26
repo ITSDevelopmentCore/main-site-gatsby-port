@@ -9,12 +9,10 @@ import React from 'react';
 import CardWebAppsMobile from '../view/CardWebAppsMobile';
 import SwiperWebApps from '../view/SwiperWebApps'
 
-export default function BlockAdvantages() {
+const BlockWebApps = () => 
+        <section className='section'>
 
-    return (
-        <section className="mt-[100px]">
-
-            <h2 className={'section-title'}>
+            <h2 className='section-title'>
                 Telegram <span className='text-sky-500'>Web Apps</span>
             </h2>
 
@@ -73,6 +71,5 @@ export default function BlockAdvantages() {
             </div>
 
         </section>
-    )
-}
 
+export default BlockWebApps

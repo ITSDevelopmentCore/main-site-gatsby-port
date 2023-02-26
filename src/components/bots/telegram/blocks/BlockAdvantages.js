@@ -21,15 +21,13 @@ import CardAdvantage from '../view/CardAdvantage';
 import AwardLight from '../../../../assets/telegram/award_light.svg';
 import AwardDark from '../../../../assets/telegram/award_dark.svg';
 
-
-
-export default function BlockAdvantages() {
+const BlockAdvantages = () => {
 
     const { theme } = useContext(ThemeContext);
 
     return (
         <>
-            <div className="mt-[85px]">
+            <div className="section">
 
                 <h2 className={'mb-12 section-title'}>
                     Преимущества
@@ -69,8 +67,8 @@ export default function BlockAdvantages() {
 
                         <img
                             src={theme === 'dark' ? AwardDark : AwardLight}
-                            alt='Our company rewards'
-                            className={'absolute h-full'} />
+                            alt='Награды нашей компании по разработке ботов'
+                            className='absolute h-full' />
 
                         <p className='flex flex-col items-center w-[40%] text-center desktop:pt-[10%] laptop:scale-75 laptop:pt-[30%] desktop:scale-100'>
                             <span className='font-extrabold text-[100px] leading-[50px] text-sky-500'>4</span><br />
@@ -82,7 +80,7 @@ export default function BlockAdvantages() {
                 </div>
             </div>
 
-            <div className='laptop:hidden'>
+            <div className='section laptop:hidden'>
                 <div className="carousel p-4 space-x-4 bg-neutral rounded-box">
                     <div className="carousel-item">
                         <CardAdvantageMobile
@@ -119,3 +117,4 @@ export default function BlockAdvantages() {
     )
 }
 
+export default BlockAdvantages

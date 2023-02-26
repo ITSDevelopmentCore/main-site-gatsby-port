@@ -10,7 +10,12 @@ import Symbol from '../../../common/view/Symbol';
 import MockupGIF from '../../../../assets/telegram/video/mockup.gif';
 import IllustrationMobileMockupDouble from '../../../../assets/telegram/illustration-mobile-mockup-double.webp';
 
-export default function BlockPreview() {
+/**
+ * Imports : scripts
+ */
+import { smoothToFeedback } from '../../../../scripts/changeViewByIdScripts'
+
+const BlockPreview = () => {
 
     const classesPreviewAdvantageDigitLaptop = "text-center desktop:text-[70px] desktop:leading-[75px] large:text-[60px] large:leading-[65px] laptop:text-[50px] laptop:leading-[55px]";
     const classesPreviewAdvantageTextLaptop = "font-base opacity-60 text-center";
@@ -19,17 +24,9 @@ export default function BlockPreview() {
     const classesPreviewAdvantageDigit = "basis-1/2 text-center text-[50px] leading-[50px]";
     const classesPreviewAdvantageText = "basis-1/2 text-[14px] font-base opacity-60";
 
-    const buttonClickHandler = () => {
-        document.getElementById('feedback').scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
-
     return (
-        <section className={
-            'mt-[100px] mb-[110px] '
-            + 'laptop:mb-[220px]'
-        }>
+        <section className={'section'}>
+
             <div className={
                 'block '
                 + 'laptop:flex laptop:items-center laptop:justify-between'}>
@@ -57,7 +54,7 @@ export default function BlockPreview() {
                     </p>
 
                     <button
-                        onClick={buttonClickHandler}
+                        onClick={smoothToFeedback}
                         className={
                             'py-[19px] px-[46px] w-max mx-auto -mb-[80px] '
                             + 'leading-[30px] font-bold text-white shadow-blue rounded-xl bg-gradient-to-t from-sky-500 to-sky-300 transition-all duration-200 hover:shadow-blue-extended '
@@ -152,5 +149,6 @@ export default function BlockPreview() {
 
         </section>
     );
-
 }
+
+export default BlockPreview

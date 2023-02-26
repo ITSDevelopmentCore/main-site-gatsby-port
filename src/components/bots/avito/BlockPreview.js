@@ -14,14 +14,14 @@ import Symbol from '../../common/view/Symbol';
 /**
  * Imports : scripts
  */
-import {smoothToFeedback} from '../../../scripts/changeViewByIdScripts'
-
-
-const { theme } = useContext(ThemeContext)
+import { smoothToFeedback } from '../../../scripts/changeViewByIdScripts'
 
 const BlockPreview = () => {
-  
-    <section className={'mt-[50px] mb-[240px]'}>
+
+  const { theme } = useContext(ThemeContext)
+
+  return (
+    <section className={'section'}>
 
       <div className={'flex flex-col '
         + 'laptop:flex-row laptop:space-x-[80px]'}>
@@ -48,8 +48,8 @@ const BlockPreview = () => {
           <p
             className={
               'my-[25px] '
-              + 'text-center '
-              + 'laptop:text-white laptop:text-start laptop:my-0'}>
+              + 'text-center opacity-60'
+              + 'laptop:text-start laptop:my-0'}>
             Боты для Авито являются обязательным инструментом для продаж.
             Боты для Avito автоматизируют ваши продажи и отвечают клиенту 24<Symbol symbol='/' />7, интегрируясь со всеми CRM
             и прочими сервисами, экономя десятки часов предпринимателя и повышая конверсию объявлений в разы.
@@ -60,7 +60,7 @@ const BlockPreview = () => {
             + 'laptop:flex-row laptop:space-x-[25px] laptop:my-0 laptop:space-y-0'}>
 
             <button
-              onClick={buttonClickHandler}
+              onClick={smoothToFeedback}
               className={'button '
                 + 'font-bold bg-white rounded-xl text-sky-500 border-2 border-white transition-all duration-200 '
                 + 'hover:text-white hover:bg-transparent '}>
@@ -107,12 +107,13 @@ const BlockPreview = () => {
               placeholder="blurred"
               src='../../../assets/avito/illustration_preview-light.webp'
               alt='Окно с работающим ботом для авито' />}
-              
+
         </div>
 
       </div>
 
     </section>
+  )
 
 }
 

@@ -3,9 +3,7 @@
  */
 import React from 'react';
 
-export default function CardStage(props) {
-
-    return (
+const CardStage = (props) => 
         <section className={
             'w-full aspect-[2/1] relative'}>
 
@@ -41,5 +39,6 @@ export default function CardStage(props) {
             </div>
 
         </section>
-    )
-}
+    
+
+export default CardStage

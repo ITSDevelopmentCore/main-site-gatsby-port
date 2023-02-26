@@ -9,7 +9,7 @@ import React from 'react';
 import Layout from "../../layouts";
 import Feedback from '../../components/common/blocks/Feedback';
 import BlockPreview from '../../components/bots/instagram/BlockPreview';
-import BlockPossibilities from '../../components/bots/instagram/BlockPossibilities';
+import BlockFunctions from '../../components/bots/instagram/BlockFunctions';
 import BlockStages from '../../components/bots/instagram/BlockStages';
 import BlockPricing from '../../components/bots/instagram/BlockPricing';
 import BlockFAQ from '../../components/bots/instagram/BlockFAQ';
@@ -25,7 +25,7 @@ const InstagramPage = () =>
     backgroundDark={BackgroundDarkDefault}
     backgroundLight={BackgroundLightDefault}>
     <BlockPreview />
-    <BlockPossibilities />
+    <BlockFunctions />
     <BlockStages />
     <BlockPricing />
     <BlockFAQ />

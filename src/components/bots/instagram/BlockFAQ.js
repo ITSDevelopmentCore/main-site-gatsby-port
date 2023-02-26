@@ -8,57 +8,55 @@ import React from 'react';
  */
 import ElementFAQ from '../commons/ElementFAQ';
 
-export default function BlockFAQ() {
+/**
+ * Imports : scripts
+ */
+import { smoothToFeedback } from '../../../scripts/changeViewByIdScripts'
 
-    const buttonClickHandler = () => {
-        document.getElementById('feedback').scrollIntoView({
-            behavior: 'smooth',
-        });
-    };
+export const BlockFAQ = () => 
+        <section className={'section'}>
 
-    return (
-        <section className={
-            'mt-[120px] '
-            + 'laptop:mt-[265px]'}>
-
-            <h2 className={'mb-[50px] section-title'}>
+            <h2 className={'section-title'}>
                 FAQ
             </h2>
 
             <div className={'space-y-[16px]'}>
-
                 <ElementFAQ
                     title='Хостинг бота'
-                    description='Мы размещаем все проекты Заказчиков на партнерских серверах ООО Яндекс Клауд по льготной стоимости за 170 р / месяц. 
-                    Аналогично мы можем развернуть и запустить проект на сервере Заказчика, либо на любой другой облачной платформе, которую выбрал Заказчик' />
+                    description='Мы размещаем все проекты Заказчиков на партнерских серверах ООО 
+                    Яндекс Клауд по льготной стоимости за 170 р / месяц. Аналогично мы можем 
+                    развернуть и запустить проект на сервере Заказчика, либо на любой другой 
+                    облачной платформе, которую выбрал Заказчик' />
 
                 <ElementFAQ
-                    title='Изменения бота после завершения работ'
-                    description='По завершению работ мы предоставляем Заказчику 30 минут времени разработчика, которыми Заказчик может воспользоваться для внесения небольших правок. 
-                    Правки и модификации, выходящие за рамки этого лимита оплачиваются отдельно по стандартной ставке наших разработчиков, как и для основного заказа - 1000 рублей / час' />
+                    title='Мне нужно решение, которое немного отличается от готовых'
+                    description='В таком случае мы доработаем уже имеющеегося у нас готового бота под 
+                    Ваши задачи. Стоимость такой работы будет существенно ниже, чем разработка с нуля, 
+                    и полностью зависит масштабов изменений' />
 
                 <ElementFAQ
-                    title='Бессрочная гарантия'
-                    description='Мы действительно предоставляем бессрочную гарантию. Важно отметить, что гарантийными являются только те случаи, когда поломка произошла по нашей вине. Если же вина лежит на третьей стороне (к примеру, изменение способа взаимодействия с Telegram),
-                    то такой случай гарантийным не является.' />
+                    title='Мой бюджет серьезно ограничен'
+                    description='В таком случае мы предложим Вам способы оптимизации бота, что бы 
+                    сократить бюджет. Чаще всего то, что мы предлагаем - оказывается более эффективным,
+                     чем изначальный вариант Заказчика.' />
 
                 <ElementFAQ
-                    title='Отчетность'
-                    description='Мы ведем стандартный документооборот, включающий договор, техническое задание, счета для оплаты, счет-фактуры. Кроме этого мы предоставляем Заказчику отчетность по ходу работы два раза в неделю, а так же оперативную
-                    сводку в любой момент времени.' />
-
+                    title='Доработка проектов после релиза'
+                    description='Когда Заказчику требуется добавить, или изменить функционал бота - 
+                    мы создаем дополнение к договору в день обращения, составляем упрощенное 
+                    техническое задание и оперативно приступаем к работе.' />
             </div>
 
-            <button className={'mt-[40px] w-full '
-                + 'button font-bold bg-white rounded-xl text-sky-500 border-2 border-white transition-all duration-200 hover:text-white hover:bg-transparent '
+            <button className={'button mt-[40px] p-[20px] w-full '
+                + 'font-bold bg-white rounded-[25px] text-sky-500 border-2 border-white transition-all duration-200 hover:text-white hover:bg-transparent '
                 + 'dark:bg-transparent dark:border-sky-500 dark:hover:border-white'}
-                onClick={buttonClickHandler}>
+                onClick={smoothToFeedback}>
                 Задать вопрос
             </button>
 
-
         </section>
-    )
-}
+
+export default BlockFAQ
+
 
 

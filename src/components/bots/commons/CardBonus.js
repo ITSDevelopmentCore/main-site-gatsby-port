@@ -4,7 +4,7 @@
 import React from 'react';
 
 const CardBonus = (props) =>
-    <article className={
+    <div className={
         'relative '
         + 'card_primary '
         + 'laptop:basis-0 laptop:grow'}>
@@ -23,6 +23,6 @@ const CardBonus = (props) =>
             {props.description}
         </p>
 
-    </article>
+    </div>
 
 export default CardBonus;

@@ -6,23 +6,22 @@ import { ThemeContext } from '../../../layouts/index';
 import { StaticImage } from "gatsby-plugin-image";
 
 /**
- * Imports : Media
+ * Imports : media
  */
 import IcYandexCloud from '../../../assets/avito/icons/ic_yandex-cloud.webp';
 import Symbol from '../../common/view/Symbol';
 
-export default function BlockPreview() {
+/**
+ * Imports : scripts
+ */
+import { smoothToFeedback } from '../../../scripts/changeViewByIdScripts'
+
+const BlockPreview = () => {
 
   const { theme } = useContext(ThemeContext)
 
-  const buttonClickHandler = () => {
-    document.getElementById('feedback').scrollIntoView({
-      behavior: 'smooth',
-    });
-  };
-
   return (
-    <section className={'mt-[50px] mb-[240px]'}>
+    <section className={'section'}>
 
       <div className={'flex flex-col items-stretch '
         + 'laptop:flex-row laptop:space-x-[80px]'}>
@@ -45,11 +44,10 @@ export default function BlockPreview() {
 
           <p
             className={
-              ' '
               + 'text-center '
               + 'laptop:text-white laptop:text-start laptop:my-0'}>
-            Боты для Авито являются обязательным инструментом для продаж.
-            Боты для Avito автоматизируют ваши продажи и отвечают клиенту 24<Symbol symbol='/' />7, интегрируясь со всеми CRM
+            Боты для Инстаграм являются обязательным инструментом для продаж.
+            Боты для Instagram автоматизируют ваши продажи и отвечают клиенту 24<Symbol symbol='/' />7, интегрируясь со всеми CRM
             и прочими сервисами, экономя десятки часов предпринимателя и повышая конверсию объявлений в разы.
           </p>
 
@@ -58,7 +56,7 @@ export default function BlockPreview() {
             + 'laptop:flex-row laptop:space-x-[25px] laptop:my-0 laptop:space-y-0'}>
 
             <button
-              onClick={buttonClickHandler}
+              onClick={smoothToFeedback}
               className={'button '
                 + 'font-bold bg-white rounded-xl text-sky-500 border-2 border-white transition-all duration-200 '
                 + 'hover:text-white hover:bg-transparent '}>
@@ -69,7 +67,7 @@ export default function BlockPreview() {
               className={'button '
                 + 'font-bold border-2 border-sky-500 rounded-xl text-sky-500 text-center transition-all duration-200 '
                 + 'hover:border-white hover:text-white '}
-              href='https://www.avito.ru/moskva/predlozheniya_uslug/razrabotka_chat-botov._telegram_avito_vkontakte_2743395912'>
+              href='https://developers.facebook.com/docs/instagram-api/'>
               <button>
                 Быстрый обзор
               </button>
@@ -85,7 +83,9 @@ export default function BlockPreview() {
             <img
               src={IcYandexCloud}
               alt={"Знак партнерства с ООО Яндекс Облако"} />
-            <p className='my-auto text-black'>Официальный партнер <br /> ООО Яндекс Облако</p>
+            <p className='my-auto text-black'>
+              Официальный партнер <br /> ООО Яндекс Облако
+            </p>
           </div>
 
         </div>
@@ -114,3 +114,4 @@ export default function BlockPreview() {
   );
 }
 
+export default BlockPreview

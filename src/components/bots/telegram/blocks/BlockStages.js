@@ -17,14 +17,10 @@ import { RiApps2Fill } from 'react-icons/ri';
 import { HiServerStack } from 'react-icons/hi2';
 
 
-export default function BlockStages() {
+const BlockStages = () => 
+        <section className={'section'}>
 
-    return (
-        <section className={
-            'mt-[120px] '
-            + 'laptop:mt-[265px]'}>
-
-            <h2 className={'mb-12 section-title'}>
+            <h2 className={'section-title'}>
                 Процесс работы
             </h2>
 
@@ -103,6 +99,5 @@ export default function BlockStages() {
             </div>
 
         </section>
-    )
-}
 
+export default BlockStages

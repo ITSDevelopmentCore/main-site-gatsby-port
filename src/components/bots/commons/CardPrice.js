@@ -8,17 +8,15 @@ import React from 'react';
  */
 import { FaRobot } from 'react-icons/fa';
 
-function CardPrice(props) {
+/**
+ * Imports : scripts
+ */
+import { smoothToFeedback } from '../../../scripts/changeViewByIdScripts'
 
-    const buttonClickHandler = () => {
-        document.getElementById('feedback').scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
-
-    return (
+const CardPrice = (props) => 
         <section className={'w-[250px] group flex h-full flex-col justify-between '
-            + 'laptop:w-[350px]'}>
+            + 'laptop:w-[300px] '
+            + 'desktop:w-[350px]'}>
 
             <div className={'flex flex-col space-y-[10px]'}>
 
@@ -36,10 +34,9 @@ function CardPrice(props) {
 
             </div>
 
-
             <div>
 
-                <div className='mb-[20px] mt-[40px] flex justify-between'>
+                <div className='my-[20px] flex justify-between'>
 
                     <div>
 
@@ -48,8 +45,9 @@ function CardPrice(props) {
                             Цена:
                         </span>
 
-                        <p className={'mt-[20px] text-[18px] leading-[20px] text-sky-500 '
-                            + 'laptop:text-[24px]'}>
+                        <p className={'mt-[20px] '
+                            + 'text-[18px] leading-[20px] '
+                            + 'laptop:text-[24px] text-sky-500 '}>
                             <span className={'font-extrabold'}>{props.price} Р</span>
                         </p>
 
@@ -69,16 +67,16 @@ function CardPrice(props) {
                 </div>
 
                 <button
-                    onClick={buttonClickHandler}
+                    onClick={smoothToFeedback}
                     className={'w-full button rounded-xl text-white bg-gradient-to-t from-sky-500 to-sky-300 border-2 group-hover:border-sky-500 group-hover:text-sky-500 group-hover:bg-none transition-all duration-200 '
                         + 'dark:border-sky-500 dark:to-sky-500 '}>
                     Уточнить стоимость
                 </button>
+
             </div>
 
-
         </section>
-    )
-}
+    
+
 
 export default CardPrice;

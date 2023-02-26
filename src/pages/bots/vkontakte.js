@@ -9,7 +9,7 @@ import React from 'react';
 import Layout from "../../layouts";
 import Feedback from '../../components/common/blocks/Feedback';
 import BlockPreview from '../../components/bots/vkontakte/BlockPreview';
-import BlockPossibilities from '../../components/bots/vkontakte/BlockPossibilities';
+import BlockFunctions from '../../components/bots/vkontakte/BlockFunctions';
 import BlockStages from '../../components/bots/vkontakte/BlockStages';
 import BlockPricing from '../../components/bots/vkontakte/BlockPricing';
 import BlockFAQ from '../../components/bots/vkontakte/BlockFAQ';
@@ -17,15 +17,15 @@ import BlockFAQ from '../../components/bots/vkontakte/BlockFAQ';
 /**
  * Imports : media
  */
-import BackgroundDarkDefault from '../../assets/avito/background-dark.webp';
-import BackgroundLightDefault from '../../assets/avito/background-light.webp';
+import BackgroundDarkDefault from '../../assets/vkontakte/background-dark.webp';
+import BackgroundLightDefault from '../../assets/vkontakte/background-light.webp';
 
 const VkontaktePage = () =>
   <Layout
     backgroundDark={BackgroundDarkDefault}
     backgroundLight={BackgroundLightDefault}>
     <BlockPreview />
-    <BlockPossibilities />
+    <BlockFunctions />
     <BlockStages />
     <BlockPricing />
     <BlockFAQ />

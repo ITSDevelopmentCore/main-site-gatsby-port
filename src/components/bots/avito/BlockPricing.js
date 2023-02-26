@@ -6,22 +6,19 @@ import React from 'react';
 /**
  * Imports : components
  */
-import Swiper from '../commons/SwiperPrices'
+import Swiper from './SwiperPrices'
 
 
-export default function BlockPricing() {
+const BlockPricing = () => 
+        <section className={'section'}>
 
-    return (
-        <section className={'mt-[110px] '
-        + 'laptop:mt-[265px]'}>
-
-            <h2 className={'mb-12 section-title'}>
+            <h2 className={'section-title'}>
                 Стоимость работы 
             </h2>
 
             <Swiper />
 
         </section>
-    )
-}
+    
 
+export default BlockPricing

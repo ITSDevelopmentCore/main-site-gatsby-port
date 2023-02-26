@@ -3,10 +3,8 @@
  */
 import React from 'react';
 
-export default function CardWebAppsMobile(props) {
-
-    return (
-        <section className="collapse collapse-arrow card_primary p-[20px] rounded-[35px]">
+const CardWebAppsMobile = (props) => 
+        <section className='collapse collapse-arrow card_primary p-[20px] rounded-[35px]'>
 
             <div className={'flex justify-start items-center'}>
                 
@@ -14,16 +12,18 @@ export default function CardWebAppsMobile(props) {
                     {props.number}
                 </span>
 
-                <div className="collapse-title text-[19px]">
+                <div className='collapse-title text-[20px]'>
                     {props.title}
                 </div>
             </div>
 
-            <div className="collapse-content">
-                <p className={'mx-auto text-[14px] leading-[20px] opacity-60'}>{props.description}</p>
+            <div className='collapse-content'>
+                <p className={'mx-auto text-[14px] leading-[20px] opacity-60'}>
+                    {props.description}
+                </p>
             </div>
 
         </section>
 
-    )
-}
+
+export default CardWebAppsMobile;
