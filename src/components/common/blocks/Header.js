@@ -16,23 +16,25 @@ import Symbol from '../view/Symbol';
 import DropdownMenu from "../view/DropdownMenu";
 import ThemeSwitcher from "../view/ThemeSwitcher";
 import DropdownMenuMobile from "../view/DropdownMenuMobile";
+import NewMenu from '../view/NewMenu'
 
 /**
  * Imports : Gatsby
  */
 import { Link } from 'gatsby';
 
-const Header = () => {
+/**
+ * Imports : scripts
+ */
+import { smoothToFeedback } from '../../../scripts/changeViewByIdScripts'
 
-    const buttonClickHandler = () => {
-        document.getElementById('feedback').scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
+const Header = () => {    
 
+  
     return (
-        <header className={
-            'py-[10px] flex justify-between items-center '
+        <>
+            <header className={
+            'relative py-[10px] flex justify-between items-center '
             + 'laptop:py-[30px] '
             + 'desktop:py-[60px] '} >
 
@@ -85,7 +87,7 @@ const Header = () => {
                                     title: 'ВКонтакте разработка',
                                     link: '/bots/instagram'
                                 },
-                    
+
                             ]} />
                         <DropdownMenu
                             title="Решения"
@@ -117,7 +119,7 @@ const Header = () => {
                     </a>
 
                     <button
-                        onClick={buttonClickHandler}
+                        onClick={smoothToFeedback}
                         className={
                             'py-[12px] px-[20px] '
                             + 'text-inherit btn btn-active rounded-lg bg-sky-500 hover:bg-sky-400 border-none transition-all normal-case'}>
@@ -137,6 +139,10 @@ const Header = () => {
             </div>
 
         </ header>
+
+<NewMenu/>
+        </>
+    
     );
 
 }
