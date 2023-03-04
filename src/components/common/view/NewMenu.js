@@ -1,41 +1,27 @@
-import React from "react";
+/**
+ * Imports : React
+ */
+import React from 'react';
 
-const categories = [
-  {
-    name: "Women",
-    subcategories: ["Clothing", "Shoes", "Accessories"],
-  },
-  {
-    name: "Men",
-    subcategories: ["Clothing", "Shoes", "Accessories"],
-  },
-  {
-    name: "Kids",
-    subcategories: ["Boys", "Girls", "Babies"],
-  },
-  {
-    name: "Home",
-    subcategories: ["Bedding", "Bath", "Kitchen"],
-  },
-];
+const NewMenu = (props) => 
+        <div className='absolute top-[150px] z-20 w-full card_primary flex justify-around p-[20px] rounded-[10px]'>
 
-const Menu = () => {
-  return (
-    <div className="bg-gray-900 text-white">
-      <div className="container mx-auto flex flex-wrap justify-between py-6">
-        {categories.map((category, index) => (
-          <div key={index} className="w-fit px-2">
-            <h2 className="font-semibold text-xl mb-2">{category.name}</h2>
-            {category.subcategories.map((subcategory, index) => (
-              <p key={index} className="hover:text-gray-300 cursor-pointer">
-                {subcategory}
-              </p>
-            ))}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+          {props.categories.map((category, index) => (
 
-export default Menu;
+            <div key={index} className='w-fit px-2 space-y-[10px]'>
+
+              <h2 className='font-semibold text-xl mb-2'>{category.name}</h2>
+
+              {category.subcategories.map((subcategory, index) => (
+                <p key={index} className='cursor-pointer'>
+                  {subcategory}
+                </p>
+              ))}
+
+            </div>
+          ))}
+
+        </div>
+
+
+export default NewMenu;
