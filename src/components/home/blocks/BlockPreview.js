@@ -94,12 +94,9 @@ export default function BlockPreview() {
                 <button
                     onClick={buttonClickHandler}
                     className={
-                        'p-[10px] mb-[75px] '
-                        + 'text-[14px] leading-[20px] font-bold text-white shadow-blue rounded-[6px] bg-gradient-to-t from-sky-500 to-sky-300 transition-all duration-200 hover:shadow-blue-extended '
-                        + 'laptop:text-[18px] laptop:px-[34px] laptop:py-[14px] '
-                        + 'large:text-[20px] large:px-[42px] large:py-[16px] '
-                        + 'desktop:text-[22px] desktop:leading-[33px] desktop:px-[46px] desktop:py-[19px] desktop:rounded-[10px] '
-                        + 'dark:to-sky-500 dark:text-white'}>
+                        'mt-[20px] mb-[50px] px-[20px] py-[11px] w-fit mx-auto '
+                        + 'text-white rounded-[6px] text-[14px] leading-[20px] font-bold shadow-blue bg-gradient-to-t from-sky-500 to-sky-300 dark:to-sky-500 transition-all duration-200 hover:shadow-blue-extended '
+                        + 'laptop:mx-0 laptop:px-[80px] laptop:py-[20px] laptop:text-[22px] laptop:leading-[33px] laptop:mt-[42px]'}>
                     Свяжитесь со мной
                 </button>
 

@@ -4,7 +4,7 @@
 import React from 'react';
 
 const NewMenu = (props) =>
-  <div className='absolute top-[90px] z-20 w-full card_primary flex justify-around p-[20px] rounded-[10px]'>
+  <div className='absolute top-[70%] z-20 w-full card_primary flex justify-around p-[20px] rounded-[10px]'>
 
     {props.categories.map((category, index) => (
 
