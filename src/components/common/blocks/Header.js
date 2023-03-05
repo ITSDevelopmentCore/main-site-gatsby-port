@@ -16,6 +16,8 @@ import Symbol from '../view/Symbol';
 import ThemeSwitcher from "../view/ThemeSwitcher";
 import DropdownMenuMobile from "../view/DropdownMenuMobile";
 import NewMenu from '../view/NewMenu'
+import { IoIosArrowDown } from 'react-icons/io';
+
 
 /**
  * Imports : Gatsby
@@ -31,7 +33,7 @@ const Header = () => {
 
     const menuServices = [
         {
-            name: "О нас",
+            name: "",
             subcategories: ["Коллектив", "Награды", "Расположение"],
         },
         {
@@ -90,10 +92,16 @@ const Header = () => {
     const [isInnerVisible, setIsInnerVisible] = useState(false)
     const [menuCategories, setMenuCategories] = useState(null)
 
+
     const navigationClickCallback = (menu) => {
         setIsInnerVisible(true)
         setMenuCategories(menu)
     }
+    const navigationClickUnCallback = (menu) => {
+        setIsInnerVisible(false)
+        setMenuCategories(false)
+    }
+
 
     return (
         <>
@@ -115,26 +123,26 @@ const Header = () => {
                     </Link>
 
                     <nav className={
-                        'h-full hidden space-x-[20px] '
+                        'h-full  space-x-[40px] '
                         + 'laptop:flex'}>
 
             
                             <button
-                                className={'cursor-pointer font-bold bg-black'}
-                                onClick={() => navigationClickCallback(menuAbout)}>
-                                О нас
+                                className={'cursor-pointer flex font-bold p-[10px] text-[18px] rounded-[5px] hover:bg-sky-200  dark:hover:bg-black'}
+                                onClick={() =>  navigationClickCallback  (menuAbout || false)}  >
+                                О нас <IoIosArrowDown className="ml-[5px] mt-[5px] transition-all hover:rotate-180"/>
                             </button>
 
                             <button
-                                className={'cursor-pointer font-bold bg-black'}
+                                className={'cursor-pointer flex font-bold p-[10px] text-[18px] rounded-[5px] hover:bg-sky-200 dark:hover:bg-black'}
                                 onClick={() => navigationClickCallback(menuServices)}>
-                                Услуги
+                                Услуги  <IoIosArrowDown className="ml-[5px] mt-[5px] transition-all hover:rotate-180"/>
                             </button>
 
                             <button
-                                className={'cursor-pointer font-bold bg-black'}
+                                className={'cursor-pointer flex font-bold p-[10px] text-[18px] rounded-[5px] hover:bg-sky-200 dark:hover:bg-black'}
                                 onClick={() => navigationClickCallback(menuSolutions)}>
-                                Ришэния
+                                Решения  <IoIosArrowDown className="ml-[5px] mt-[5px] transition-all hover:rotate-180"/> 
                             </button>
 
 
