@@ -6,7 +6,7 @@ import React from 'react';
 /**
  * Imports: components
  */
-import Layout from "../../layouts";
+import Layout from "../../layouts/wrapper";
 import Feedback from '../../components/common/blocks/Feedback';
 import BlockPreview from '../../components/bots/vkontakte/BlockPreview';
 import BlockFunctions from '../../components/bots/vkontakte/BlockFunctions';

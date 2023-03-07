@@ -35,7 +35,7 @@ export default function Layout(props) {
         <ThemeContext.Provider value={{ theme, changeThemeCallback }}>
             <div style={theme === 'dark' ? { backgroundImage: `url(${props.backgroundDark})`, backgroundSize : 'cover'} : { backgroundImage: `url(${props.backgroundLight})`, backgroundSize : 'cover' }}>
                 <div
-                    className={'mx-5 laptop:mx-10 desktop:w-[1500px] desktop:mx-auto'}>
+                    className={'relative mx-[20px] laptop:mx-[40px] desktop:w-[1500px] desktop:mx-auto'}>
 
                     <CookiesProvider>
                         <Header />

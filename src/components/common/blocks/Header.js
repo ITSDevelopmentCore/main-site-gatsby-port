@@ -1,23 +1,21 @@
 /**
  * Imports : React
  */
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 
 /**
  * Imports : media
  */
-import { BsFillTelephoneFill } from 'react-icons/bs';
-import IcBurger from '../../../assets/common/icons/IcBurger';
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import IcBurger from '../../../assets/common/icons/IcBurger'
 
 /**
  * Imports : custom components
  */
-import Symbol from '../view/Symbol';
-import ThemeSwitcher from "../view/ThemeSwitcher";
-import DropdownMenuMobile from "../view/DropdownMenuMobile";
-import NewMenu from '../view/NewMenu'
-import { IoIosArrowDown } from 'react-icons/io';
-
+import Symbol from '../view/Symbol'
+import ThemeSwitcher from '../view/ThemeSwitcher'
+import DropdownMenuMobile from '../view/DropdownMenuMobile'
+import MainMenu from '../view/NewMenu'
 
 /**
  * Imports : Gatsby
@@ -31,28 +29,47 @@ import { smoothToFeedback } from '../../../scripts/changeViewByIdScripts'
 
 const Header = () => {
 
+    const [isMenuVisible, setMenuVisible] = useState(false)
+    const [menuCategories, setMenuCategories] = useState(null)
+    const [isSticky, setSticky] = useState(false);
+
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+  
+    const handleScroll = () => {
+      if (window.pageYOffset > 0) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+
     const menuServices = [
         {
-            name: "Разработка ботов",
-            subcategories: ["Коллектив", "Награды", "Расположение"],
+            name: 'Разработка ботов',
+            subcategories: ['Коллектив', 'Награды', 'Расположение'],
         },
         {
-            name: "Карьера",
-            subcategories: ["Clothing", "Shoes", "Accessories"],
+            name: 'Карьера',
+            subcategories: ['Clothing', 'Shoes', 'Accessories'],
         },
         {
-            name: "Kids",
-            subcategories: ["Boys", "Girls", "Babies"],
+            name: 'Kids',
+            subcategories: ['Boys', 'Girls', 'Babies'],
         },
         {
-            name: "Home",
-            subcategories: ["Bedding", "Bath", "Kitchen"],
+            name: 'Home',
+            subcategories: ['Bedding', 'Bath', 'Kitchen'],
         },
     ];
 
     const menuAbout = [
         {
-            name: "О нас",
+            name: 'О нас',
             subcategories: [ <Link to='/underDevelopment'>
                 Вакансии и карьера 
                 </Link>
@@ -60,100 +77,62 @@ const Header = () => {
         }
     ];
 
-    const menuSolutions = [
-        {
-            name: "Women",
-            subcategories: ["Clothing", "Shoes", "Accessories"],
-        },
-        {
-            name: "Men",
-            subcategories: ["Clothing", "Shoes", "Accessories"],
-        },
-        {
-            name: "Kids",
-            subcategories: ["Boys", "Girls", "Babies"],
-        },
-        {
-            name: "Home",
-            subcategories: ["Bedding", "Bath", "Kitchen"],
-        },
-    ];
-
-
-    const [isInnerVisible, setIsInnerVisible] = useState(false)
-    const [menuCategories, setMenuCategories] = useState(null)
-
-
     const navigationClickCallback = (menu) => {
-        setIsInnerVisible(true)
+        setMenuVisible(!isMenuVisible)
         setMenuCategories(menu)
     }
-    const navigationClickUnCallback = (menu) => {
-        setIsInnerVisible(false)
-        setMenuCategories(false)
-    }
-
 
     return (
         <>
             <header className={
                 'relative py-[10px] flex justify-between items-center '
-                + 'laptop:py-[30px] '
-                + 'desktop:py-[60px] '} >
+                + 'laptop:py-[30px] bg-white rounded-[10px]'} >
 
-                <div className="flex items-center">
+                <div className='flex items-center'>
 
                     <Link to='/'>
                         <div className={
                             'font-bold text-[30px] leading-[46px] '
                             + 'laptop:mr-14 laptop:text-[32px] laptop:leading-[48px]'}>
 
-                            its.<span className="text-sky-500">dev</span>
+                            its.<span className='text-sky-500'>dev</span>
 
                         </div>
                     </Link>
 
                     <nav className={
-                        'h-full   '
+                        'h-full '
                         + 'laptop:flex '}>
 
-            
                             <button
-                                className={'cursor-pointer flex font-bold p-[20px] text-[18px] rounded-[5px] hover:bg-sky-200  dark:hover:bg-black'}
+                                className='cursor-pointer flex font-bold p-[20px] hover:bg-gray-100'
                                 onClick={() =>  navigationClickCallback  (menuAbout)}  >
-                                О нас <IoIosArrowDown className="ml-[5px] mt-[5px] transition-all hover:rotate-180"/>
+                                О нас 
                             </button>
 
                             <button
-                                className={'cursor-pointer flex font-bold p-[20px] text-[18px] rounded-[5px] hover:bg-sky-200 dark:hover:bg-black'}
+                                className='cursor-pointer flex font-bold p-[20px] hover:bg-gray-100'
                                 onClick={() => navigationClickCallback(menuServices)}>
-                                Услуги  <IoIosArrowDown className="ml-[5px] mt-[5px] transition-all hover:rotate-180"/>
+                                Услуги  
                             </button>
-
-                            <button
-                                className={'cursor-pointer flex font-bold p-[20px] text-[18px] rounded-[5px] hover:bg-sky-200 dark:hover:bg-black'}
-                                onClick={() => navigationClickCallback(menuSolutions)}>
-                                Решения  <IoIosArrowDown className="ml-[5px] mt-[5px] transition-all hover:rotate-180"/> 
-                            </button>
-
 
                     </nav>
 
                 </div>
 
 
-                <div className="flex">
+                <div className='flex'>
 
                     <div className={
                         'hidden laptop:flex laptop:items-center '
                         + 'font-bold'}>
 
-                        <BsFillTelephoneFill className="text-sky-500 w-[25px] aspect-square mx-[10px]" />
+                        <BsFillTelephoneFill className='text-sky-500 w-[25px] aspect-square mx-[10px]' />
 
                         <a
-                            href="tel:88001015228"
-                            className="mr-[52px]">
-                            8 <Symbol symbol="(" />800<Symbol symbol=")" /> 101-52-28
+                            href='tel:88001015228'
+                            className='mr-[52px]'>
+                            8 <Symbol symbol='(' />800<Symbol symbol=')' /> 101-52-28
                         </a>
 
                         <button
@@ -176,17 +155,11 @@ const Header = () => {
 
                 </div>
 
-                {isInnerVisible && (
-                    <NewMenu
-                        categories={menuCategories} />
-                )}
             </ header>
 
-
+            {isMenuVisible && (<MainMenu categories={menuCategories} />)}
         </>
-
     );
-
 }
 
 export default Header;

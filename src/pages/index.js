@@ -7,7 +7,7 @@ import * as React from "react"
 /**
  * Imports: Blocks
  */
-import Layout from "../layouts";
+import Layout from "../layouts/wrapper";
 import Feedback from "../components/common/blocks/Feedback";
 import BlockPreview from "../components/home/blocks/BlockPreview";
 import BlockAdvantages from "../components/home/blocks/BlockAdvantages";

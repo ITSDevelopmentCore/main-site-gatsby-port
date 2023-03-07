@@ -1,7 +1,7 @@
 /**
  * Imports : React
  */
-import { ThemeContext } from '../../../layouts/index';
+import { ThemeContext } from '../../../layouts/wrapper';
 import React, { useContext } from 'react'
 
 /**

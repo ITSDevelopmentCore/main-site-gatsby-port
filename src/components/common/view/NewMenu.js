@@ -3,8 +3,8 @@
  */
 import React from 'react';
 
-const NewMenu = (props) =>
-  <div className='absolute top-[70%] z-20 w-full card_primary flex justify-around p-[20px] rounded-[10px]'>
+const MainMenu = (props) =>
+  <div className='absolute w-full z-20 card_primary flex justify-around p-[20px] rounded-[10px]'>
 
     {props.categories.map((category, index) => (
 
@@ -13,16 +13,10 @@ const NewMenu = (props) =>
         <h2 className='font-semibold text-xl mb-2'>{category.name}</h2>
 
       {category.subcategories.map((subcategory, index) => ( 
-
-       
-
-          
            <p key={index} className='cursor-pointer p-[10px] rounded-[5px] dark:hover:bg-gray-800 hover:bg-gray-200'>
              {subcategory}
            </p> 
          ))} 
-
-        
 
       </div>
     ))}
@@ -30,4 +24,4 @@ const NewMenu = (props) =>
   </div>
 
 
-export default NewMenu;
+export default MainMenu;

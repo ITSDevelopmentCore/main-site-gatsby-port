@@ -2,7 +2,7 @@
  * Imports : React
  */
 import React, { useContext } from "react";
-import { ThemeContext } from '../../../layouts/index';
+import { ThemeContext } from '../../../layouts/wrapper';
 
 export default function IcDzen() {
 

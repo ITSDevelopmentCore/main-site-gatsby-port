@@ -12,7 +12,7 @@ import BackgroundLightDefault from '../assets/home/background-light.webp';
 /**
  * Imports: Blocks
  */
-import Layout from "../layouts";
+import Layout from "../layouts/wrapper";
 
 const NotFoundPage = () =>
   <Layout
