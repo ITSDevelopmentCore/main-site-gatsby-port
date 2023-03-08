@@ -24,7 +24,6 @@ function DarkThemeModal() {
         changeThemeCallback(false)
     }
 
-    if (currentHour >= 22 || currentHour < 6) {
         return (
 
             <div
@@ -46,7 +45,7 @@ function DarkThemeModal() {
             </div>
         )
 
-    }
+    
 
 }
 

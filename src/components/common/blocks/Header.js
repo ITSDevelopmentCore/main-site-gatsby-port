@@ -14,8 +14,8 @@ import IcBurger from '../../../assets/common/icons/IcBurger'
  */
 import Symbol from '../view/Symbol'
 import ThemeSwitcher from '../view/ThemeSwitcher'
-import DropdownMenuMobile from '../view/DropdownMenuMobile'
-import MainMenu from '../view/NewMenu'
+import DropdownMenuMobile from '../view/MenuMobile'
+import MainMenu from '../view/Menu'
 
 /**
  * Imports : Gatsby
@@ -34,19 +34,15 @@ const Header = () => {
     const [isSticky, setSticky] = useState(false);
 
     useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-  
-    const handleScroll = () => {
-      if (window.pageYOffset > 0) {
-        setSticky(true);
-      } else {
-        setSticky(false);
-      }
-    };
+        window.addEventListener("scroll", handleScroll)
+    });
+
+    const handleScroll = () => setSticky(window.pageYOffset > 0);
+      
+    const navigationClickCallback = (menu) => {
+        setMenuVisible(!isMenuVisible)
+        setMenuCategories(menu)
+    }
 
     const menuServices = [
         {
@@ -70,33 +66,28 @@ const Header = () => {
     const menuAbout = [
         {
             name: 'О нас',
-            subcategories: [ <Link to='/underDevelopment'>
-                Вакансии и карьера 
+            subcategories: [
+                <Link to='/underDevelopment'>
+                    Вакансии и карьера
                 </Link>
             ],
         }
     ];
 
-    const navigationClickCallback = (menu) => {
-        setMenuVisible(!isMenuVisible)
-        setMenuCategories(menu)
-    }
-
     return (
         <>
             <header className={
-                'relative py-[10px] flex justify-between items-center '
-                + 'laptop:py-[30px] bg-white rounded-[10px]'} >
+                `relative mb-[30px] flex justify-between items-center `
+                + `transition-all duration-200 rounded-[10px] `
+                + `${isSticky ? `bg-white dark:bg-gray-700 sticky top-[20px] z-30 py-[10px] shadow-2xl` : `py-[30px]`}`} >
 
-                <div className='flex items-center'>
+                <div className='flex items-center px-[30px]'>
 
                     <Link to='/'>
                         <div className={
                             'font-bold text-[30px] leading-[46px] '
                             + 'laptop:mr-14 laptop:text-[32px] laptop:leading-[48px]'}>
-
                             its.<span className='text-sky-500'>dev</span>
-
                         </div>
                     </Link>
 
@@ -104,24 +95,24 @@ const Header = () => {
                         'h-full '
                         + 'laptop:flex '}>
 
-                            <button
-                                className='cursor-pointer flex font-bold p-[20px] hover:bg-gray-100'
-                                onClick={() =>  navigationClickCallback  (menuAbout)}  >
-                                О нас 
-                            </button>
+                        <button
+                            className='cursor-pointer flex font-bold p-[20px] hover:bg-sky-50 rounded-[10px]'
+                            onClick={() => navigationClickCallback(menuAbout)}  >
+                            О нас
+                        </button>
 
-                            <button
-                                className='cursor-pointer flex font-bold p-[20px] hover:bg-gray-100'
-                                onClick={() => navigationClickCallback(menuServices)}>
-                                Услуги  
-                            </button>
+                        <button
+                            className='cursor-pointer flex font-bold p-[20px] hover:bg-sky-50 rounded-[10px]'
+                            onClick={() => navigationClickCallback(menuServices)}>
+                            Услуги
+                        </button>
 
                     </nav>
 
                 </div>
 
 
-                <div className='flex'>
+                <div className='flex px-[30px]'>
 
                     <div className={
                         'hidden laptop:flex laptop:items-center '
@@ -155,9 +146,9 @@ const Header = () => {
 
                 </div>
 
-            </ header>
+                {isMenuVisible && (<MainMenu categories={menuCategories} />)}
 
-            {isMenuVisible && (<MainMenu categories={menuCategories} />)}
+            </ header>
         </>
     );
 }

@@ -8,8 +8,7 @@ import React from "react";
  */
 import { Link } from 'gatsby';
 
-const DropdownMenuMobile = () => {
-    return (
+const DropdownMenuMobile = () => 
         <menu
             id={"dropdownMenuMobile"}
             className={'hidden absolute top-[70px] right-0 left-0 z-40'}>
@@ -47,11 +46,9 @@ const DropdownMenuMobile = () => {
                     } />
             </ul>
         </menu>
-    )
-}
 
-const DropdownMenuMobileCategory = (props) => {
-    return (
+
+const DropdownMenuMobileCategory = (props) => 
         <li 
             className={
                 'collapse card_primary rounded-none'}>
@@ -69,12 +66,10 @@ const DropdownMenuMobileCategory = (props) => {
                 })}
             </ul>
         </li>
-    )
-}
 
 
-const DropdownMenuMobileItem = (props) => {
-    return (
+
+const DropdownMenuMobileItem = (props) => 
         <Link to={props.link}>
             <li
                 className={
@@ -85,7 +80,6 @@ const DropdownMenuMobileItem = (props) => {
                 <span>{props.title.split(' ')[1]}</span>
             </li>
         </Link>
-    )
-}
+
 
 export default DropdownMenuMobile;
