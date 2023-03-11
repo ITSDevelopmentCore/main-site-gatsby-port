@@ -14,8 +14,8 @@ import IcBurger from '../../../assets/common/icons/IcBurger'
  */
 import Symbol from '../view/Symbol'
 import ThemeSwitcher from '../view/ThemeSwitcher'
-import DropdownMenuMobile from '../view/MenuMobile'
-import MainMenu from '../view/Menu'
+import MenuMobile from '../view/MenuMobile'
+import Menu from '../view/Menu'
 
 /**
  * Imports : Gatsby
@@ -37,8 +37,12 @@ const Header = () => {
         window.addEventListener("scroll", handleScroll)
     });
 
-    const handleScroll = () => setSticky(window.pageYOffset > 0);
-      
+    const handleScroll = () => {
+        setSticky(window.pageYOffset > 0);
+        setMenuVisible(false)
+        setMenuCategories(null)
+    }
+
     const navigationClickCallback = (menu) => {
         setMenuVisible(!isMenuVisible)
         setMenuCategories(menu)
@@ -46,31 +50,32 @@ const Header = () => {
 
     const menuServices = [
         {
-            name: 'Разработка ботов',
-            subcategories: ['Коллектив', 'Награды', 'Расположение'],
+            name: 'Web разработка',
+            subcategories: ['Сайты', 'Сервисы', 'Высоконагруженные системы'],
+            links: ['/underDevelopment', '/underDevelopment', '/underDevelopment']
         },
         {
-            name: 'Карьера',
-            subcategories: ['Clothing', 'Shoes', 'Accessories'],
+            name: 'Мобильная разработка',
+            subcategories: ['Android', 'IOS', 'Crossplatform'],
+            links: ['/underDevelopment', '/underDevelopment', '/underDevelopment']
         },
         {
-            name: 'Kids',
-            subcategories: ['Boys', 'Girls', 'Babies'],
+            name: 'Боты',
+            subcategories: ['Телеграм', 'Avito', 'Инстаграм', 'Вконтакте'],
+            links: ['/bots/telegram', '/bots/avito', '/bots/instagram', '/bots/vkontakte']
         },
         {
-            name: 'Home',
-            subcategories: ['Bedding', 'Bath', 'Kitchen'],
+            name: 'Консалтинг',
+            subcategories: ['Цифровизация бизнеса', 'Аудит IT экосистемы', 'Поддержка стартапов'],
+            links: ['/underDevelopment', '/underDevelopment', '/underDevelopment']
         },
     ];
 
     const menuAbout = [
         {
             name: 'О нас',
-            subcategories: [
-                <Link to='/underDevelopment'>
-                    Вакансии и карьера
-                </Link>
-            ],
+            subcategories: ['Команда', 'Вакансии'],
+            links: ['/underDevelopment', '/underDevelopment', '/underDevelopment'],
         }
     ];
 
@@ -92,17 +97,17 @@ const Header = () => {
                     </Link>
 
                     <nav className={
-                        'h-full '
+                        'h-full hidden '
                         + 'laptop:flex '}>
 
                         <button
-                            className='cursor-pointer flex font-bold p-[20px] hover:bg-sky-50 rounded-[10px]'
+                            className='cursor-pointer flex font-bold p-[20px] dark:hover:bg-gray-600 hover:bg-gray-200 rounded-[10px]'
                             onClick={() => navigationClickCallback(menuAbout)}  >
                             О нас
                         </button>
 
                         <button
-                            className='cursor-pointer flex font-bold p-[20px] hover:bg-sky-50 rounded-[10px]'
+                            className='cursor-pointer flex font-bold p-[20px] dark:hover:bg-gray-600 hover:bg-gray-200 rounded-[10px]'
                             onClick={() => navigationClickCallback(menuServices)}>
                             Услуги
                         </button>
@@ -142,11 +147,12 @@ const Header = () => {
 
                     <IcBurger />
 
-                    <DropdownMenuMobile />
+                    <MenuMobile
+                        categories={[...menuServices, ...menuAbout]} />
 
                 </div>
 
-                {isMenuVisible && (<MainMenu categories={menuCategories} />)}
+                {isMenuVisible && (<Menu categories={menuCategories} />)}
 
             </ header>
         </>

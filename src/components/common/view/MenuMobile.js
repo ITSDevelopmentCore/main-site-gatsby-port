@@ -1,85 +1,66 @@
 /**
  * Imports : React
  */
-import React from "react";
+import React from 'react';
 
 /**
  * Imports : Gatsby
  */
 import { Link } from 'gatsby';
 
-const DropdownMenuMobile = () => 
-        <menu
-            id={"dropdownMenuMobile"}
-            className={'hidden absolute top-[70px] right-0 left-0 z-40'}>
-            <ul>
+const DropdownMenuMobile = (props) => {
+    return (<menu
+        id='dropdownMenuMobile'
+        className='hidden absolute top-[70px] rounded-[10px] right-0 left-0 z-40'>
 
+        <ul>
+            {props.categories.map(category => 
                 <DropdownMenuMobileCategory
-                    title='О компании и соискателям'
-                    key='О компании и соискателям'
-                    content={
-                        [
-                            { title: 'О нас', href: '/' },
-                            { title: 'Вакансии', href: '/underDevelopment' },
-                        ]
-                    } />
-
-                <DropdownMenuMobileCategory
-                    title='Услуги'
-                    key='Услуги'
-                    content={
-                        [
-                            { title: 'Телеграм разработка', href: '/bots/telegram' },
-                            { title: 'Авито разработка', href: '/bots/avito' },
-                            { title: 'Инстаграм разработка', href: '/bots/instagram' },
-                            { title: 'Вконтакте разработка', href: '/bots/vkontakte' },
-                        ]
-                    } />
-
-                <DropdownMenuMobileCategory
-                    title='Решения'
-                    key='Решения'
-                    content={
-                        [
-                            { title: 'Bot System', href: '/underDevelopment' },
-                        ]
-                    } />
-            </ul>
-        </menu>
+                    title={category.name}
+                    subcategories={category.subcategories}
+                    links={category.links} />
+            )}
+        </ul>
+    </menu>)
+}
 
 
-const DropdownMenuMobileCategory = (props) => 
-        <li 
-            className={
-                'collapse card_primary rounded-none'}>
+const DropdownMenuMobileCategory = (props) => {
 
-            <p className="collapse-title text-xl font-medium block">
-                {props.title}
-            </p>
+    return (
+        props.subcategories.map((subcategory, index) => {
+        return (
+            <li className='collapse card_primary rounded-none p-0'>
+                <input type='checkbox' className='peer' />
 
-            <ul>
-                {props.content.map(function (item) {
-                    return <DropdownMenuMobileItem
-                    key={item.title}
-                        title={item.title}
-                        link={item.href} />;
-                })}
-            </ul>
-        </li>
+                <p className='collapse-title text-center font-semibold'>
+                    {props.title}
+                </p>
 
-
-
-const DropdownMenuMobileItem = (props) => 
-        <Link to={props.link}>
-            <li
-                className={
-                    'flex justify-center items-center py-[15px]'}>
-
-                <span className="text-sky-500">{props.title.split(' ')[0]}</span>
-                &nbsp;
-                <span>{props.title.split(' ')[1]}</span>
+                <ul className='collapse-content'>
+                    <DropdownMenuMobileItem
+                        title={subcategory}
+                        link={props.links[index]} />;
+                </ul>
             </li>
-        </Link>
+        )})
+    )
 
+}
+
+
+const DropdownMenuMobileItem = (props) => {
+    return(
+        <Link to={props.link}>
+        <li
+            className='p-[10px] mb-[5px] bg-sky-100 rounded-[10px]'>
+            <span className='text-sky-500'>{props.title.split(' ')[0]}</span>
+            &nbsp;
+            <span>{props.title.split(' ')[1]}</span>
+        </li>
+    </Link>
+    )
+
+}
 
 export default DropdownMenuMobile;
